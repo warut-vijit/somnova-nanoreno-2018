@@ -1,0 +1,1 @@
+define elonmusk = Character("Elon Musk", what_prefix = "\"", what_suffix = "\"")

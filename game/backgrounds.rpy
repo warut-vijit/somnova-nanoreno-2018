@@ -1,0 +1,1 @@
+image bg_elonmusk_office = "backgrounds/elonmusk/office.png"
