@@ -5,15 +5,10 @@
 # The _() marks the string as translatable, should we want that in the future.
 define config.name = _("Arcadia")
 
-# Don't show the name on the title screen. We'll have our own image for that.
-define gui.show_name = False
-
-define config.version = "1.0"
+define config.version = "0.1.0 beta"
 
 # Text that is placed on the game's about screen. To insert a blank line
 # between paragraphs, write \n\n.
-
-# TODO: Write something cool here. Make sure to note that this was made using Ren'Py.
 define gui.about = _("")
 
 define build.name = "Arcadia"
@@ -78,7 +73,9 @@ define config.save_directory = "arcadia-218-1519786094"
 ##-----------------ICON-----------------##
 ##########################################
 
-define config.window_icon = "gui/window_icon.png"
+#define config.window_icon = "images/emblem_icon.png"
+# This icon should be used for non-final builds.
+define config.window_icon = "images/emblem_icon_dev.png"
 
 ##########################################
 ##--------BUILDING/DISTRIBUTION---------##

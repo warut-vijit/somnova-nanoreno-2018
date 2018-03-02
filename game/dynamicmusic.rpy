@@ -1,3 +1,6 @@
+# This ensures that dynamic music can be used on the title screen.
+init offset -2
+
 init python:
     import time
     import threading
