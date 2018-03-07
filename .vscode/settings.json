@@ -9,5 +9,7 @@
 		"**/.gitignore": true,
 		"**/LICENSE": true,
 		"**/README.md": true
-	}
+	},
+	
+	"python.linting.enabled": false,
 }

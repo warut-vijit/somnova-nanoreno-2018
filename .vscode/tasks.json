@@ -14,6 +14,21 @@
                 "panel": "shared"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "lint",
+            "type": "process",
+            "command": "${config:renpy.renpyPath}",
+            "args": [
+                "--lint",
+                "${workspaceFolder}"
+            ],
+            "presentation": {
+                "echo": false,
+                "reveal": "never",
+                "panel": "shared"
+            },
+            "problemMatcher": []
         }
     ]
 }
