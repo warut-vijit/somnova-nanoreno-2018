@@ -9,7 +9,7 @@ style default:
     language gui.language
 
 style input:
-    properties gui.text_properties("input", accent = True)
+    properties gui.text_properties("input", accent=True)
     adjust_spacing False
 
 #style hyperlink_text:
@@ -27,44 +27,44 @@ style button_text is gui_text:
     yalign 0.5
 
 style label_text is gui_text:
-    properties gui.text_properties("label", accent = True)
+    properties gui.text_properties("label", accent=True)
 
 style prompt_text is gui_text:
     properties gui.text_properties("prompt")
 
 style bar:
     ysize gui.bar_size
-    left_bar Frame("gui/bar/left.png", gui.bar_borders, tile = gui.bar_tile)
-    right_bar Frame("gui/bar/right.png", gui.bar_borders, tile = gui.bar_tile)
+    left_bar Frame("gui/bar/left.png", gui.bar_borders, tile=gui.bar_tile)
+    right_bar Frame("gui/bar/right.png", gui.bar_borders, tile=gui.bar_tile)
 
 style vbar:
     xsize gui.bar_size
-    top_bar Frame("gui/bar/top.png", gui.vbar_borders, tile = gui.bar_tile)
-    bottom_bar Frame("gui/bar/bottom.png", gui.vbar_borders, tile = gui.bar_tile)
+    top_bar Frame("gui/bar/top.png", gui.vbar_borders, tile=gui.bar_tile)
+    bottom_bar Frame("gui/bar/bottom.png", gui.vbar_borders, tile=gui.bar_tile)
 
 style scrollbar:
     ysize gui.scrollbar_size
-    base_bar Frame("gui/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile = gui.scrollbar_tile)
-    thumb Frame("gui/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile = gui.scrollbar_tile)
+    base_bar Frame("gui/scrollbar/horizontal_[prefix_]bar.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame("gui/scrollbar/horizontal_[prefix_]thumb.png", gui.scrollbar_borders, tile=gui.scrollbar_tile)
 
 style vscrollbar:
     xsize gui.scrollbar_size
-    base_bar Frame("gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile = gui.scrollbar_tile)
-    thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile = gui.scrollbar_tile)
+    base_bar Frame("gui/scrollbar/vertical_[prefix_]bar.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
+    thumb Frame("gui/scrollbar/vertical_[prefix_]thumb.png", gui.vscrollbar_borders, tile=gui.scrollbar_tile)
 
 style slider:
     ysize gui.slider_size
-    base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile = gui.slider_tile)
+    base_bar Frame("gui/slider/horizontal_[prefix_]bar.png", gui.slider_borders, tile=gui.slider_tile)
     thumb "gui/slider/horizontal_[prefix_]thumb.png"
 
 style vslider:
     xsize gui.slider_size
-    base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile = gui.slider_tile)
+    base_bar Frame("gui/slider/vertical_[prefix_]bar.png", gui.vslider_borders, tile=gui.slider_tile)
     thumb "gui/slider/vertical_[prefix_]thumb.png"
 
 style frame:
     padding gui.frame_borders.padding
-    background Frame("gui/frame.png", gui.frame_borders, tile = gui.frame_tile)
+    background Frame("gui/frame.png", gui.frame_borders, tile=gui.frame_tile)
 
 ##########################################
 ##----------------SCREENS---------------##
@@ -97,7 +97,7 @@ style window:
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
-    background Image("gui/textbox.png", xalign = 0.5, yalign = 1.0)
+    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
 
 style namebox:
     xpos gui.name_xpos
@@ -105,11 +105,11 @@ style namebox:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-    background Frame("gui/namebox.png", gui.namebox_borders, tile = gui.namebox_tile, xalign = gui.name_xalign)
+    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
-    properties gui.text_properties("name", accent = True)
+    properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
 
@@ -188,7 +188,7 @@ screen quick_menu():
             yalign 1.0
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast = True, confirm = True)
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
@@ -224,13 +224,13 @@ screen navigation():
         else:
             textbutton _("History") action ShowMenu("history")
             textbutton _("Save") action ShowMenu("save")
-        
+
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Extras") action ShowMenu("extras")
         textbutton _("Options") action ShowMenu("options")
 
         if _in_replay:
-            textbutton _("End Replay") action EndReplay(confirm = True)
+            textbutton _("End Replay") action EndReplay(confirm=True)
         elif not main_menu:
             textbutton _("Main Menu") action MainMenu()
 
@@ -238,7 +238,7 @@ screen navigation():
             # Help isn't necessary or relevant to mobile devices.
             # textbutton _("Help") action ShowMenu("help")
             # The quit button is banned on iOS and unnecessary on Android.
-            textbutton _("Quit") action Quit(confirm = not main_menu)
+            textbutton _("Quit") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -281,19 +281,19 @@ style main_menu_frame:
 
 style main_menu_vbox:
     xalign 1.0
-    xoffset -20
+    xoffset - 20
     xmaximum 800
     yalign 1.0
-    yoffset -20
+    yoffset - 20
 
 style main_menu_text:
-    properties gui.text_properties("main_menu", accent = True)
+    properties gui.text_properties("main_menu", accent=True)
 
 ##########################################
 ##--------------GAME MENU---------------##
 ##########################################
 
-screen game_menu(title, scroll = None):
+screen game_menu(title, scroll=None):
     style_prefix "game_menu"
 
     if main_menu:
@@ -388,7 +388,7 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -30
+    yoffset - 30
 
 ##########################################
 ##-----------LOAD/SAVE SCREEN-----------##
@@ -405,7 +405,7 @@ screen load():
 
 
 screen file_slots(title):
-    default page_name_value = FilePageNameInputValue(pattern = _("Page {}"), auto = _("Automatic saves"), quick = _("Quick saves"))
+    default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
     use game_menu(title):
         fixed:
             # This ensures the input will get the enter event before any of the buttons do.
@@ -433,7 +433,7 @@ screen file_slots(title):
                         action FileAction(slot)
                         has vbox
                         add FileScreenshot(slot) xalign 0.5
-                        text FileTime(slot, format = _("{#file_time}%A, %B %d %Y, %H:%M"), empty = _("empty slot")):
+                        text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
                             style "slot_time_text"
                         text FileSaveName(slot):
                             style "slot_name_text"
@@ -499,7 +499,7 @@ screen options():
         $ cols = 2
     else:
         $ cols = 4
-    use game_menu(_("Options"), scroll = "viewport"):
+    use game_menu(_("Options"), scroll="viewport"):
         vbox:
             hbox:
                 box_wrap True
@@ -522,7 +522,7 @@ screen options():
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
-            null height (4 * gui.pref_spacing)
+            null height(4 * gui.pref_spacing)
             hbox:
                 style_prefix "slider"
                 box_wrap True
@@ -627,7 +627,7 @@ screen history():
     # Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll = ("vpgrid" if gui.history_height else "viewport")):
+    use game_menu(_("History"), scroll=("vpgrid" if gui.history_height else "viewport")):
         style_prefix "history"
         for h in _history_list:
             window:
@@ -677,7 +677,7 @@ style history_text:
     xsize gui.history_text_width
     min_width gui.history_text_width
     text_align gui.history_text_xalign
-    layout ("subtitle" if gui.history_text_xalign else "tex")
+    layout("subtitle" if gui.history_text_xalign else "tex")
 
 style history_label:
     xfill True
@@ -694,7 +694,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll = "viewport"):
+    use game_menu(_("Help"), scroll="viewport"):
         style_prefix "help"
         vbox:
             spacing 15
@@ -843,7 +843,7 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile = gui.frame_tile)
+    background Frame(["gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
@@ -883,7 +883,7 @@ transform delayed_blink(delay, cycle):
         linear .2 alpha 1.0
         pause .2
         linear .2 alpha 0.5
-        pause (cycle - .4)
+        pause(cycle - .4)
         repeat
 
 style skip_frame is empty
@@ -892,7 +892,7 @@ style skip_triangle is skip_text
 
 style skip_frame:
     ypos gui.skip_ypos
-    background Frame("gui/skip.png", gui.skip_frame_borders, tile = gui.frame_tile)
+    background Frame("gui/skip.png", gui.skip_frame_borders, tile=gui.frame_tile)
     padding gui.skip_frame_borders.padding
 
 style skip_text:
@@ -929,7 +929,7 @@ style notify_text is gui_text
 style notify_frame:
     ypos gui.notify_ypos
 
-    background Frame("gui/notify.png", gui.notify_frame_borders, tile = gui.frame_tile)
+    background Frame("gui/notify.png", gui.notify_frame_borders, tile=gui.frame_tile)
     padding gui.notify_frame_borders.padding
 
 style notify_text:
@@ -954,7 +954,7 @@ screen quick_menu():
         xalign 0.5
         yalign 1.0
         textbutton _("Back") action Rollback()
-        textbutton _("Skip") action Skip() alternate Skip(fast = True, confirm = True)
+        textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
         textbutton _("Auto") action Preference("auto-forward", "toggle")
         textbutton _("Menu") action ShowMenu()
 
@@ -993,13 +993,12 @@ style slider_pref_vbox:
 style slider_pref_slider:
     variant "small"
     xsize 600
-    
-######################################
-#-------------EXTRAS MENU------------#
-######################################
+
+##########################################
+##--------------EXTRAS MENU-------------##
+##########################################
 
 screen extras():
-    
     tag menu
 
     use game_menu(_("Extras"), scroll="viewport"):
@@ -1009,15 +1008,15 @@ screen extras():
         has vbox:
             spacing 20
 
-        text _("Hey Look a Menu.")
-        
-#####################################
-#-------------PAUSE MENU------------#
-#####################################
+        # text _()
+
+##########################################
+##--------------PAUSE MENU--------------##
+##########################################
 
 screen game_menu:
     tag menu
-    
+
     vbox:
         textbutton _("Continue") action Return()
         textbutton _("Save Game") action ShowMenu("save")
@@ -1025,4 +1024,3 @@ screen game_menu:
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Main Menu") action MainMenu()
         textbutton _("Quit") action Quit()
-        
