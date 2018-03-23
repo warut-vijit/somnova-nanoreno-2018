@@ -5,5 +5,4 @@
 # To use this in a script, use the following command:
 # $ queue_music(music_jazz_tune)
 
-define music_jazz_tune = DynamicMusic("music/jazz-tune.ogg", stop_points = [0, 12.002, 17.455], loop_point = 12.002)
-define music_funeral_march = DynamicMusic("music/funeral-march.ogg", stop_points = [0, 12.75, 36.75, 48.75], loop_point = 0.75)
+define music_one = DynamicMusic("music/one.ogg", stop_points = [0], loop_point = 61.0807)

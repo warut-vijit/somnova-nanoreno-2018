@@ -1,1 +1,1 @@
-image cg_elonmusk_liftoff = "cgs/elonmusk/liftoff.png"
+# image cg_elonmusk_liftoff = "cgs/elonmusk/liftoff.png"

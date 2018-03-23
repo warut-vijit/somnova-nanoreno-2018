@@ -1,1 +1,5 @@
-image elonmusk smile = im.FactorScale("sprites/elonmusk/smile.png", width = 0.5, bilinear = True) 
+image parker p1 e1 = im.FactorScale("sprites/parker/p1-e1-default.png", width = 0.5, bilinear = True) 
+image parker p1 e2 = im.FactorScale("sprites/parker/p1-e2-tired.png", width = 0.5, bilinear = True) 
+image parker p1 e3 = im.FactorScale("sprites/parker/p1-e3-surprised.png", width = 0.5, bilinear = True) 
+image parker p1 e4 = im.FactorScale("sprites/parker/p1-e4-angry.png", width = 0.5, bilinear = True) 
+image parker p1 e5 = im.FactorScale("sprites/parker/p1-e5-smile.png", width = 0.5, bilinear = True) 
