@@ -1,6 +1,5 @@
 label A1_03:
     show bg_black
-    # TODO: play audio car_engine
     "Pulling the car back into the alleyway behind Arcadia's feels like sinking through molasses into another world."
     "One moment, you can't hear yourself thinking over the honks and the blares and the shouting and all that hustle and bustle of the street outside."
     "Then you drive back for ten more seconds, and before you can really mind it all that noise just fades out into... a world you have for yourself."
@@ -441,7 +440,7 @@ label A1_03:
     "Jesus, this is awful."
     "Concern."
     eris "Well..."
-    show eris p1 e1 at centered
+    show eris p3 e8 at centered
     "She shifts uncomfortably in her place, almost as if she needs to go to the bathroom."
     eris "Nice evening, huh?"
     roman "Yeah."
