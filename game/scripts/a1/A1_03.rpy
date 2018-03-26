@@ -55,7 +55,7 @@ label A1_03:
     # TODO: play audio bottles_rattling
     "There, I'm almost there."
     "Just another meter, then to stretch my arm juuuust the right way to grab the handle ---"
-    # TODO: play audio door_open
+    play audio backdoor_open
     "I can feel the cool touch of the metal on my fingertips when the creak of the old door beginning to open hits my eardrums like the cocking of a gun."
     # TODO: play audio bottles_rattling
     scene bg_club_exterior_day with hpunch
