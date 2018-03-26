@@ -120,6 +120,17 @@ style say_dialogue:
     ypos gui.dialogue_ypos
 
 ##########################################
+##---------SIMULTANEOUS DIALOGUE--------##
+##########################################
+
+# TODO: Design and implement.
+style block1_multiple2_say_window:
+    xalign 0.0
+
+style block2_multiple2_say_window:
+    xalign 1.0
+
+##########################################
 ##----------------INPUT-----------------##
 ##########################################
 
@@ -151,6 +162,8 @@ style input:
 
 # Reference: http://www.renpy.org/doc/html/screen_special.html#choice
 
+define config.narrator_menu = True
+
 screen choice(items):
     style_prefix "choice"
     hbox:
@@ -163,12 +176,12 @@ style choice_button_text is button_text
 
 style choice_hbox:
     xalign 0.5
-    ypos 0.5
-    yanchor 0.5
+    ycenter 0.5
     spacing gui.choice_spacing
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    ycenter 0.5
 
 style choice_button_text is default:
     properties gui.button_text_properties("choice_button")

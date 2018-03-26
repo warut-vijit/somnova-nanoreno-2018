@@ -100,3 +100,11 @@ init python:
     
     # If we intend to upload this to itch.io, we can set the project name here.
     # build.itch_project = "renpytom/test-project"
+    
+    def replace_text(s):
+        # This is the em dash. —
+        s = s.replace('--', u'\u2014')
+        # This is the ellipsis.
+        s = s.replace('...', u'\u2026')
+        return s
+    config.replace_text = replace_text

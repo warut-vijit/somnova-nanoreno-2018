@@ -1,5 +1,6 @@
-define audio.ambient_city = "audio/ambient-city.ogg"
-define audio.ambient_club = "audio/ambient-club.ogg"
+define audio.ambient_city = "<loop 0>audio/ambient-city.ogg"
+define audio.ambient_club = "<loop 0>audio/ambient-club.ogg"
+
 define audio.backdoor_close = "audio/backdoor-close.ogg"
 define audio.backdoor_open = "audio/backdoor-open.ogg"
 define audio.navcomp = "audio/navcomp.ogg"
