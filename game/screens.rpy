@@ -21,16 +21,16 @@ screen say(who, what):
     window:
         id "window"
         yanchor 1.0
-        pos (460, -80)
-        xysize (1260, 160)
+        pos (440, -80)
+        xysize (1280, 160)
         yoffset 1080
         background Solid("#0005") # TODO
-        add Solid("#fff", xpos = 1260, xysize = (1, 160))
+        add Solid("#fff", xpos = 1280, xysize = (1, 160))
         
         text what id "what":
             xpos 37
             ypos 10
-            xsize 1175
+            xsize 1195
             line_spacing 4
             size 31
 
@@ -38,7 +38,7 @@ screen say(who, what):
     window:
         yanchor 1.0
         pos (199, -180)
-        xysize (241, 60)
+        xysize (221, 60)
         yoffset 1080
         background Solid("#0005") # TODO
         add Solid("#fff", xpos = 0, xysize = (1, 60))
