@@ -10,7 +10,7 @@ define debug = Character("Debug", who_color = "#ff00ff")
 
 define eris = Character("Eris", what_prefix = "“", what_suffix = "”", image = "eris")
 define roman = Character("Roman", what_prefix = "“", what_suffix = "”")
-define parker = Character("Parker", what_prefix = "“", what_suffix = "”", image = "parker")
+define parker = Character("Parker", what_prefix = "“", what_suffix = "”", image = "parker", who_color = "#f0c464")
 
 ##########################################
 ##--------INCIDENTAL CHARACTERS---------##
