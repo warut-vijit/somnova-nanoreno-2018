@@ -26,6 +26,8 @@ define gui.border_center = "#fff3" # White (20% opacity)
 define gui.confirm_text_color = "#ffffff4c" # White (30% opacity)
 define gui.confirm_background = "#00000080" # Black (50% opacity)
 define gui.confirm_button_background = "#000000B2" # Black (70% opacity)
+define gui.scrollbar_color = "#fff" # White
+define gui.scrollbar_color_idle = "#ffffff4c" # White (30% opacity)
 
 ##########################################
 ##--------------FILE SLOTS--------------##

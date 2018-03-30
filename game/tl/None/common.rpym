@@ -187,15 +187,15 @@ translate None strings:
 
     # 00gui.rpy:237
     old "Loading will lose unsaved progress.\nAre you sure you want to do this?"
-    new "Loading will lose unsaved progress.\nAre you sure you want to do this?"
+    new "Loading will lose unsaved progress.Are you sure you want to do this?"
 
     # 00gui.rpy:238
     old "Are you sure you want to quit?"
-    new "Are you sure you want to quit?\nAll unsaved progress will be lost."
+    new "Are you sure you want to quit? All unsaved progress will be lost."
 
     # 00gui.rpy:239
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
+    new "Are you sure you want to return to the main menu? All unsaved progress will be lost."
 
     # 00gui.rpy:240
     old "Are you sure you want to end the replay?"

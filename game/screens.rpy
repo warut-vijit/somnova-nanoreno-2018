@@ -11,8 +11,10 @@ style default:
 
 style vscrollbar:
     xysize (10, 520)
-    base_bar Frame("gui/scrollbar_border.png", 1, 1, tile = True)
-    thumb Solid("#fff")
+    selected_base_bar Frame("gui/scrollbar_border.png", 1, 1, tile = True)
+    base_bar Frame("gui/scrollbar_border_idle.png", 1, 1, tile = True)
+    selected_thumb Solid(gui.scrollbar_color)
+    thumb Solid(gui.scrollbar_color_idle)
 
 ##########################################
 ##-----------------SAY------------------##
@@ -529,6 +531,7 @@ screen confirm(message, yes_action, no_action):
                     xcenter 0.5
                     ycenter 0.5
                     text_size 28
+                    xsize 400
                     text_text_align 0.5
                 vbox:
                     style_prefix "confirm"
