@@ -1,4 +1,4 @@
-﻿init offset = -1
+init offset = -1
 
 ##########################################
 ##----------------STYLES----------------##
@@ -25,7 +25,14 @@ style vscrollbar:
 screen say(who, what):
     style_prefix "say"
 
+    frame:
+        background Frame("gui/divider.png", 2, 0, tile = True)
+        yoffset 1080
+        pos (199, -262)
+        xysize (1522, 2)
+
     window:
+        style_prefix "say_text"
         id "window"
         yanchor 1.0
         pos (440, -80)
@@ -42,6 +49,7 @@ screen say(who, what):
             size 31
 
     window:
+        style_prefix "say_name"
         yanchor 1.0
         pos (199, -180)
         xysize (221, 60)
