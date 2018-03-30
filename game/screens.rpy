@@ -9,6 +9,11 @@ style default:
     font "fonts/Abel-Regular.ttf"
     language "western"
 
+style vscrollbar:
+    xysize (10, 520)
+    base_bar Frame("gui/scrollbar_border.png", 1, 1, tile = True)
+    thumb Solid("#fff")
+
 ##########################################
 ##-----------------SAY------------------##
 ##########################################
@@ -34,7 +39,6 @@ screen say(who, what):
             line_spacing 4
             size 31
 
-    #if who is not None:
     window:
         yanchor 1.0
         pos (199, -180)
@@ -42,11 +46,11 @@ screen say(who, what):
         yoffset 1080
         background Solid(gui.box_background_color)
         add Solid(gui.border_edge, xpos = 0, xysize = (1, 60))
-
-        text who + ":" id "who":
-            size 36
-            xpos 19
-            yalign 0.5
+        if who is not None:
+            text who + ":" id "who":
+                size 36
+                xpos 19
+                yalign 0.5
 
 ##########################################
 ##---------SIMULTANEOUS DIALOGUE--------##
@@ -454,23 +458,34 @@ screen history():
     # Avoid predicting this screen, as it can be very large.
     predict False
 
-    use game_menu(_("History"), scroll = ("vpgrid" if gui.history_height else "viewport")):
-        style_prefix "history"
-        for h in _history_list:
-            window:
-                # This lays things out properly if history_height is None.
-                has fixed:
-                    yfit True
-                if h.who:
-                    label h.who:
-                        style "history_name"
-                        # Take the color of the who text from the Character, if set.
-                        if "color" in h.who_args:
-                            text_color h.who_args["color"]
+    use game_menu(_("HISTORY")):
+        viewport:
+            pos (55, 60)
+            xysize (965, 520)
 
-                text h.what
-        if not _history_list:
-            label _("The dialogue history is empty.")
+            scrollbars "vertical"
+            mousewheel True
+            draggable True
+            pagekeys True
+            
+            yinitial 1.0
+
+            style_prefix "history"
+            vbox:
+                spacing 18
+                for h in _history_list:
+                    hbox:
+                        spacing 5
+                        if h.who:
+                            text h.who + ":":
+                                # Take the color of the who text from the Character, if set.
+                                if "color" in h.who_args:
+                                    color h.who_args["color"]
+
+                        text h.what
+
+style history_text:
+    size 24
 
 ##########################################
 ##------------CONFIRM SCREEN------------##
