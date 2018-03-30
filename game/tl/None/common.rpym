@@ -191,7 +191,7 @@ translate None strings:
 
     # 00gui.rpy:238
     old "Are you sure you want to quit?"
-    new "Are you sure you want to quit?"
+    new "Are you sure you want to quit?\nAll unsaved progress will be lost."
 
     # 00gui.rpy:239
     old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."

@@ -5,7 +5,7 @@
 ##########################################
 
 style default:
-    color "#fff"
+    color gui.text_color
     font "fonts/Abel-Regular.ttf"
     language "western"
 
@@ -24,8 +24,8 @@ screen say(who, what):
         pos (440, -80)
         xysize (1280, 160)
         yoffset 1080
-        background Solid("#0005") # TODO
-        add Solid("#fff", xpos = 1280, xysize = (1, 160))
+        background Solid(gui.box_background_color)
+        add Solid(gui.border_edge, xpos = 1280, xysize = (1, 160))
         
         text what id "what":
             xpos 37
@@ -40,8 +40,8 @@ screen say(who, what):
         pos (199, -180)
         xysize (221, 60)
         yoffset 1080
-        background Solid("#0005") # TODO
-        add Solid("#fff", xpos = 0, xysize = (1, 60))
+        background Solid(gui.box_background_color)
+        add Solid(gui.border_edge, xpos = 0, xysize = (1, 60))
 
         text who + ":" id "who":
             size 36
@@ -80,14 +80,7 @@ style choice_button_text is button_text
 style choice_hbox:
     xalign 0.5
     ycenter 0.5
-    spacing gui.choice_spacing
-
-style choice_button is default:
-    properties gui.button_properties("choice_button")
-    ycenter 0.5
-
-style choice_button_text is default:
-    properties gui.button_text_properties("choice_button")
+    spacing 20 # TODO
 
 ##########################################
 ##--------------QUICK MENU--------------##
@@ -108,13 +101,13 @@ screen quick_menu():
         textbutton _("AUTO") action Preference("auto-forward", "toggle")
         textbutton _("SKIP") action Skip() alternate Skip(fast = True, confirm = True)
         textbutton _("MUTE") action Preference("all mute", "toggle")
-        textbutton _("HISTORY") action ShowMenu("history")
         
     hbox:
         style_prefix "quick_right"
         textbutton _("MENU") action ShowMenu("options")
         textbutton _("LOAD") action ShowMenu("load")
         textbutton _("SAVE") action ShowMenu("save")
+        textbutton _("HISTORY") action ShowMenu("history")
 
 init python:
     config.overlay_screens.append("quick_menu")
@@ -143,14 +136,20 @@ style quick_left_button is quick_button
 style quick_right_button is quick_button
 
 style quick_left_button:
-    background Solid("#fff6", xysize = (3, 3), ypos = 37)
+    background Solid(gui.inactive_text_color, xysize = (3, 3), ypos = 37)
+    hover_background Solid(gui.text_color, xysize = (3, 3), ypos = 37)
+    selected_background Solid(gui.active_text_color, xysize = (3, 3), ypos = 37)
 
 style quick_right_button:
-    background Solid("#fff6", xysize = (3, 3), pos = (57, 37))
+    background Solid(gui.inactive_text_color, xysize = (3, 3), pos = (57, 37))
+    hover_background Solid(gui.text_color, xysize = (3, 3), pos = (57, 37))
+    selected_background Solid(gui.active_text_color, xysize = (3, 3), pos = (57, 37))
 
 style quick_button_text:
     size 20
-    color "#fff6"
+    color gui.inactive_text_color
+    hover_color gui.text_color
+    selected_color gui.active_text_color
     ycenter 0.5
 
 style quick_left_button_text is quick_button_text
@@ -168,7 +167,7 @@ screen navigation():
     frame:
         xpos 200
         xsize 280
-        background Solid("#0006") # TODO: Transparency?
+        background Solid(gui.box_background_color)
 
         label _("MENU"):
             text_ycenter 0.73 # This aligns the text to the bottom of the container. Ack.
@@ -239,7 +238,7 @@ screen game_menu(title):
         xpos 500
         xsize 1220
         yfill True
-        background Solid("#0006") # TODO
+        background Solid(gui.box_background_color)
 
         label title:
             text_ycenter 0.73 # Align to bottom. Ack.
@@ -254,7 +253,7 @@ screen game_menu(title):
         frame: # Bottom divider.
             background Frame("gui/divider.png", 2, 0, tile = True)
             xfill True
-            add Solid("#fff", xsize = 88)
+            add Solid(gui.border_edge, xsize = 88)
             yoffset 858
             ysize 2
         textbutton _("BACK"):
@@ -279,92 +278,85 @@ screen game_menu(title):
 
 screen save():
     tag menu
-    use file_slots(_("Save"))
+    use file_slots(_("SAVE GAME"))
 
 screen load():
     tag menu
-    use file_slots(_("Load"))
+    use file_slots(_("LOAD GAME"))
 
 
-screen file_slots():
+screen file_slots(title):
     default page_name_value = FilePageNameInputValue(pattern = _("Page {}"), auto = _("Automatic saves"), quick = _("Quick saves"))
-    use game_menu():
+    use game_menu(title):
         fixed:
-            # This ensures the input will get the enter event before any of the buttons do.
-            order_reverse True
-            # The page name, which can be edited by clicking on a button.
-            button:
-                style "page_label"
-                key_events True
-                xalign 0.5
-                action page_name_value.Toggle()
-                input:
-                    style "page_label_text"
-                    value page_name_value
-
             # The grid of file slots.
-            grid gui.file_slot_cols gui.file_slot_rows:
+            grid 4 3:
+                yoffset -31
                 style_prefix "slot"
                 xalign 0.5
                 yalign 0.5
-                spacing gui.slot_spacing
+                xspacing 20
+                yspacing 60
 
-                for i in range(gui.file_slot_cols * gui.file_slot_rows):
+                $ slot_hover = [False] * (4 * 3)
+                for i in range(4 * 3):
                     $ slot = i + 1
-                    button:
-                        action FileAction(slot)
-                        has vbox
-                        add FileScreenshot(slot) xalign 0.5
-                        text FileTime(slot, format = _("{#file_time}%A, %B %d %Y, %H:%M"), empty = _("empty slot")):
-                            style "slot_time_text"
-                        text FileSaveName(slot):
-                            style "slot_name_text"
-                        key "save_delete" action FileDelete(slot)
+                    if FileLoadable(slot):
+                        button:
+                            background Frame("gui/file_slot_button.png", 2, 2, tile = True)
+                            xysize (240, 80)
+                            action FileAction(slot)
+                            add FileScreenshot(slot):
+                                pos (20, 6)
+                            text str(slot).rjust(3, str("0")):
+                                pos (154, -1)
+                                size 28
+                            $ playtime_minutes = FileJson(slot, "playtime", empty = 0, missing = 0) / 60
+                            text "{0}:{1}".format(str(int(playtime_minutes / 60)).rjust(2, str("0")), str(int(playtime_minutes % 60)).rjust(2, str("0"))):
+                                pos (156, 33)
+                                size 16
+                            text FileTime(slot, format = _("{#file_time}%m-%d-%Y")):
+                                pos (156, 58)
+                                size 16
+                            button:
+                                anchor (0.0, 1.0)
+                                pos (211, 21)
+                                xysize (15, 15)
+                                background "gui/x_idle.png"
+                                hover_background "gui/x_focus.png"
+                                action FileDelete(slot)
+                    else:
+                        button:
+                            xysize (240, 80)
+                            action FileAction(slot)
+                            frame:
+                                background Frame("gui/file_slot_empty.png", 2, 2, tile = True)
+                                xysize (config.thumbnail_width, config.thumbnail_height)
+                                pos (20, 6)
+                            text _("Empty"):
+                                color gui.empty_text_color
+                                pos (154, -1)
+                                size 28
 
             # Buttons to access other pages.
             hbox:
                 style_prefix "page"
-                xalign 0.5
+                xalign 1.0
                 yalign 1.0
-                spacing gui.page_spacing
-                textbutton _("<") action FilePagePrevious()
+                offset (-20, -54)
+                spacing 12
+                textbutton _("Prev") action FilePagePrevious()
 
-                # 1 (inclusive) to 10 (exclusive).
-                for page in range(1, 10):
+                # 1 (inclusive) to 6 (exclusive).
+                for page in range(1, 6):
                     textbutton "[page]" action FilePage(page)
 
-                textbutton _(">") action FilePageNext()
-
-style page_label is gui_label
-style page_label_text is gui_label_text
-style page_button is gui_button
-style page_button_text is gui_button_text
-
-style slot_button is gui_button
-style slot_button_text is gui_button_text
-style slot_time_text is slot_button_text
-style slot_name_text is slot_button_text
-
-style page_label:
-    xpadding 50
-    ypadding 3
-
-style page_label_text:
-    text_align 0.5
-    layout "subtitle"
-    hover_color gui.hover_color
-
-style page_button:
-    properties gui.button_properties("page_button")
+                textbutton _("Next") action FilePageNext()
 
 style page_button_text:
-    properties gui.button_text_properties("page_button")
-
-style slot_button:
-    properties gui.button_properties("slot_button")
-
-style slot_button_text:
-    properties gui.button_text_properties("slot_button")
+    color gui.empty_text_color
+    selected_color gui.text_color
+    size 25
 
 ##########################################
 ##---------------OPTIONS----------------##
@@ -431,8 +423,8 @@ style options_button:
 style options_button_text:
     xcenter 0.5
     ycenter 0.5
-    color "#898885"
-    selected_color "#59ff9b"
+    color gui.inactive_text_color
+    selected_color gui.active_text_color
     size 20
 
 style options_slider:
@@ -480,46 +472,6 @@ screen history():
         if not _history_list:
             label _("The dialogue history is empty.")
 
-style history_window is empty
-
-style history_name is gui_label
-style history_name_text is gui_label_text
-style history_text is gui_text
-
-style history_text is gui_text
-
-style history_label is gui_label
-style history_label_text is gui_label_text
-
-style history_window:
-    xfill True
-    ysize gui.history_height
-
-style history_name:
-    xpos gui.history_name_xpos
-    xanchor gui.history_name_xalign
-    ypos gui.history_name_ypos
-    xsize gui.history_name_width
-
-style history_name_text:
-    min_width gui.history_name_width
-    text_align gui.history_name_xalign
-
-style history_text:
-    xpos gui.history_text_xpos
-    ypos gui.history_text_ypos
-    xanchor gui.history_text_xalign
-    xsize gui.history_text_width
-    min_width gui.history_text_width
-    text_align gui.history_text_xalign
-    layout ("subtitle" if gui.history_text_xalign else "tex")
-
-style history_label:
-    xfill True
-
-style history_label_text:
-    xalign 0.5
-
 ##########################################
 ##------------CONFIRM SCREEN------------##
 ##########################################
@@ -532,43 +484,58 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     frame:
-        vbox:
+        xfill True
+        yfill True
+        background Solid(gui.confirm_background)
+        frame:    
             xalign .5
             yalign .5
-            spacing 30
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
-            hbox:
-                xalign 0.5
-                spacing 100
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+            xysize (660, 180)
+            frame:
+                background Frame("gui/divider.png", 2, 0, tile = True)
+                ysize 2
+                ypos -2
+                xfill True
+            frame:
+                background Frame("gui/divider.png", 2, 0, tile = True)
+                ysize 2
+                ypos 180
+                xfill True
+
+            frame:
+                ypos 20
+                xysize (480, 140)
+                frame:
+                    background Solid(gui.border_edge)
+                    xysize (2, 140)
+                background Solid(gui.confirm_button_background)
+                label _(message):
+                    xcenter 0.5
+                    ycenter 0.5
+                    text_size 28
+                    text_text_align 0.5
+                vbox:
+                    style_prefix "confirm"
+                    xpos 500
+                    spacing 20
+                    textbutton _("Yes") action yes_action
+                    textbutton _("No") action no_action
 
     # Right-click and escape answer "no".
     key "game_menu" action no_action
 
-style confirm_frame is gui_frame
-style confirm_prompt is gui_prompt
-style confirm_prompt_text is gui_prompt_text
-style confirm_button is gui_medium_button
-style confirm_button_text is gui_medium_button_text
-
-style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile = gui.frame_tile)
-    padding gui.confirm_frame_borders.padding
-    xalign .5
-    yalign .5
-
-style confirm_prompt_text:
-    text_align 0.5
-    layout "subtitle"
-
 style confirm_button:
-    properties gui.button_properties("confirm_button")
+    xysize (160, 60)
+    # Behold, a perfect example of Ren'Py's styling system being terrible:
+    background LiveComposite((160, 60), (0, 0), Solid(gui.confirm_button_background), (158, 0), Solid(gui.border_edge, xysize = (2, 60)))
+    hover_background LiveComposite((160, 60), (0, 0), Solid(gui.confirm_button_background), (158, 0), Solid(gui.active_text_color, xysize = (2, 60)))
 
 style confirm_button_text:
-    properties gui.button_text_properties("confirm_button")
+    size 28
+    xcenter 0.5
+    ycenter 0.5
+    color gui.confirm_text_color
+    hover_color gui.text_color
 
 ##########################################
 ##------------SKIP INDICATOR------------##
@@ -598,22 +565,6 @@ transform delayed_blink(delay, cycle):
         pause (cycle - .4)
         repeat
 
-style skip_frame is empty
-style skip_text is gui_text
-style skip_triangle is skip_text
-
-style skip_frame:
-    ypos gui.skip_ypos
-    background Frame("gui/skip.png", gui.skip_frame_borders, tile = gui.frame_tile)
-    padding gui.skip_frame_borders.padding
-
-style skip_text:
-    size gui.notify_text_size
-
-style skip_triangle:
-    # We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE glyph in it.
-    font "DejaVuSans.ttf"
-
 ##########################################
 ##-------------NOTIFY POPUP-------------##
 ##########################################
@@ -633,16 +584,3 @@ transform notify_appear:
         linear .25 alpha 1.0
     on hide:
         linear .5 alpha 0.0
-
-
-style notify_frame is empty
-style notify_text is gui_text
-
-style notify_frame:
-    ypos gui.notify_ypos
-
-    background Solid("#0006") # TODO
-    padding gui.notify_frame_borders.padding
-
-style notify_text:
-    properties gui.text_properties("notify")
