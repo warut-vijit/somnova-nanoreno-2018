@@ -85,19 +85,37 @@ style block2_multiple2_say_window:
 define config.narrator_menu = True
 
 screen choice(items):
-    style_prefix "choice"
-    hbox:
-        for i in items:
-            textbutton i.caption action i.action
+    frame:
+        style_prefix "choice"
+        background "gui/choice_icon.png"
+        xysize (80, 69)
+        xalign 0.5
+        yalign 0.4
 
-style choice_hbox is hbox
-style choice_button is button
-style choice_button_text is button_text
-
-style choice_hbox:
-    xalign 0.5
+        textbutton items[0].caption:
+            action items[0].action
+            xanchor 1.0
+            xoffset -30
+            background LiveComposite((734, 60), (0, 0), "gui/choice_button_left.png", (0, 0), "gui/choice_overlay_left_idle.png")
+            hover_background LiveComposite((734, 60), (0, 0), "gui/choice_button_left.png", (0, 0), "gui/choice_overlay_left.png")
+        textbutton items[1].caption:
+            action items[1].action
+            xanchor 0.0
+            xoffset 30
+            background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.png", (0, 0), "gui/choice_overlay_right_idle.png")
+            hover_background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.png", (0, 0), "gui/choice_overlay_right.png")
+            
+style choice_button:
+    xysize (734, 60)
+    xpos 0.5
     ycenter 0.5
-    spacing 20 # TODO
+
+style choice_button_text:
+    xfill True
+    yfill True
+    xcenter 0.5
+    ycenter 0.5
+    size 32
 
 ##########################################
 ##--------------QUICK MENU--------------##
@@ -208,7 +226,7 @@ screen navigation():
             textbutton _("OPTIONS") action ShowMenu("options")
 
             if main_menu:
-                textbutton _("EXTRAS") action ShowMenu("extras")
+                textbutton _("EXTRAS") sensitive False text_color gui.empty_text_color
                 textbutton _("QUIT") action Quit(confirm = not main_menu)
             else:
                 textbutton _("QUIT") action MainMenu()
