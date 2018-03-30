@@ -1,4 +1,4 @@
-init offset = -1
+﻿init offset = -1
 
 ##########################################
 ##----------------STYLES----------------##
@@ -24,7 +24,7 @@ style vscrollbar:
 
 screen say(who, what):
     style_prefix "say"
-
+    
     frame:
         background Frame("gui/divider.png", 2, 0, tile = True)
         yoffset 1080
@@ -32,14 +32,8 @@ screen say(who, what):
         xysize (1522, 2)
 
     window:
-        style_prefix "say_text"
         id "window"
-        yanchor 1.0
-        pos (440, -80)
-        xysize (1280, 160)
-        yoffset 1080
-        background Solid(gui.box_background_color)
-        add Solid(gui.border_edge, xpos = 1280, xysize = (1, 160))
+        add Solid(gui.border_edge, xalign = 1.0, xoffset = 1, xysize = (1, 160))
         
         text what id "what":
             xpos 37
@@ -48,30 +42,39 @@ screen say(who, what):
             line_spacing 4
             size 31
 
-    window:
-        style_prefix "say_name"
-        yanchor 1.0
-        pos (199, -180)
-        xysize (221, 60)
-        yoffset 1080
-        background Solid(gui.box_background_color)
-        add Solid(gui.border_edge, xpos = 0, xysize = (1, 60))
-        if who is not None:
-            text who + ":" id "who":
-                size 36
-                xpos 19
-                yalign 0.5
+        window:
+            style "namebox"
+            add Solid(gui.border_edge, xpos = -1, xysize = (1, 60))
+            if who is not None:
+                text who + ":" id "who":
+                    size 36
+                    xpos 19
+                    yalign 0.5
+
+style say_window:
+    yanchor 1.0
+    pos (440, -80)
+    xysize (1280, 160)
+    yoffset 1080
+    background Solid(gui.box_background_color)
+
+style namebox:
+    xpos -240
+    xysize (220, 60)
+    background Solid(gui.box_background_color)
 
 ##########################################
 ##---------SIMULTANEOUS DIALOGUE--------##
 ##########################################
 
-# TODO: Design and implement.
-style block1_multiple2_say_window:
-    xalign 0.0
+style multiple2_say_window:
+    xsize 500
+
+style multiple2_namebox:
+    xsize 200
 
 style block2_multiple2_say_window:
-    xalign 1.0
+    xpos 1220
 
 ##########################################
 ##---------------CHOICES----------------##
