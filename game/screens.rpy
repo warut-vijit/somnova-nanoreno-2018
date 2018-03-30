@@ -187,18 +187,19 @@ screen navigation():
             if main_menu:
                 textbutton _("NEW GAME") action Start()
             else:
+                textbutton _("RETURN") action Return()
                 textbutton _("HISTORY") action ShowMenu("history")
                 textbutton _("SAVE GAME") action ShowMenu("save")
             
             textbutton _("LOAD GAME") action ShowMenu("load")
             textbutton _("OPTIONS") action ShowMenu("options")
 
-            if not main_menu:
-                textbutton _("MAIN MENU") action MainMenu()
+            if main_menu:
+                textbutton _("EXTRAS") action ShowMenu("extras")
+                textbutton _("QUIT") action Quit(confirm = not main_menu)
+            else:
+                textbutton _("QUIT") action MainMenu()
 
-            textbutton _("EXTRAS") action ShowMenu("extras")
-
-            textbutton _("QUIT") action Quit(confirm = not main_menu)
 
 style navigation_button:
     xysize (280, 60)
