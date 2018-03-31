@@ -1,8 +1,6 @@
 label A1_01:
     play audio ambient_city
     show bg_black
-    # TODO: Add intro music
-    # $ queue_music(music_intro)
     "There's something that I hate about this city."
     "Maybe it's the staleness of the air, or the lack of available parking."
     "But if I had to choose one thing though, it's the people."
@@ -41,7 +39,8 @@ label A1_01:
     show parker at transform_hide
     hide parker
     "Well, I guess it's better paid work than my last job..."
-    # TODO: Timeskip animation
+    show bg_black with Dissolve(0.75)
+    hide bg_black with Dissolve(0.75)
     "Soon, the evening crowd moves in, ordering drinks and dinner."
     "My ears eventually pick up a fragment of conversation."
     customer_a "I wonder if she's performing here tonight..."
@@ -60,7 +59,7 @@ label A1_01:
     parker p1 e5 "Just checking. By the way, the girl just walked in. I'll have her meet you once she's done clocking in."
     show parker at transform_hide
     hide parker
-    # TODO: Play footstep sounds
+    play audio lightfootsteps
     "True to his word, in a few moments I catch the sound of footsteps approach me from behind."
     "I turn around and catch sight of just who it is that I'll be working with."
     # TODO: CG1
