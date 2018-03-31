@@ -379,7 +379,7 @@ label A1_03:
     roman "Call it off?! But I've already ---"
     parker "Third time, Roman: this isn't up for discussion. Arcady is still my club, you are still my employee, and my decision about this is final."
     show parker p1 e5 at centered
-    parker "I like your spirit. I like your attitude. I like how you...talk about things most people nowadays wouldn't care less about."
+    parker "I like your spirit. I like your attitude. I like how you...talk about things most people nowadays couldn't care less about."
     parker "And part of that means I like you enough to see you making a very stupid decision that you're going to regret ten days from now, just because you're currently hyper-focused on something Eris told you three days ago."
     "I lay the glass down. Maybe it's the alcohol, but..."
     "It really feels like I've just had all the wind knocked out of me."
