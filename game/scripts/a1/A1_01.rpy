@@ -12,6 +12,7 @@ label A1_01:
     "It's really stifling to me. I want to talk to people, but no one's ever without a device these days."
     "I'd give anything to get out of this city at this point. Maybe head out of state, get a new job, that sort of thing."
     "A fresh start."
+	# $ crossfade_music(1.0, 0.0, 2.5)
     scene bg_club_2_before_work with Dissolve(2.5)
     "A place that hasn't caught the AR plague."
     "I guess you could call me a hipster, but I wouldn't be offended if you did."
