@@ -11,5 +11,5 @@
 # This sets the first track's volume to 0.0 and the second track's volume to 1.0 over the course
 # of five seconds.
 
-define music_one = DynamicMusic(["music/one.ogg"], stop_points = [0], loop_point = 61.324)
+define music_one = DynamicMusic(["music/one.ogg", "music/one-reverb.ogg"], stop_points = [0], loop_point = 61.324)
 define music_test = DynamicMusic(["music/test1.ogg", "music/test2.ogg"], stop_points = [0], loop_point = 0)
