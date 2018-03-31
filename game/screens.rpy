@@ -111,8 +111,7 @@ style choice_button:
     ycenter 0.5
 
 style choice_button_text:
-    xfill True
-    yfill True
+    layout "nobreak"
     xcenter 0.5
     ycenter 0.5
     size 32
