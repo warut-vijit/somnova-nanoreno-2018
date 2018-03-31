@@ -82,6 +82,8 @@ define config.window_icon = "images/emblem_icon_dev.png"
 ##########################################
 
 init python:
+    config.main_menu_music = "music/one.ogg"
+
     # Glob patterns, case insensitive.
     # / - directory separator
     # * - all characters, except directory separator
