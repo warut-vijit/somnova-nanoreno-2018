@@ -17,8 +17,8 @@ label A1_01:
     scene bg_club_2_before_work with Dissolve(2.5)
     "A place that hasn't caught the AR plague."
     "I guess you could call me a hipster, but I wouldn't be offended if you did."
-    "I like the way people did things back in the 90s and the Aughts - without bunch of bombardment by shiny tech that commands your attention 24/7."
-    "And that's what this place -- the Arcady Jazz Club -- is all about."
+    "I like the way people did things back in the 90s and the Aughts--without bunch of bombardment by shiny tech that commands your attention 24/7."
+    "And that's what this place--the Arcady Jazz Club--is all about."
     "I got a job as a waiter here mainly because I wanted to soak in this atmosphere; a breath of fresh air away from the stagnant city outside."
     "Parker, my boss, manages this club exactly the way I like it. He's cultivated a unique atmosphere."
     show parker p1 e1 at centered
