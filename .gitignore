@@ -31,7 +31,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-*.rpy[bc]
+*.rpy*[bc]*
 *.bak
 **/tmp/*
 **/log.txt

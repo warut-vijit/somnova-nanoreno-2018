@@ -3,7 +3,7 @@
 	"editor.insertSpaces": true,
 
 	"files.exclude": {
-		"**/*.rpy*[bc]": true,
+		"**/*.rpy*[bc]*": true,
 		"**/cache": true,
 		"**/saves": true,
 		"**/.gitignore": true,
