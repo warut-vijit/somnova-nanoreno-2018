@@ -1,10 +1,9 @@
 transform common(x = 0):
     subpixel True
     transform_anchor True
-    size (600 * 0.7, 1080 * 0.7)
-    xcenter 1280 / 2
-    yanchor 1080
-    ypos 720
+    xcenter 0.5
+    yanchor 1.0
+    ypos 1080
     on show:
         # This block is called when the image is first shown.
         alpha 0
@@ -24,10 +23,10 @@ transform centered:
     common()
 
 transform center_right:
-    common(200)
+    common(300)
 
 transform center_left:
-    common(-200)
+    common(-300)
 
 transform embiggen:
-    ease 1 size (600 * 0.75, 1080 * 0.75)
+    ease 1 size (600 * 1.05, 1080 * 1.05)
