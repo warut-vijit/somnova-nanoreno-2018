@@ -8,9 +8,9 @@ define debug = Character("Debug", who_color = "#ff00ff")
 ##----------PRIMARY CHARACTERS----------##
 ##########################################
 
-define eris = Character("Eris", what_prefix = "“", what_suffix = "”", image = "eris")
-define roman = Character("Roman", what_prefix = "“", what_suffix = "”")
-define parker = Character("Parker", what_prefix = "“", what_suffix = "”", image = "parker", who_color = "#f0c464")
+define eris = Character("Eris", what_prefix = "“", what_suffix = "”", image = "eris", who_color = "#59ff9b")
+define roman = Character("Roman", what_prefix = "“", what_suffix = "”", who_color = "#b37664")
+define parker = Character("Parker", what_prefix = "“", what_suffix = "”", image = "parker", who_color = "#f1c564")
 
 ##########################################
 ##--------INCIDENTAL CHARACTERS---------##
