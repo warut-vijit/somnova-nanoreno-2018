@@ -111,6 +111,8 @@ style choice_button:
     ycenter 0.5
 
 style choice_button_text:
+    color gui.empty_text_color
+    hover_color gui.text_color
     layout "nobreak"
     xcenter 0.5
     ycenter 0.5
@@ -251,8 +253,6 @@ screen main_menu():
     tag menu # This ensures that any other menu screen is replaced.
     style_prefix "main_menu"
     add "gui/main_menu.png" # TODO
-
-    on "show" action renpy.music.play(music_one.file_names[0])
 
     frame:
         pass

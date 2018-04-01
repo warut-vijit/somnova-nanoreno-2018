@@ -11,6 +11,7 @@ init python:
         save["playtime"] = renpy.get_game_runtime()
 
     config.save_json_callbacks = [save_time]
+    config.main_menu_music = music_one.file_names[0]
 
 ##########################################
 ##----------------COLORS----------------##

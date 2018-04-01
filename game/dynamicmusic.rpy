@@ -1,5 +1,5 @@
 # This ensures that dynamic music can be used on the title screen.
-init offset = -2
+init offset = -4
 
 init python:
     import time
