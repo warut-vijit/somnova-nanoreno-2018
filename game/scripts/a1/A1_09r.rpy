@@ -545,5 +545,5 @@ Roman "Some genie I am."
 
 
 #fade to black
- 
+# NOTE - If possible, use something to the effect of $ queue_music(music_nine2) when moving into credits, without it looping
 #end scene

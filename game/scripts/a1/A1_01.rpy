@@ -176,6 +176,8 @@ label A1_01:
     show parker p1 e1 at centered
     show parker at transform_hide
     hide parker
+	stop dynamic_1 fadeout 5.0
+	stop dynamic_2 fadeout 5.0
     "Man, this sucks. How'd she even find this place, anyway?"
     "Memories of the past come flooding back to me."
     "Arguments over deadlines, panic over downed servers, angry PMs breathing fire down our backs..."
@@ -186,4 +188,5 @@ label A1_01:
     "Perhaps tomorrow will give me something to keep my mind off of Eris."
     "Knowing her, that's probably not going to happen."
     show bg_black with Dissolve(1.5)
+	
     return

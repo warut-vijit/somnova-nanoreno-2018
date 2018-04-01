@@ -248,6 +248,8 @@
     roman "Sure thing."
     show parker p1 e1 at transform_hide
     hide parker
+	stop dynamic_1 fadeout 5.0
+	stop dynamic_2 fadeout 5.0
     "Tonight was a disaster, one that I should ultimately feel happy about."
     "Eris's plan was crushed. Demolished. Burned to the ground like it had killed someone's loved one."
     "I guess..."
