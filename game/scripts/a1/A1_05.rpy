@@ -110,6 +110,7 @@
             call A1_05_c
         "Don't patronize me.":
             $ rivalry += 1
+            $ scene_5_cooperation = False
             call A1_05_r
     return
 

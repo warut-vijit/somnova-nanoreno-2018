@@ -13,7 +13,7 @@
     "As much as I'm all for the cohesion of the time-space continuum, I...really don't know how I feel about this new development."
     "Everything feels right, but old habits are desperately telling me to flee."
     "I'm all too afraid that something's bound to go wrong."
-    play audio [backdoor_close, backdoor_open]
+    play audio [backdoor_open, backdoor_close]
     scene bg_back_alley with Dissolve(0.5)
     roman "There goes another night..."
     "My shift over, I say goodbye to Parker, pick my jacket off of the hanger and leave through the front door, but not before waving kindly to the guy with pink bangs who leaves big tips."
@@ -34,7 +34,7 @@
     "I try tracing my steps back to the beginning of my shift. I must've left it inside when Eris started on this one song, and I pulled it out to check which one it was and--"
     "Well, at least it should still be at the staff only area, if I remember correctly. I mean, Parker's probably got better things to do than steal his employees' electronics and Eris wouldn't be caught dead with any device over six months old."
     "I laugh at the thought and turn back towards the club."
-    play audio [backdoor_close, backdoor_open]
+    play audio [backdoor_open, backdoor_close]
     scene bg_club_2_after_work with Dissolve(0.5)
     "Parker's nowhere to be seen, and it seems the rest of the crowd has already dispersed for the evening."
     "I make my way towards the staff area, quickly spotting my phone on the table. As I'm about to leave, though, my attention shifts towards a sight as unexpected as it is comfortably familiar."

@@ -51,6 +51,7 @@ label A1_02:
         "Parker's pushing me hard. I need to get him off my case."
         "Seriously. That's all it was. Just coworkers.":
             $ cooperation += 1
+            $ scene_5_cooperation = False
             call just_coworkers
         
         "Fine. She made my time at my old place a living hell.":
