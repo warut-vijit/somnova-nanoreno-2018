@@ -1,4 +1,8 @@
 ﻿label scene4:
+
+$ queue_music(music_four1)
+$ crossfade_music(0.0, 1.0, 0)
+
 "It was almost humiliating to come back to work today. Last night was a disaster of unbelievable proportions." 
 "It has often been said that ‘no plan survives contact with the enemy,’ but my idea did more than just {i}not{/i} survive. It was crushed. Demolished. Burned to the ground like it had killed someone’s loved one."
 "It taught me what Parker’s like when angry, a lesson I could’ve done without."
@@ -8,6 +12,7 @@
 "I’d have other ideas eventually. Better ones, even."
 "But...after all that, I’ve realized it’s all a bit pointless in the end."
 "I’ll just end up where I started, and just accumulate another embarrassment."
+$ crossfade_music(1.0, 0.0, 5.0)
 "So screw the bet, if Eris wants to gloat then I can tell her right where to shove it." 
 "And besides...there’s still some solace in returning back to ARTech."
 "A wicked smile crosses my face as I take in Arcady’s lobby and prepare for the day."
@@ -89,6 +94,7 @@ I can’t help but watch her as she practically glides across the room, over to 
 "And before I know it I’m back to my usual rhythm, one that’s weirdly assuring to fall back into." 
 "The night wrapped up without any further complications—a bit of respite that I embraced wholeheartedly while I could."
 //move to club1_offwork
+$ crossfade_music(0.0, 1.0, 5.0)
 show Parker p1 e5 right
 shoe Eris p1 e6 left
 "After work Parker calls the entire staff to sit in the main room of Arcady."
@@ -129,6 +135,7 @@ eris p1 e1 "Hmph."
 hide eris
 "She dismisses me with a wave and heads off to take care of cleaning up tables."
 #Timeskip
+$ crossfade_music(1.0, 0.0, 5.0)
 "Most of the other staff have already gone home for the night."
 "I can see Eris already dumbly eager to get started on overtime, watching her furiously scrub the floors clean as she runs back and forth on Arcady’s main floor."
 show eris p1 e1
@@ -165,6 +172,7 @@ eris p1 e1 "Oh, Roman."
 eris p1 e6 "Wanna watch me win our competition that bad, huh?"
 roman "Don’t be full of yourself Eris, I’m here because Parker asked me to watch you."
 eris p1 e10 "Too bad, I’ve already hit the swit-"
+$ queue_music(music_four2)
 eris p1 e1 "..."
 eris p2 e5 "..."
 "Something stops Eris from continuing her gloating, her fingers madly tapping and swiping at the screen."
@@ -203,6 +211,7 @@ eris p3 e8 "I’m sorry Parker."
 eris "Those changes might take a while longer."
 "The once tense attitude on our boss instantly evaporates, now replaced with exasperation."
 eris "But I can stay late and try and fix the system! If I can have a little more time I assure you-"
+$ crossfade_music(0.0, 1.0, 10)
 parker "{i}Eris.{i/}"
 parker "I’m going to need you to go home."
 parker “I mean Jesus, I thought someone was actually hurt out here!"
@@ -230,4 +239,3 @@ hide parker
 "I guess…"
 "...now we could call ourselves even."
 <end>
-[a]grammar
