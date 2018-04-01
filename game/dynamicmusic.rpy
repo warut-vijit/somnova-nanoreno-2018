@@ -16,16 +16,19 @@ init python:
             self.stop_points = stop_points
             self.loop_point = loop_point
 
-        def filename(self, index):
+        def filename(self, index, loop):
             if len(self.file_names) == 1:
                 name = self.file_names[0]
             else:
                 name = self.file_names[index]
+            
+            if loop:
+                return "<loop {0}>{1}".format(self.loop_point, name)
+            else:
+                return name
 
-            return "<loop {0}>{1}".format(self.loop_point, name)
-
-    def queue_music(track):
-        thread = threading.Thread(target = queue_music_async, args = [track])
+    def queue_music(track, loop = True):
+        thread = threading.Thread(target = queue_music_async, args = [track, loop])
         # Python exits a program when there are no non-daemonic threads left. Making this thread
         # daemonic ensures that the application can quit even if there's music that's been
         # queued and is waiting to be played. Without this, the program would wait until a stopping
@@ -42,18 +45,18 @@ init python:
         name = "dynamic_1",
         mixer = "music",
         tight = True,
-        loop = True,
+        loop = False,
         stop_on_mute = False)
     renpy.music.register_channel(
         name = "dynamic_2",
         mixer = "music",
         tight = True,
-        loop = True,
+        loop = False,
         stop_on_mute = False)
 
     queued_music = None
     current_music = None
-    def queue_music_async(track):
+    def queue_music_async(track, loop):
         global queued_music
         global current_music
         
@@ -79,11 +82,11 @@ init python:
         renpy.music.set_volume(volume = 1.0, channel = "dynamic_1")
         renpy.music.set_volume(volume = 0.0, channel = "dynamic_2")
         renpy.music.play(
-            filenames = track.filename(0),
+            filenames = track.filename(0, loop),
             channel = "dynamic_1",
             synchro_start = True)
         renpy.music.play(
-            filenames = track.filename(1),
+            filenames = track.filename(1, loop),
             channel = "dynamic_2",
             synchro_start = True)
 
