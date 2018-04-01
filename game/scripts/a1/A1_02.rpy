@@ -102,7 +102,7 @@ label A1_02:
     parker p1 e5 "So, in these meetings I just like to take stock of things, how you are doing as a team, and listen to any concerns you have."
     parker p1 e1 "Usually I'd involve the whole staff, but I'm going to talk to the rest of them later. There's something I wanted to pick your brains about, specific like."
     parker "With your mutual backgrounds in AR tech--thank you for sharing that with me, by the way, whether or not it was deliberate--well, I could use your advice."
-    eris p2 e7 "Wow, look at that, {i}Roman{/i}. You've only been here a few days and already you're being asked how to run the business."
+    eris p2 e7 "Wow, look at that, {i}Roman{/i}. Only a few days working here and I'm already being asked how to run the business."
     "Her arrogance spikes my irritation. This is clearly not shared by Parker, who merely looks politely amused."
     show eris p1 e1 at center_right
     roman "What do you need our advice on, Parker?"
@@ -339,7 +339,7 @@ label living_hell:
     "He looks...satisfied enough." 
     parker p1 e5 "Wise words. Mind you live by them."
     "He fixes me with a knowing stare for a beat, before continuing."
-    parker p1 e1 "I am surprised to hear you and Eris have such a turbulent history, to be honest. She didn't say anything about it when I mentioned to her that I was bringing you on board."
+    parker p1 e1 "I am surprised to hear you and Eris have such a turbulent history, to be honest. I didn't really expect anything like this to happen when I was bringing her on board, even when I mentioned you during our interview."
     parker p1 e3 "Though I probably shouldn't talk about that with you."
     "He hastens to fix his slip-up--but I'm not about to let that go."
     roman "You mentioned me to Eris before she started? What did she say?"
@@ -348,7 +348,7 @@ label living_hell:
     "I hardly have an in-depth knowledge of employment law--though I'm hoping Parker has very little understanding as well."
     "That or a kind heart."
     parker p1 e4 "Well..."
-    parker p1 e1 "All right, all right. I just mentioned your name, in passing--you know, mentioned I was bringing a new guy on and all that--and when I mentioned your name, she sort of... fixated on it."
+    parker p1 e1 "All right, all right. I just mentioned your name, in passing--you know, when mentioning some of the staff during her hiring interview--and when I came to your name, she sort of... fixated on it."
     roman "And?"
     parker "We didn't really linger on the subject. She said that she worked with you before, and that you were a, eh... what was it, now..."
     parker "Actually, she just sort of trailed off."
@@ -358,7 +358,7 @@ label living_hell:
     "I don't know what I expected."
     "Should I be offended about her choice of words describing me? Is it that she hardly cares, or was what she had to say too rude for Parker to repeat?"
     parker p1 e1 "I don't expect any trouble to come of this, Roman. Eris is now as valued here as you are."
-    "He says this firmly, but not unkindly. Not exactly kindly, either, but not {i}un{/i}kindly."
+    "He says this firmly, but not unkindly. Not exactly kindly, either."
     parker "Let's get back to it, then. The crowd will be arriving soon."
     show parker p1 e1 at transform_hide
     hide parker
