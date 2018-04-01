@@ -9,6 +9,7 @@ label start:
 
         scene_5_rivalry = True
         scene_5_cooperation = True
+        print("pizza")
 
     call A1_01
     call A1_02
