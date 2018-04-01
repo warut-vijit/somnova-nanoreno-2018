@@ -1,5 +1,5 @@
 ﻿label A1_09c:
-    #black_screen
+    show bg_black with Dissolve(1.0)
     #$ queue_sound(car driving)
 
 
@@ -9,7 +9,7 @@
     "It’s almost like I’ve finally found—"
 
 
-    play sound navcomp.ogg
+    play audio navcomp
 
 
     navcomp "You are currently driving - ten - MPH over the speed limit. It is advised to slow your current speed before authorities are alerted."
@@ -20,14 +20,14 @@
     roman "Aw, give me a break. Can’t a guy be excited to drive to work for once?"
 
 
-    play sound navcomp.ogg
+    play audio navcomp
 
 
     navcomp "Please be aware that in cases of - pregnancy. injury. tardiness - speeding may cause unnecessary and reckless endangerment."
 
     roman "Being excited is still on the table then?"
 
-    play sound navcomp.ogg
+    play audio navcomp
 
 
     navcomp "Please be aware—"
@@ -35,29 +35,29 @@
     roman "Alright, alright! I’m slowing down you piece of... garbage."
 
 
-    #Fade into backalley.png
+
 
 
     "Conveniently enough, I’m already pulling into Arcady’s back—and before the machine can inform me of doing so, I’ve already started pulling into my usual spot." 
 
 
-    play sound navcomp.ogg
+    play audio navcomp
 
 
     navcomp "Are you trying to—"
 
 
-    play sound navcomp.ogg
+    play audio navcomp
 
 
     navcomp "Would you like—"
 
-    play sound navcomp.ogg
+    play audio navcomp
 
 
-    navcom "You have arrived."
+    navcomp "You have arrived."
 
-    scene bg alley 
+    show bg_back_alley with Dissolve(0.25)
     "It only took a solid month—but for the most part, it seems like I’ve finally beat my car’s navigation computer."
     "I take in the familiar back wall of the Arcady Jazz Club, then smile." 
 
@@ -457,7 +457,7 @@ roman "I have a good thing going here, so…"
 roman "I’ll be sad to see you go."
 
 
-Eris "..."
+eris "..."
 
 
 eris "Well… you don’t have to be {i}that{/i} sad."

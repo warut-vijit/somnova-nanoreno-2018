@@ -1,6 +1,6 @@
-﻿label scene9r:
+﻿label A1_09r:
  
-scene bg club indoor 2 during work
+scene bg_club_2_during_work with Dissolve (0.5)
  
 "The hours kept running like wax."
  
@@ -12,14 +12,14 @@ scene bg club indoor 2 during work
  
 "I need a smoke. Gotta get this shit out of my mind."
  
-Roman "Yo, Parker?"
+roman "Yo, Parker?"
 
 
-show parker p1 e3 at middleleft
+show parker p1 e3 at center_left
  
 "He spares me a quiet glance, bottle of synthequila still steadily held in one hand and glass still secure in the other. The customer wouldn't have even seen it."
  
-Roman "I'll be out for a bit, that alright? Just going for a cig, then I'm back."
+roman "I'll be out for a bit, that alright? Just going for a cig, then I'm back."
 
 
 show parker p1 e1
@@ -98,7 +98,7 @@ roman "I need to escape this place."
  
 "Then Eris had to come and drag ARTech all the way out here behind her."
  
-Roman "Jesus. What's up with me today."
+roman "Jesus. What's up with me today."
  
 "Experimentally, like it actually matters, I push one foot forward and break a half-formed circle of ash that has fallen to the floor. The flakes rise up into the air in a tiny, gray cloud, then evaporate off into nothing."
  
@@ -111,7 +111,7 @@ roman "Huh?"
 "I turn my head back towards the door, cheeks burning like I'd just got caught with my pants down."
 
 
-show eris p1 e2 at middleright
+show eris p1 e2 at center_right
  
 eris "Roman?"
  
@@ -184,7 +184,7 @@ eris p2 e7 "I was selfish. I admit it."
  
 eris "That takes some guts, doesn't it? Doesn't happen every day that I can admit I was wrong."
  
-eris p1 e4 "So there, you have your one thing that you can hold over me."
+eris p1 e6 "So there, you have your one thing that you can hold over me."
  
 "She says that, then stops, obviously trying to get me to reply."
 
@@ -329,7 +329,7 @@ hide eris
  
 roman "This is way, {i}way{/i} more than I expected."
  
-show eris p1 e1 at middleright
+show eris p1 e1 at center_right
  
 eris "I know. You've helped a lot with the upgrades."
  
@@ -469,7 +469,7 @@ show eris p3 e9
  
 "Then, in the span of an eye blink, the moment's gone."
  
-Roman "Good luck with that."
+roman "Good luck with that."
  
 "My voice sounds distant and brittle."
  

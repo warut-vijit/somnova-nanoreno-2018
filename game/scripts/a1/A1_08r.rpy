@@ -6,24 +6,24 @@
 #knock.ogg - knocking on an interior door
 #scene8rmusic = various music tracks, which aren't yet delivered. Followed by a general mood or tone.
 
-label scene8r: 
+label A1_08r: 
 
-   scene bg black
-   play music scene8rmusic #(Relaxed, but tired, and not happy. Roman feels washed up. A husk, after the preceding events.)
+   show bg_black
+   #play music scene8rmusic #(Relaxed, but tired, and not happy. Roman feels washed up. A husk, after the preceding events.)
 
    "If the last few weeks were a blur, the one that follows them is more like white noise."
    "Coming into work, waiting tables, and leaving passes by without notice, without any thought."
    "If I talk to Eris at all, it's never more than a grunt, and is forgotten within ten minutes."
    "After a few days, this mental quagmire starts to become unbearable."
 
-   scene bg clubempty
+   show bg_club_2_before_work with Dissolve (0.25)
 
    "I approach the door behind the bar, leading to Parker's office, and knock."
-   play sound knock.ogg
+   #TODO play sound knock.ogg
 
    "After a few seconds, the door opens, and Parker emerges, closing the door behind him."
 
-   show parker p1 e3 at middleleft
+   show parker p1 e3 at center_left
    
    parker "Roman. Everything all right?"
 
@@ -73,7 +73,7 @@ label scene8r:
 
    "He closes the door, and I turn to leave - but as I do, I see someone else approaching the bar."
 
-   show eris p1 e1 at middleright
+   show eris p1 e1 at center_right
 
    eris "Were you just talking to Parker?"
 
@@ -86,7 +86,7 @@ label scene8r:
    roman "Wow, we're so in sync."
    roman "I just asked. It's off."
 
-   eris annoyed "Oh."
+   eris "Oh."
    eris "Right."
 
    roman "Did you think you might have won?"
@@ -104,12 +104,12 @@ label scene8r:
 
    "But cutting her off, Parker appears once again from the office."
 
-   show parker p1 e1 at middleleft
+   show parker p1 e1 at center_left
 
    "He notices us."
 
    parker p1 e4 "Oh, is this bar where the cool kids hang out after work now? I had no idea."
-   parker default "I'm going out for a bit. Keep an eye on the place?"
+   parker "I'm going out for a bit. Keep an eye on the place?"
 
    hide parker
 
@@ -220,7 +220,7 @@ label scene8r:
 
    "Giving me a look that I can't place, Eris departs. As she leaves, I hear her greet Parker, who heads back in towards the bar."
 
-   show parker p1 e1 at middleright
+   show parker p1 e1 at center_right
 
    parker "Just left my wallet."
 

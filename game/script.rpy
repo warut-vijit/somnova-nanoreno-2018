@@ -28,11 +28,11 @@ label start:
     
     if cooperation > rivalry:
         call A1_07c
-        # call A1_08c
-        # call A1_09c
-    # else:
+        call A1_08c
+        call A1_09c
+    else:
         call A1_07r
-        # call A1_08r
-        # call A1_09r
+        call A1_08r
+        call A1_09r
 
     return

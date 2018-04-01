@@ -1,4 +1,4 @@
-﻿label scene8c: 
+﻿label A1_08c: 
 
 
 scene bg_club_2_before_work
@@ -7,16 +7,18 @@ scene bg_club_2_before_work
 "The following day, Eris shows me her new setup on the AR platform."
 
 
-show Eris p1 e6 "Roman!"
+show eris p1 e6 
+
+eris "Roman!"
 
 
-Eris p2 e4 "I was able to finish things up from last night. Wanna go over these again?"
+eris p2 e4 "I was able to finish things up from last night. Wanna go over these again?"
 
 
-Roman "Sure thing. Did you test things beforehand?"
+roman "Sure thing. Did you test things beforehand?"
 
 
-Eris p1 e1 "Yeah. The platform does most of the work, but I really want to make sure."
+eris p1 e1 "Yeah. The platform does most of the work, but I really want to make sure."
 
 
 roman "Well no problem but…"
@@ -43,13 +45,13 @@ roman "What changed?"
 "She takes a moment, looking as if she’s trying to take in the question thoughtfully."
 
 
-Eris "Well…"
+eris "Well…"
 
 
 eris "I was thinking about the last night we talked, actually."
 
 
-Eris "What you said, about me not trusting you in the past…"
+eris "What you said, about me not trusting you in the past…"
 
 
 "She shifts her body to stand a little taller."
@@ -188,7 +190,8 @@ show eris p1 e1
 roman "Whether at a high-profile company or somewhere like here, I guess it’s healthy to check in with someone."
 
 
-Eris "That’s strange."
+eris "That’s strange."
+
 eris "I always just took you for someone who always knew what they were doing. Someone who would just efficiently check their work and move onto the next task."
 
 
@@ -309,10 +312,10 @@ hide parker
 "I head over to where some of my other coworkers are huddled near the kitchen entrance."
 
 
-show parker p1 e1
+show parker p1 e1 at center_left
 
 
-show eris p1 e1
+show eris p1 e1 at center_right
 
 
 parker "Now that all of you are here…"
