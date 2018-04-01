@@ -252,6 +252,8 @@ screen main_menu():
     style_prefix "main_menu"
     add "gui/main_menu.png" # TODO
 
+    on "show" action renpy.music.play(music_one.file_names[0])
+
     frame:
         pass
 
