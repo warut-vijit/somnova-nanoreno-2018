@@ -79,7 +79,7 @@ label A1_02:
     roman "Eris."
     "I see what Parker meant about the atmosphere between us now. I really can't avoid how {i}tense{/i} this is."
     "A few seconds of silence are all the excuse I need. I head behind the bar and grab a lowball glass and a bottle."
-    play audio mop_bucket
+    play audio whiskey_pour
     "As I pour myself more than a dram of a pleasant looking Islay twelve-year, Eris clucks her tongue. Like an angry chicken."
     eris p2 e7 "Isn't it a little early for that?"
     roman "Sun's over the yardarm."
