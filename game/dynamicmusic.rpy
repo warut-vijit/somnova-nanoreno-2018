@@ -41,11 +41,13 @@ init python:
     renpy.music.register_channel(
         name = "dynamic_1",
         mixer = "music",
+        tight = True,
         loop = True,
         stop_on_mute = False)
     renpy.music.register_channel(
         name = "dynamic_2",
         mixer = "music",
+        tight = True,
         loop = True,
         stop_on_mute = False)
 
