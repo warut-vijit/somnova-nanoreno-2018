@@ -1,5 +1,5 @@
 ﻿label A1_08c: 
-    scene bg_club_2_before_work
+    scene bg_club_2_before_work with Dissolve(0.5)
     "The following day, Eris shows me her new setup on the AR platform."
     show eris p1 e6 at centered
     eris "Roman!"
