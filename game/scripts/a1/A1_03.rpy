@@ -35,7 +35,7 @@ label A1_03:
     "Guess I have it coming for insisting on driving a solocar, but between that and spending half an hour jammed in the tube with fifty slack-jawed ARses staring into space and waving their fingers around like a pod of virtual zombies, I'll take the car every day, thank you very much."
     "Now, to get out and move that precious, precious cargo where it needs be."
     play audio car_open
-    "I walk around to the back, stretch my arms over my head until I can hear that satisfying *knack* my spine makes after a drive, then open the trunk."
+    "I walk around to the back, stretch my arms over my head until I can hear that satisfying *crack* my spine makes after a drive, then open the trunk."
     "Part of me thought it'd be easier to just put it in the back seat before I left home, but I just couldn't get that image out of my head of me stopping suddenly and the whole thing coming hurtling forward like a glass rocket and shattering to a bajillion pieces of wasted money."
     "Not to mention contests lost, egos bruised and Eris' smug face... smug-ing."
     "She doesn't know what's coming to her. I got this in the bag."
@@ -67,7 +67,7 @@ label A1_03:
     parker "Roman?"
     "Parker's eyes move confusedly first to the box, then my face peeking out from behind it, then, with a stretch of the neck, to my car, then right back to the box, then to me."
     "His eyebrow rises by a fiendish, all-too familiar, fraction of a centimeter."
-    parker "Fancy seeing you here, of all places. Don't you usually go about how good it feels to walk to work?"
+    parker "Fancy seeing you here, of all places. Don't you usually go on about how good it feels to walk to work?"
     "Under different circumstances, I'd like to think that I'd have been able to pull out a comeback."
     roman "Uhm--"
     roman "I, uh, had those boxes to carry."
@@ -133,11 +133,11 @@ label A1_03:
     roman "If we're doing this right, we're doing this right. Old fashioned. Classy. Pure."
     "Parker bites on the corner of his lips, obviously mulling over how to respond."
     "Eventually, he settles for a shrug and a smile."
-    show parker p1 e1 at transform_hide
-    hide parker
     parker "Okay."
     parker "I'm willing to give it a shot. Let's see how it goes. You need any help getting those inside?"
     roman "It's alright, I got this."
+    show parker p1 e1 at transform_hide
+    hide parker
     "Parker nods and turns back into the club. My knees cry meekly in protest as I lift back up the box at my feet, but after that 'a man's got to do' talk, I don't think I have much choice but to bear with it."
     "Now, back to business."
     scene bg_club_2_before_work with Dissolve(0.5)
@@ -155,6 +155,7 @@ label A1_03:
     "I keep one eye on my work and one eye on the slowly gathering crowd as the club begins to slowly come to life."
     "Much as I want to start this already, I know I'll only get one shot at a real fancy opening, and I don't want to waste on a partial audience."
     "In the meantime, I make use of whatever lulls in the action I can risk setting up the stage and connecting the mic. Kinda disappointing that this is kind of tech is mostly just plug-and-play."
+    scene bg_club_2_during_work with Dissolve(0.5)
     "Slowly but surely more and more seats are taken. The static noise of conversations and laugher grows louder and less distinct. Parker's now spending more time handing out drinks than chatting with drinkers."
     "This is it. Just a little while longer now."
     "I had over to Parker's for a few final preparations. He's just finished pouring one of the early-comers what has to be their third mug already, so he should have a free moment."
@@ -368,7 +369,7 @@ label A1_03:
     parker "To most of these people, though?"
     parker "This is going to sound terrible, but as a bartender, I can tell you for a fact that to most of those people, your expensive, gold label, real-deal whiskey is {i}just another drink{/i}."
     parker "It's tasty and it's nice, but you know what else is? Eris' awful kiwi mojitos. Or Mexican corn beer, for that matter."
-    roman "W--come on, it can't be that--"
+    roman "Wh--come on, it can't be that--"
     parker "Please don't argue with me. You know that I hate sounding like that."
     parker "I'm just telling you how things are. As the guy who's getting all of the tabs."
     roman "And?"

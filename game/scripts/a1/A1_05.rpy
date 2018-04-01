@@ -1,9 +1,9 @@
 ﻿label A1_05:
-    scene bg_club_2_after_work
+    scene bg_club_2_after_work with Dissolve (1.0)
     $ queue_music(music_five)
     "After an hour or so of mindless busy-work that does nothing to lift my mood, I decide I need a break."
     "There's nothing else to do, and I can feel the events of the last few days gnawing away at my insides. Maybe some nicotine will solve my problems?"
-    scene bg_back_alley
+    scene bg_back_alley with Dissolve(0.25)
     play audio backdoor_open
     "Outside, the grim sky darkens; the sun is quickly swallowed up by the city's towering skyline."
     "As I step through Arcady's backdoor, already rummaging in my pocket for a lighter and a cigarette I rolled while inside, I notice another presence in the alley."
@@ -254,8 +254,8 @@ label A1_05_r:
     roman "I am {i}not{/i} wrong about the past. Stop saying I'm misremembering it when--"
     eris "Oh, right. You just wanted to keep being a dick. I thought you were coming out to do some big dramatic apology or something."
     eris "Grow up, Roman. See you tomorrow."
-    hide eris
+    hide eris with Dissolve(0.25)
     "She turns, and heads back around the corner, presumably towards home."
-    "My brain buzzing, my face burning, and my fingers tingling, I shakily roll another cigarette and light up."
+    "My brain buzzing, my face burning, and my fingers tingling, I shakily grab another cigarette and light up."
     show bg_black with Dissolve(1.5)
     return
