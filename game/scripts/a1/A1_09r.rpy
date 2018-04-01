@@ -56,6 +56,9 @@ bg back alley
 "Everything's right with the world. We've won."
  
 # fade off the ambient city noises over a few seconds (or, if that's too complicated, turn them off)
+stop music
+    $ queue_music(music_nine)
+	$ crossfade_music(0.0, 1.0, 0.0)
  
 "My movements are fast and automatic. The cigarette's lit and held between my teeth before I'd so much as noticed taking it out of the packet."
  
