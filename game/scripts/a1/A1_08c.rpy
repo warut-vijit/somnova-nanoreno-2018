@@ -7,7 +7,7 @@ scene bg_club_2_before_work
 "The following day, Eris shows me her new setup on the AR platform."
 
 
-show eris p1 e6 
+show eris p1 e6 with Dissolve (0.25)
 
 eris "Roman!"
 

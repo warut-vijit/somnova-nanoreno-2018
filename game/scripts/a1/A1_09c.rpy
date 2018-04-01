@@ -68,7 +68,7 @@
     "Hard to believe that I’m still here." 
 
 
-show parker p1 e1
+show parker p1 e1 with Dissolve (0.25)
 
 
 "I shut off the engine and pop out of my car, only to  curiously meet Parker’s gaze as he steps through Arcady’s backdoor."
@@ -136,9 +136,12 @@ show parker p1 e1
 
 "He shrugs as I grab the door for him; the two of us proceeding to make our way through the kitchen and to the bar."
 
+scene bg_club_2_before_work with Dissolve (0.25)
+
 
 "He sets the crate on the bar counter and motions for me to join him."
 
+show parker p1 e1 with Dissolve (0.25)
 
 parker "Some of the other staff tried your whiskey and took a liking to it. I like to treat my employees at times, so..."
 
@@ -176,6 +179,7 @@ roman "You do realize you overpaid, right?"
 
 parker p1 e5 "Keep up the good work, Roman." 
 
+hide parker with Dissolve (0.5)
 
 "Before I can even think about thanking him, he’s already walking toward the back room. The conversation is over—and like always, it’s back to being just another normal day at Arcady." 
 
@@ -186,7 +190,7 @@ eris "Hey, Roman!"
 "One filled with familiar sounds and people."
 
 
-show eris p1 e6
+show eris p1 e6 with Dissolve (0.25)
 
 
 "I watch Parker leave before I turn to face Eris, who approaches me with a grin spread across her face." 
@@ -243,11 +247,11 @@ eris p1 e6 "I can share if you run out prematurely."
 "She sets her bottle against mine and works her way through the same door I came from, motioning me to join her." 
 
 
-#[Transition to backalley.png]
+scene bg_back_alley with Dissolve (0.5)
 
 
-$ queue_music (music_nine)
-show eris p1 e1
+#$ queue_music (music_nine)
+show eris p1 e1 with Dissolve(0.25)
 "As usual, we’re outside, in the same back alley, next to the same club, feeling the same air." 
 "It’s just a normal day—but of course, everything is different."
 
@@ -637,7 +641,7 @@ eris p1 e10 "He could always fire us."
 roman "Now wouldn’t that be something...."
 
 
-hide eris
+hide eris with Dissolve(0.25)
 
 
 "The two of us share a laugh as we casually make our way inside."

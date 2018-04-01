@@ -69,7 +69,7 @@ label A1_08r:
 
    parker "Good. See you around."
 
-   hide parker
+   hide parker with Dissolve(0.5)
 
    "He closes the door, and I turn to leave - but as I do, I see someone else approaching the bar."
 
@@ -111,7 +111,7 @@ label A1_08r:
    parker p1 e4 "Oh, is this bar where the cool kids hang out after work now? I had no idea."
    parker "I'm going out for a bit. Keep an eye on the place?"
 
-   hide parker
+   hide parker with Dissolve (0.5)
 
    "Parker strides towards the exit."
 
@@ -216,11 +216,11 @@ label A1_08r:
 
    eris p1 e1 "What is there to close?"
 
-   hide eris
+   hide eris with Dissolve(0.25)
 
    "Giving me a look that I can't place, Eris departs. As she leaves, I hear her greet Parker, who heads back in towards the bar."
 
-   show parker p1 e1 at center_right
+   show parker p1 e1 at center_right with Dissolve (0.5)
 
    parker "Just left my wallet."
 
@@ -248,7 +248,7 @@ label A1_08r:
 
    "I don't have anything more to say. After another moment's pause, Parker leaves, too."
 
-   hide parker
+   hide parker with Dissolve (0.5)
 
    "My thoughts are not pleasant company, and my hollow-feeling stomach is no better."
    "I reach for a bottle of whiskey, but halt, my hand halfway there, hovering in place."        

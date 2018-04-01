@@ -40,7 +40,7 @@ show parker p1 e1
  
 # sound effect backdooropen.ogg
  
-show bg_back_alley
+show bg_back_alley with Dissolve(0.5)
  
 # sound effect backdoorclose.ogg
 # start playing the ambient city noises, quietly, in the background
@@ -305,7 +305,7 @@ roman "…I feel like that depends a lot on what 'this' is."
 "She shrugs, looking the other way and sucking the occasional bubble out of her e-cig."
 
 
-hide eris
+hide eris with Dissolve(0.25)
  
 "For a while, both of us just stand there, in silence."
  
