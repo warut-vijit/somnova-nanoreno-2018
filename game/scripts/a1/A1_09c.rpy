@@ -233,5 +233,4 @@
     "The two of us share a laugh as we casually make our way inside."
     "We're heading back to a home that we both have found."
     "Back to Arcady, the garden of an old and new world."
-    # NOTE--If possible, use something to the effect of $ queue_music(music_nine2) when moving into credits, without it looping
-    #END
+    return

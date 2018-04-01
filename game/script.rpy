@@ -17,7 +17,7 @@ label start:
         $ renpy.watch("scene_5_rivalry")
         $ renpy.watch("scene_5_cooperation")
 
-    call A1_09c
+    call A1_08r
 
     #call A1_01
     #call A1_02
