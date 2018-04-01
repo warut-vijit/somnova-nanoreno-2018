@@ -29,4 +29,5 @@ transform center_left:
     common(-300)
 
 transform embiggen:
-    ease 1 size (600 * 1.05, 1080 * 1.05)
+    size (600, 1080)
+    ease 1 size (600 * 1.1, 1080 * 1.1)

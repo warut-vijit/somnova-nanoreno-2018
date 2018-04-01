@@ -15,5 +15,5 @@ label start:
 
     call A1_01
     call A1_02
-    # call A1_03
+    call A1_03
     return

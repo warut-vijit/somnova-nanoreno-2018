@@ -3,7 +3,7 @@ label A1_03:
     "Pulling the car back into the alleyway behind Arcadia's feels like sinking through molasses into another world."
     "One moment, you can't hear yourself thinking over the honks and the blares and the shouting and all that hustle and bustle of the street outside."
     "Then you drive back for ten more seconds, and before you can really mind it all that noise just fades out into... a world you have for yourself."
-    "Just the soft hum of the engine, the gray, hoary whisper of the AC blowing at your face, and ---"
+    "Just the soft hum of the engine, the gray, hoary whisper of the AC blowing at your face, and--"
     play audio navcomp
     navcomp "Are you trying to park in reverse?"
     "The navcomp's saccharine, hotel-receptionist voice pulls me out of my moment."
@@ -11,7 +11,7 @@ label A1_03:
     "The navcomp goes silent for a blissful second. Checking with the satellite, I bet. Gotta be cautious when the human's driving."
     "Hope it's not calling my insurance provider."
     play audio navcomp
-    navcomp "Are you certain that you're in the middle of a traffic jam? Your position seems to be ---"
+    navcomp "Are you certain that you're in the middle of a traffic jam? Your position seems to be--"
     roman "Yeah, yeah. Can it. I can handle it fine."
     play audio navcomp
     navcomp "Are you trying to park in reverse?"
@@ -23,26 +23,26 @@ label A1_03:
     navcomp "Would you like to open a rear view screen?"
     roman "Nyet. They got those nifty little tchotchkes called 'mirrors' on cars now, thought I'd try see for myself how those work."
     play audio navcomp
-    navcomp "Would you like to ---"
+    navcomp "Would you like to--"
     roman "Navcomp, off."
     "The cheery, fake voice cuts off in the middle of yet another helpful suggestion."
     "Good riddance."
-    # TODO: play audio car_off
-    scene bg_club_exterior_day
+    play audio car_off
+    scene bg_back_alley with Dissolve(1.5)
     "Stretching my neck out the window, it {i}does{/i} kind of look like I might have a couple more meters to go, but I'm not pushing my luck."
     "Didn't just squeeze through that godawful afternoon traffic like some oiled-up fragging butterfly just to end up backing into a dumpster at the last second."
     "Guess I have it coming for insisting on driving a solocar, but between that and spending half an hour jammed in the tube with fifty slack-jawed ARses staring into space and waving their fingers around like a pod of virtual zombies, I'll take the car every day, thank you very much."
     "Now, to get out and move that precious, precious cargo where it needs be."
-    # TODO: play audio car_door
+    play audio car_open
     "I walk around to the back, stretch my arms over my head until I can hear that satisfying *knack* my spine makes after a drive, then open the trunk."
     "Part of me thought it'd be easier to just put it in the back seat before I left home, but I just couldn't get that image out of my head of me stopping suddenly and the whole thing coming hurtling forward like a glass rocket and shattering to a bajillion pieces of wasted money."
     "Not to mention contests lost, egos bruised and Eris' smug face... smug-ing."
     "She doesn't know what's coming to her. I got this in the bag."
-    # TODO: play audio car_trunk_close
+    play audio car_close
     "Spreading my legs to brace myself, like I used to do when transporting computer brains back in the day, I get my fingers underneath the crate until I can feel the hard wood right between the backs of my knuckles, and heft."
-    "Heave ---"
+    "Heave--"
     # TODO: play audio bottles_rattling
-    "Ho --- {i}woah!{/i}"
+    "Ho--{i}whoa!{/i}"
     "The contents rattle dangerously at the sudden movements. Looks like I'm going to have to do this slow and steady."
     "Which is a problem, since the thing's pretty damn heavy."
     "Gauging the distance at a glance tells me my knees aren't going to be pleased with me by when I'm done."
@@ -53,22 +53,22 @@ label A1_03:
     "That's the way to do it."
     # TODO: play audio bottles_rattling
     "There, I'm almost there."
-    "Just another meter, then to stretch my arm juuuust the right way to grab the handle ---"
+    "Just another meter, then to stretch my arm juuuust the right way to grab the handle--"
     play audio backdoor_open
     "I can feel the cool touch of the metal on my fingertips when the creak of the old door beginning to open hits my eardrums like the cocking of a gun."
     # TODO: play audio bottles_rattling
-    scene bg_club_exterior_day with hpunch
-    roman "Oh crap oh crap oh crap ---"
-    roman "--- phew!"
+    scene bg_back_alley with hpunch
+    roman "Oh crap oh crap oh crap--"
+    roman "--phew!"
     "Exercising what little grace can be humanely mustered while carrying a load in two hands, I deftly manage to very nearly avoid killing myself in a very stupid way as I tumble backwards."
     show parker p1 e1 at centered
-    parker "What with all the noise out ---"
+    parker "What with all the noise out--"
     parker "Roman?"
     "Parker's eyes move confusedly first to the box, then my face peeking out from behind it, then, with a stretch of the neck, to my car, then right back to the box, then to me."
     "His eyebrow rises by a fiendish, all-too familiar, fraction of a centimeter."
     parker "Fancy seeing you here, of all places. Don't you usually go about how good it feels to walk to work?"
     "Under different circumstances, I'd like to think that I'd have been able to pull out a comeback."
-    roman "Uhm ---"
+    roman "Uhm--"
     roman "I, uh, had those boxes to carry."
     roman "They're heavy."
     roman "Well, heavy-ish, in any case. Would've been a bit of a hassle."
@@ -79,11 +79,11 @@ label A1_03:
     roman "Harr harr. It's my supplies for this evening's thing. The competition."
     parker "Competition?"
     roman "That bet I made with Eris."
-    parker "Oh. That 'competition'."
-    roman "What --- come on, don't be like this! You thought I wasn't serious or something? I'm a man of my word, Parker."
+    parker "Oh. That 'competition.''"
+    roman "What--come on, don't be like this! You thought I wasn't serious or something? I'm a man of my word, Parker."
     parker "A modern day samurai."
-    roman "Okay, look --- I didn't want it to come to this, alright?"
-    roman "But sometimes a man's gotta do what a man's gotta do, you know? I'm not going to spend the rest of my days here listening to Eris --- I don't know, just {i}dissing{/i} me and, like, my whole way of life!"
+    roman "Okay, look--I didn't want it to come to this, alright?"
+    roman "But sometimes a man's gotta do what a man's gotta do, you know? I'm not going to spend the rest of my days here listening to Eris--I don't know, just {i}dissing{/i} me and, like, my whole way of life!"
     show parker p1 e5 at centered
     "Parker looks like he's trying very hard not to laugh. To his credit, he's doing a pretty good job."
     roman "Fine, so maybe not that far. But still, Eris started it. And if it's a fight she wants, then dammit, a fight's what I'm going to give."
@@ -100,9 +100,9 @@ label A1_03:
     roman "Although I guess this can help."
     show parker p1 e5 at centered
     "This gets a wry laugh out of him."
-    roman "What I got you here ---"
+    roman "What I got you here--"
     "I carefully take one hand out from underneath the crate to present it with all due gusto."
-    roman "--- is two, whole boxes of no-shit, bona fide, real-deal, genuine {i}whiskey{/i}, my good man."
+    roman "--is two, whole boxes of no-shit, bona fide, real-deal, genuine {i}whiskey{/i}, my good man."
     show parker p1 e3 at centered
     "Damn, I got him to widen his eyes a little. I'm on a roll now."
     roman "And not that Mexican Cornahol shit, either. None of that stuff. I'm talking serious booze here. 100\%, smoky, golden, just-short-of-a-decade-old bourbon goodness."
@@ -157,7 +157,6 @@ label A1_03:
     "Slowly but surely more and more seats are taken. The static noise of conversations and laugher grows louder and less distinct. Parker's now spending more time handing out drinks than chatting with drinkers."
     "This is it. Just a little while longer now."
     "I had over to Parker's for a few final preparations. He's just finished pouring one of the early-comers what has to be their third mug already, so he should have a free moment."
-    # TODO: Parker looking busy?
     show parker p1 e1 at centered
     roman "Yo, Parker. Doing fine?"
     "Parker takes his eyes off the indeterminate point in the distance his display must be floating in and faces towards me."
@@ -169,13 +168,13 @@ label A1_03:
     roman "Well, yeah, just making sure."
     parker "Consider yourself assured, then."
     roman "Thanks. I guarantee you, this is going to be amazing."
-    roman "Oh, and I've been thinking ---"
+    roman "Oh, and I've been thinking--"
     "I point towards the stage behind me."
     roman "Is there any chance I can try and hook up a real mic up there, or are we stuck with that AR contraption?"
     show parker p1 e4 at centered
     "Parker eyes me with an odd look."
     parker "Why? The customers are all wired in, they hear it just fine."
-    roman "Sure, but, I mean, it doesn't have all those little things, you know? No echoes, no tiny pieces of feedback, no ---"
+    roman "Sure, but, I mean, it doesn't have all those little things, you know? No echoes, no tiny pieces of feedback, no--"
     parker p1 e1 "Roman, generations of sound technicians have toiled for more than a century to produce a system that runs as smoothly as this one does."
     parker "It isn't theirs, mine, and certainly any of my customers' fault that you found the bugs on older models charming. Is that clear?"
     roman "...Yes, boss."
@@ -202,11 +201,12 @@ label A1_03:
     roman "But those are all future problems, right? For now, you want to try the real deal, yeah?"
     roman "So just for you, just tonight, Arcady's got all the greatest brands and labels, the prices are great, and we've got all the special deals you could shake your glass at."
     roman "So sit back, relax, and enjoy the true, proper Arcady experience the way you never have, but should have."
-    "I instinctively give a small bow --- even though, now that I think about it, I probably shouldn't have had to --- and climb back down the stairs, feeling like I've just come back from war."
+    "I instinctively give a small bow--even though, now that I think about it, I probably shouldn't have had to--and climb back down the stairs, feeling like I've just come back from war."
     "Passing a hand over the bridge of my nose and through my hair, I now know what I need."
     "I need a drink."
     "It's okay, though. I think we got a few of those lying around."
-    # TODO: Timeskip animation
+    show bg_black with Dissolve(0.75)
+    hide bg_black with Dissolve(0.75)
     "That's more like it."
     "Standing in a shadowy corner, just out of sight of the customers but close enough to observe, my break has just begun holding a cold, sloshing glass of the old gold in my hand."
     "This is the life."
@@ -231,9 +231,9 @@ label A1_03:
     # TODO: note: I don't know where we want the CGs to be yet, but if we're going to have those I think we should absolutely consider using a CG for the following part. Read it over and tell me if you think it's worth one.
     play audio whiskey_pour
     "I pick the bottle I've just used off of the counter and fill up another glass. If anyone's going to need that by the end of the night, it's going to be Eris."
-    eris p1 e2 "Seriously? Wow, that's... that's actually  ---"
+    eris p1 e2 "Seriously? Wow, that's... that's actually --"
     play audio whiskey_ice
-    roman " --- and there you go. Just perfect."
+    roman "--and there you go. Just perfect."
     play audio whiskey_toast
     roman "Cheers."
     eris "..."
@@ -247,8 +247,8 @@ label A1_03:
     roman "Pebbles."
     eris "Pebbles. You put pebbles in my whiskey."
     roman "Indeed I did. Special, drinking pebbles"
-    eris p2 e5 "W ---"
-    eris "Why would you ---"
+    eris p2 e5 "W--"
+    eris "Why would you--"
     eris "Why would you put special pebbles in whiskey? Do you have pebbles in your whiskey right now?"
     "I take another swig off my own, letting the drink slosh silently in place for a while before setting it down on the table."
     "Makes sense, ultimately. Didn't really think anyone here would know that much, last of all Eris."
@@ -256,7 +256,7 @@ label A1_03:
     eris p2 e7 "Okay. Sure. Real Mother Theresa here."
     eris "So, assuming that I'm a complete whiskey sprog, mind explaining to me why the hell the connoisseurs are drinking it with pebbles?"
     roman "Absolutely. It's actually quite simple: normally, you'd use ice cubes, right? But you put ice in your whiskey, by the time you get around to drinking it half of it's melted, and it's diluted your drink. No good."
-    roman "So you use those special pebbles --- you put them in the freezer for a while --- then by the time you want to start drinking, you can just plop a cold one in, and it's like ice that just never melts."
+    roman "So you use those special pebbles--you put them in the freezer for a while--then by the time you want to start drinking, you can just plop a cold one in, and it's like ice that just never melts."
     roman "You could say it's a real 'whiskey on the rocks', huh?"
     eris p1 e6 "I'm going to just let that slide without comment, since you're obviously drunk."
     roman "Drunk? The night's still young, and I'm doing fine. And let me tell you: those pebbles are some classy stuff. You should be thanking me for that. I paid good money for them."
@@ -270,18 +270,18 @@ label A1_03:
     eris "You paid {i}money{/i} for {i}pebbles{/i}?"
     roman "{i}Special{/i} pebbles."
     eris "Roman, this is some literal stone soup shit here. These are {i}rocks{/i}. It's basically condensed {i}dirt{/i}."
-    roman "Okay, two things: one, you can't --- and this is important --- you can't put a price tag on an {i}experience{/i}. And this is what it is, Eris: this is an experience."
+    roman "Okay, two things: one, you can't--and this is important--you can't put a price tag on an {i}experience{/i}. And this is what it is, Eris: this is an experience."
     roman "Second: I'm pretty sure those pebbles have, like, a special atomic structure, or a chemical composition or... You know. Something like that. Not just any pebble would do."
     "Eris just continues laughing."
     eris " You know what I do when I need a pebble? If for whatever weird reason I decide that I need a pebble? I got outside and grab one. Off the ground. Where the pebbles live."
-    roman "Really? You do that? Because I thought you just --- whooosh!"
-    "I wiggle a couple fingers in the air as a demonstration ---"
+    roman "Really? You do that? Because I thought you just--whooosh!"
+    "I wiggle a couple fingers in the air as a demonstration--"
     roman "Just input the command in and conjure one, eh? Pretend there's a pebble."
     eris p1 e6 "Rich, coming from someone who literally had someone else convince you to {i}pay{/i} for these. What do you think the net profit on that was? Do you think it was about equal to however much you paid for it?"
     "I furrow my brow."
     roman "What, you'd pick a pebble off the ground to put in your drink? Super unhygienic. You don't know where it's been."
     eris p1 e6 "Sure. There's that."
-    eris "I'm just saying --- don't act all cocky just yet, yeah?"
+    eris "I'm just saying--don't act all cocky just yet, yeah?"
     eris "For all we know, people might just be rushing in for a drink to avoid the hot air."
     roman "Or it might just be that it's been ages since any club around here's offered such an authentic experience and they can't wait to get a taste of some of the the good stuff."
     eris p1 e1 "I suppose. Guess we'll have to wait until my turn is finished. {i}Then{/i} we can be all scientific and compare the results."
@@ -341,14 +341,14 @@ label A1_03:
     show parker p1 e1 at centered
     "Parker pinches the bridge of his nose in what's beginning to look ominously like impatience."
     parker "What are people doing?"
-    roman "What do you mean? They're drinking, they're having fun, they're ---"
+    roman "What do you mean? They're drinking, they're having fun, they're--"
     parker "Right. Okay. Let's stop there. People are drinking, you say? Can you tell me what?"
     roman "Well, it {i}is{/i}, not to stress this too much, a whiskey tasting evening, so I'd say whiskey, no?"
     "Parker stands silently in front of me, eyes boring into my very soul."
     parker "Among other things."
     roman "Well, obviously. This is still a club, they're free to order whatever they like. It all averages out in the end, though."
     roman "I {i}personally{/i} served nine customers this night's special whiskey already. And I bet you and Eris did some, too."
-    roman "Besides, we've only just started. Once people have gotten comfortable, I'm sure they'll ---"
+    roman "Besides, we've only just started. Once people have gotten comfortable, I'm sure they'll--"
     parker "Roman, listen to me."
     parker "You said yourself that this is my specialty, didn't you?"
     parker "And you know what? You're right. I'm a bartender. I know a thing or two about drinks."
@@ -356,7 +356,7 @@ label A1_03:
     parker "Now, I don't know what kind of 'authentic', 'cool' boutique place you got all that whiskey in, but that doesn't change the fact whiskey tends to have a certain price."
     parker "As it happens, I'm {i}also{/i} the guy paying your salary."
     parker "So unless you really {i}are{/i} moonlighting as a drug dealer behind my back on top of doing that job, I'm going to hazard a guess and say you haven't spent less that a month's wages on the booze for today."
-    roman "Yeah, but this was all to show Eris ---"
+    roman "Yeah, but this was all to show Eris--"
     parker "Roman! This is {i}a lot{/i} of money to throw at a stupid, childish bet. It's {i}way, way{/i} too much money."
     roman "But it'll pay itself back! People are buying the whiskey, and we're making a profit off of each glass!"
     parker "Off of each glass, yes, but you bought enough whiskey to fill a bathtub!"
@@ -366,7 +366,7 @@ label A1_03:
     parker "To most of these people, though?"
     parker "This is going to sound terrible, but as a bartender, I can tell you for a fact that to most of those people, your expensive, gold label, real-deal whiskey is {i}just another drink{/i}."
     parker "It's tasty and it's nice, but you know what else is? Eris' awful kiwi mojitos. Or Mexican corn beer, for that matter."
-    roman "W --- come on, it can't be that ---"
+    roman "W--come on, it can't be that--"
     parker "Please don't argue with me. You know that I hate sounding like that."
     parker "I'm just telling you how things are. As the guy who's getting all of the tabs."
     roman "And?"
@@ -376,7 +376,7 @@ label A1_03:
     parker "I really care about you, guy. I'm only doing this because I do."
     roman "...doing what?"
     parker "Telling you this: your special whiskey night? I think we should call it off. Early as possible."
-    roman "Call it off?! But I've already ---"
+    roman "Call it off?! But I've already--"
     parker "Third time, Roman: this isn't up for discussion. Arcady is still my club, you are still my employee, and my decision about this is final."
     show parker p1 e5 at centered
     parker "I like your spirit. I like your attitude. I like how you...talk about things most people nowadays wouldn't care less about."
@@ -394,7 +394,7 @@ label A1_03:
     parker "When someone wants to see something, odds are they're going to see it."
     parker "And I think that right now, you're seeing what you want to see. You have been all night."
     parker "People aren't having fun with that pool table. All that thing embodies is a distraction."
-    roman "...that's just because they just don't understand real pool. It's not like AR, it's got weight, it's got ---"
+    roman "...that's just because they just don't understand real pool. It's not like AR, it's got weight, it's got--"
     parker "It's got a lot of stuff these people just don't {i}care about{/i}."
     parker p1 e4 "You've tried your best and it's great. But you've gone overboard."
     parker "This has to end. Now."
@@ -404,7 +404,7 @@ label A1_03:
     roman "What do you want me to do?"
     parker p1 e1 "First of all, don't worry about telling people about this. I'll handle this, okay?"
     parker "We let the customers have another order of whiskey if they want to. Close the tap on that slowly."
-    parker "Then, we're going to take every bottle we haven't had to open yet --- and lucky for you that's the vast, vast majority of them --- and we're going to put it out in the back."
+    parker "Then, we're going to take every bottle we haven't had to open yet--and lucky for you that's the vast, vast majority of them--and we're going to put it out in the back."
     parker "What I want you to do is, as soon as tomorrow morning, pack them back into the crates you got them in and return them to the store. See if you can get a refund."
     parker "If you're having any trouble with that, call me. I'll do my very best to make sure that you get as much of your money back as you can."
     "Without even noticing it, I've gone from looking ahead at the crowd to staring at my own feet."
@@ -421,8 +421,8 @@ label A1_03:
     hide parker
     "He starts walking away, but after a second thought turns back towards me."
     show parker p1 e5 at centered
-    parker "By the way ---"
-    "His head is already turning away right before leaving ---"
+    parker "By the way--"
+    "His head is already turning away right before leaving--"
     parker "It is pretty good whiskey, you know?"
     parker "I think I might save myself a bottle. I'll even pay you for it."
     roman "Huh."
@@ -436,7 +436,7 @@ label A1_03:
     roman "Nothing. He just wanted to buy one of those bottle from me. Said the whiskey was really good."
     eris "Oh."
     eris "Alright."
-    "Glancing aside, I can see her eyes trying to follow mine in the dim light, her expression shifting imperceptibly between bemusement, intrigue, then ---"
+    "Glancing aside, I can see her eyes trying to follow mine in the dim light, her expression shifting imperceptibly between bemusement, intrigue, then--"
     "Jesus, this is awful."
     "Concern."
     eris "Well..."
@@ -444,7 +444,7 @@ label A1_03:
     "She shifts uncomfortably in her place, almost as if she needs to go to the bathroom."
     eris "Nice evening, huh?"
     roman "Yeah."
-    eris "Well... I'll be over there if you ---"
+    eris "Well... I'll be over there if you--"
     roman "Right. Thanks. {i}Thanks a lot{/i}."
     show eris p1 e1 at transform_hide
     hide eris
