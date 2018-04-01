@@ -347,7 +347,7 @@ label living_hell:
     # $ queue_music(music_chill)
     parker p1 e5 "Wise words. Mind you live by them."
     "He fixes me with a knowing stare for a beat, before continuing."
-    parker p1 e1 "I am surprised to hear you and Eris have such a turbulent history, to be honest. She didn't say anything about it when I mentioned to her that I was bringing you on board."
+    parker p1 e1 "I am surprised to hear you and Eris have such a turbulent history, to be honest. I didn't really expect anything like this to happen when I was bringing her on board, even when I mentioned you during our interview."
     parker p1 e3 "Though I probably shouldn't talk about that with you."
     "He hastens to fix his slip-up - but I'm not about to let that go."
     roman "You mentioned me to Eris before she started? What did she say?"
@@ -356,7 +356,7 @@ label living_hell:
     "I hardly have an in-depth knowledge of employment law - though I'm hoping Parker has very little understanding as well."
     "That or a kind heart."
     parker p1 e4 "Well..."
-    parker p1 e1 "All right, all right. I just mentioned your name, in passing - you know, when mentioning some of the staff durring her hiring interview - and when I came to your name, she sort of... fixated on it."
+    parker p1 e1 "All right, all right. I just mentioned your name, in passing - you know, when mentioning some of the staff during her hiring interview - and when I came to your name, she sort of... fixated on it."
     roman "And?"
     parker "We didn't really linger on the subject. She said that she worked with you before, and that you were a, eh... what was it, now..."
     parker "Actually, she just sort of trailed off."
