@@ -55,6 +55,7 @@ label A1_02:
         
         "Fine. She made my time at my old place a living hell.":
             $ rivalry += 1
+            $ scene_5_rivalry = False
             call living_hell
     
     play audio mop_bucket

@@ -1,7 +1,7 @@
 label A1_01:
     stop music
     $ queue_music(music_one)
-	$ crossfade_music(0.0, 1.0, 0.0)
+    $ crossfade_music(0.0, 1.0, 0.0)
     play audio ambient_city
     show bg_black
     "There's something that I hate about this city."
@@ -163,6 +163,7 @@ label A1_01:
 
         "That waitress was... irritating.":
             $ rivalry += 1
+            $ scene_5_rivalry = False
             roman "That waitress was..."
             parker p1 e2 "A little grating? Yeah, she does have that impression doesn't she?"
             parker "She did seem pretty desperate for the job though."
