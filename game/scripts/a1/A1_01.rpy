@@ -188,5 +188,4 @@ label A1_01:
     "Perhaps tomorrow will give me something to keep my mind off of Eris."
     "Knowing her, that's probably not going to happen."
     show bg_black with Dissolve(1.5)
-
     return

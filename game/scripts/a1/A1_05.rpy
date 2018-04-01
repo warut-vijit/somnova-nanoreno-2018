@@ -257,4 +257,5 @@ label A1_05_r:
     hide eris
     "She turns, and heads back around the corner, presumably towards home."
     "My brain buzzing, my face burning, and my fingers tingling, I shakily roll another cigarette and light up."
+    show bg_black with Dissolve(1.5)
     return

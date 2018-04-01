@@ -1,5 +1,6 @@
 label A1_03:
     show bg_black
+    $ queue_music(music_one)
     "Pulling the car back into the alleyway behind Arcadia's feels like sinking through molasses into another world."
     "One moment, you can't hear yourself thinking over the honks and the blares and the shouting and all that hustle and bustle of the street outside."
     "Then you drive back for ten more seconds, and before you can really mind it all that noise just fades out into... a world you have for yourself."

@@ -418,6 +418,7 @@
     play audio backdoor_closehard
     "The door closes behind her with the same, deafening force of finality."
     "I'm left all alone with the smoke."
+    show bg_black with Dissolve(1.5)
     return
 
 label A1_07r_r:

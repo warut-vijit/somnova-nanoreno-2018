@@ -233,4 +233,5 @@
     "The two of us share a laugh as we casually make our way inside."
     "We're heading back to a home that we both have found."
     "Back to Arcady, the garden of an old and new world."
+    show bg_black with Dissolve(1.5)
     return

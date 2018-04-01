@@ -308,6 +308,7 @@
     "{i}We both did.{/i}"
     "I try and look out for Eris, but I can't seem to find her."
     "Maybe she really did take my advice to heart."
+    show bg_black with Dissolve(1.5)
     return
 
 label A1_07c_rivalry:

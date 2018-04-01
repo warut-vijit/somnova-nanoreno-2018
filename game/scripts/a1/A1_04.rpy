@@ -254,4 +254,5 @@
     "Eris's plan was crushed. Demolished. Burned to the ground like it had killed someone's loved one."
     "I guess..."
     "...now we could call ourselves even."
+    show bg_black with Dissolve(1.5)
     return

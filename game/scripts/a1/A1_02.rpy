@@ -1,5 +1,6 @@
 label A1_02:
     scene bg_back_alley with Dissolve(1.5)
+    $ queue_music(music_one)
     play audio navcomp
     navcomp "You have arrived."
     roman "I know I've arrived. The building's right in front of me."
@@ -364,4 +365,5 @@ label living_hell:
     parker "Let's get back to it, then. The crowd will be arriving soon."
     show parker p1 e1 at transform_hide
     hide parker
+    show bg_black with Dissolve(1.5)
     return

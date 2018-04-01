@@ -60,6 +60,9 @@ init python:
         global queued_music
         global current_music
         
+        if renpy.music.get_playing(channel = "dynamic_1") is None or renpy.music.get_playing(channel = "dynamic_2") is None:
+            current_music = None
+
         if current_music == track:
             return
 

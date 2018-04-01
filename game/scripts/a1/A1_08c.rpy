@@ -184,4 +184,5 @@
     roman "Right. Let's do it."
     "Turns out our antics managed to get us praise for our work. In a way, it's the best outcome that I could have asked for."
     "This inner sense of comfort...is a nice feeling."
+    show bg_black with Dissolve(1.5)
     return
