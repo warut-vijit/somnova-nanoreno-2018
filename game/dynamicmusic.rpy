@@ -1,5 +1,5 @@
 # This ensures that dynamic music can be used on the title screen.
-init offset = -2
+init offset = -4
 
 init python:
     import time
@@ -41,11 +41,13 @@ init python:
     renpy.music.register_channel(
         name = "dynamic_1",
         mixer = "music",
+        tight = True,
         loop = True,
         stop_on_mute = False)
     renpy.music.register_channel(
         name = "dynamic_2",
         mixer = "music",
+        tight = True,
         loop = True,
         stop_on_mute = False)
 
