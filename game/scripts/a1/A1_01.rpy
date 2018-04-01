@@ -157,6 +157,7 @@ label A1_01:
 
         "It's nothing.":
             $ cooperation += 1
+            $ scene_5_cooperation = False
             roman "Hm? It's nothing."
             parker "..."
             "He doesn't seem convinced."
