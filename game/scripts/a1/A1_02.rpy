@@ -1,24 +1,22 @@
 label A1_02:
-    scene bg_alley with Dissolve(1.5)
+    scene bg_back_alley with Dissolve(1.5)
     play audio navcomp
     navcomp "You have arrived."
     roman "I know I've arrived. The building's right in front of me."
     "I don't know what drives me to have the same conversation with my car every day. It just keeps happening."
     play audio navcomp
-    navcomp "Sorry about that. Your feedback is important to us. If you'd like to- "
-    # TODO: play audio car_off
+    navcomp "Sorry about that. Your feedback is important to us. If you'd like to--"
+    play audio car_off
     "Before it can finish, I turn the car off."
     "I don't get out immediately, though. The events of yesterday are still playing on my mind."
     "What are the chances that Eris, of all people, would have started working at the Arcady just a few weeks after me?"
     "I sit for a while, mulling this thought over and getting nothing more out of it."
     "Eventually, I give it up, and head inside."
-    # TODO: Chill scene 2 music
-    # $ queue_music(music_chill)
     scene bg_club_2_before_work with Dissolve(0.5)
     show parker p1 e1 at centered
     parker "Morning, Roman."
     roman "Good morning, Parker."
-    # TODO: play audio mop_bucket
+    play audio mop_bucket
     "I make my way hastily to the cupboard behind the bar and grab a bucket and mop from underneath it to begin the day's work."
     parker "Did you sleep all right?"
     roman "Uh..."
@@ -26,7 +24,7 @@ label A1_02:
     roman "Yeah, fine thanks."
     parker p1 e5 "Oh, good. I thought you might have had a lot on your mind."
     "Is he talking about what I think he's talking about?"
-    # TODO: play audio mop_splash
+    play audio mop_splash
     "Emerging from behind the bar, I slap the soaked mop down on the floor a little harder than necessary, spattering my pants with soapy water."
     "It takes significant effort not to scowl when I look back up at Parker, and I'm not sure I totally pull it off."
     roman "What makes you say that?"
@@ -46,8 +44,6 @@ label A1_02:
     parker "Oh, my apologies, please do forgive me for prying into your personal life."
     parker "But, unfortunately, it is my business. I've had staff with history before. It's a pain in the ass."
     parker "They either waste half the day fornicating in the store cupboard, or they can't work within 50 feet of each other without frightening the customers."
-    # TODO: Tense scene 2 music
-    # $ queue_music(music_tense)
     parker "So, what's it gonna be with you?"
     roman "We just worked together in the past. That's all it is."
     parker p1 e4 "Come off it, Roman. Don't hold out on me."
@@ -61,29 +57,27 @@ label A1_02:
             $ rivalry += 1
             call living_hell
     
-    # TODO: play audio mop_bucket
+    play audio mop_bucket
     "I do as he says, taking up the mop I'd left leaning against the side of the bucket. As Parker disappears into the back office, I'm left pondering the honesty of my own words."
     "Yeah, so me and Eris have a rough history, but do I really need to bother myself with that? Maybe now it's time to let bygones be bygones. This is supposed to be the start of a new chapter...or something like that. God, that sounds pretentious."
     "I don't know. It's hard to forget a... rivalry like that, if a rivalry is what we had. Shit like this is hard to define in the real world."
     "Eris never did anything that I could really call offensive to me, but we were just so different in the way we work that any kind of cooperation with her seemed impossible."
     "For the sake of this job, is it time to put some actual effort in? I'm done with ARTech, so having a coworker with different views doesn't mean they're out to destroy my work...right?"
-    # TODO: Timeskip animation
-    # TODO: Potential second interior background?
+    show bg_black with Dissolve(0.75)
+    hide bg_black with Dissolve(0.75)
     "After a few hours I hear Eris make her way into work, but thankfully manage to avoid conversation by making sure I'm working on the opposite side of the room."
     "As I'm replacing the last burned-out tealight, my phone vibrates."
-    # TODO: Show phone?
     "A message from Parker."
-    phone "Meeting in 10. See me at the bar. - Delivered by ARTech"
+    phone "Meeting in 10. See me at the bar. --Delivered by ARTech"
     "You'd think messages delivered straight from his brain would have more personality."
-    # TODO: Hide phone?
     "I spend another few minutes straightening the already-straightened tables before feeling like I might be pushing it, and head to the bar."
-    "As I approach, I see no sign of Parker - but Eris is there already. I steel myself and walk right into the waiting jaws of the abyss."
+    "As I approach, I see no sign of Parker--but Eris is there already. I steel myself and walk right into the waiting jaws of the abyss."
     show eris p1 e1 at center_right
     eris "Roman."
     roman "Eris."
     "I see what Parker meant about the atmosphere between us now. I really can't avoid how {i}tense{/i} this is."
     "A few seconds of silence are all the excuse I need. I head behind the bar and grab a lowball glass and a bottle."
-    # TODO: play audio mop_bucket
+    play audio mop_bucket
     "As I pour myself more than a dram of a pleasant looking Islay twelve-year, Eris clucks her tongue. Like an angry chicken."
     eris p2 e7 "Isn't it a little early for that?"
     roman "Sun's over the yardarm."
@@ -95,7 +89,7 @@ label A1_02:
     "I raise my glass and take a nose, then a sip. It's not bad. Rich, and quite smoky."
     eris "Careful now, you don't want to break Parker's second rule here."
     "She's picking a fight, but..."
-    "I don't really have anything to say to Eris. My thoughts return, as they have throughout the whole afternoon, to what Parker said to me earlier - but the thoughts are mostly cyclical and meaningless."
+    "I don't really have anything to say to Eris. My thoughts return, as they have throughout the whole afternoon, to what Parker said to me earlier--but the thoughts are mostly cyclical and meaningless."
     # TODO: p2 e1 doesn't exist.
     eris p1 e1 "Is this going to be a problem for you? Me, working here?"
     # eris p2 e1 "Is this going to be a problem for you? Me, working here?"
@@ -107,15 +101,15 @@ label A1_02:
     "He pulls out a small ring-bound pad and a stubby pencil."
     parker p1 e5 "So, in these meetings I just like to take stock of things, how you are doing as a team, and listen to any concerns you have."
     parker p1 e1 "Usually I'd involve the whole staff, but I'm going to talk to the rest of them later. There's something I wanted to pick your brains about, specific like."
-    parker "With your mutual backgrounds in AR tech - thank you for sharing that with me, by the way, whether or not it was deliberate - well, I could use your advice."
+    parker "With your mutual backgrounds in AR tech--thank you for sharing that with me, by the way, whether or not it was deliberate--well, I could use your advice."
     eris p2 e7 "Wow, look at that, {i}Roman{/i}. You've only been here a few days and already you're being asked how to run the business."
     "Her arrogance spikes my irritation. This is clearly not shared by Parker, who merely looks politely amused."
     show eris p1 e1 at center_right
     roman "What do you need our advice on, Parker?"
     "He lets out a sigh, though one that sounds far too exaggerated to be real."
-    parker p1 e2 "It's, eh - well, I'll be honest with you two; I think the club could do to perform a bit better."
+    parker p1 e2 "It's, eh--well, I'll be honest with you two; I think the club could do to perform a bit better."
     parker p1 e1 "Don't get me wrong, we're not at risk of going under or anything like that. I just think we have the capacity to see more people come through our doors."
-    parker "I'm not really sure why, and figuring out why that might be, and how we can make it better - I think you might be able to help with that."
+    parker "I'm not really sure why, and figuring out why that might be, and how we can make it better--I think you might be able to help with that."
     "There's a pause, as Parker looks expectantly at us."
     parker "So, uh... any ideas?"
     show eris p1 e1 at center_right
@@ -139,12 +133,12 @@ label A1_02:
     parker p1 e1 "Is that something you could potentially work together on?"
     eris p2 e4 "Not necessarily. All I need to do is simply up my performance quality."
     roman "How?"
-    eris "From my last performance I didn't - uh - engage the audience enough. It could definitely stand to have some more excitement to it."
+    eris "From my last performance I didn't--uh--engage the audience enough. It could definitely stand to have some more excitement to it."
     roman "People don't come here to be shouted at from the stage. They want to sit back and enjoy some jazz and a drink."
     eris p1 e1 "I'm not going to shout at them! I just want them to know I know they exist."
     roman "Well I think they just need to be able to appreciate the atmosphere a little more and enjoy the place itself. We should put something on."
     eris "Like what? Music?"
-    roman "No. I don't know, uh -"
+    roman "No. I don't know, uh--"
     "I look around for inspiration. I don't know what this place needs, exactly, but it's lacking... something."
     "It needs a bit of... a bit of..."
     "My wandering eyes land on the glass in my hand. I turn to Parker, who's now eyeing the same glass in my hand with suspicion."
@@ -158,8 +152,8 @@ label A1_02:
     # TODO: p1 e5 doesn't exist.
     eris p2 e5 "Wait a minute, is my idea just completely off the table for this imaginary idea then?"
     # eris p1 e5 "Wait a minute, is my idea just completely off the table for this imaginary idea then?"
-    parker "Of course not, Roman just- "
-    "Interrupting him, I let a string of words fly out of my mouth without processing exactly what they mean - but Eris is once again a threat that I need to dispatch."
+    parker "Of course not, Roman just--"
+    "Interrupting him, I let a string of words fly out of my mouth without processing exactly what they mean--but Eris is once again a threat that I need to dispatch."
     roman "We'll have a competition!"
     "There's a moment's silence...immediately broken by Eris laughing harshly."
     eris "A competition? Are you serious?"
@@ -188,16 +182,16 @@ label A1_02:
     roman "No problem."
     eris p2 e5 "Oh my God, Roman..."
     "Annoyed with my cockiness, she crosses her arms, looking at me with murder in her eyes."
-    eris p1 e1 "Mm. Fine. Okay, Parker - I'll go for it the day after."
+    eris p1 e1 "Mm. Fine. Okay, Parker--I'll go for it the day after."
     parker p1 e5 "Excellent. Glad to hear it."
-    "He looks between us both, smiling - but clearly sensing the tension in the air."
+    "He looks between us both, smiling--but clearly sensing the tension in the air."
     parker p1 e3 "Ahem, well, that's killed two birds with one stone. I'll leave you to it."
     parker "We open in a bit, so make sure the place is ship shape, yeah?"
     "As Eris and I stare daggers at one another Parker once again tries to intervene."
     parker p1 e4 "Is...this going to be another problem between you two? I really can't have this become a big thing."
     parker "Because God help me if I've made it worse..."
     parker "..."
-    parker p1 e2 "Actually, you know what, maybe pitting you two against one another wasn't the best idea. Why don't I just- "
+    parker p1 e2 "Actually, you know what, maybe pitting you two against one another wasn't the best idea. Why don't I just--"
     show parker p1 e1
     # These two lines are shown simultaneously.
     eris p1 e1 "No, it's fine." (multiple = 2)
@@ -205,7 +199,7 @@ label A1_02:
     "..."
     "Another awkward pause."
     eris "Maybe this is exactly what we need."
-    "Parker looks skeptical, his eyes darting once again between Eris and I - but eventually he sighs."
+    "Parker looks skeptical, his eyes darting once again between Eris and I--but eventually he sighs."
     parker p1 e2 "Fine. I have a feeling I'm going to regret this, but fine. You two go ahead."
     show parker at transform_hide
     hide parker
@@ -239,14 +233,14 @@ label A1_02:
     eris "Well, yeah, that's the problem. They were floating in here, barely taking any of it in. They sat in their chairs and looked vaguely in the direction of the stage, eyes glazed over, poisoned themselves for a few hours, and then...left."
     eris "I just wanted some of them to give a shit about what I was doing up there."
     eris p2 e5 "Because {i}I{/i} give a shit!"
-    eris "You know what it's like to put your heart and soul into a performance, only to have it met with passive interest? What about when you hear the loudest applause coming from the staff - the people paid to be here?"
+    eris "You know what it's like to put your heart and soul into a performance, only to have it met with passive interest? What about when you hear the loudest applause coming from the staff--the people paid to be here?"
     roman "I've certainly never had anyone applaud me before."
     eris "That's right, you wouldn't. You didn't even catch the performance did you?"
     eris p3 e9 "Experiencing that kind of feeling...it's horrible."
     eris p1 e1 "And I don't know if it's something I'm doing wrong or what, but I've gotta find a way to change it."
     roman "Heh."
     eris p2 e3 "What?"
-    "I'm not sure that was the best moment to laugh - not that it was exactly by choice."
+    "I'm not sure that was the best moment to laugh--not that it was exactly by choice."
     roman "So is that really all we are? Two people just out for others to give a shit?"
     "Eris gives me a hard look..."
     eris p1 e1 "No Roman, we aren't even close to being the same."
@@ -256,13 +250,13 @@ label A1_02:
     roman "Hmm. What are the stakes?"
     eris "Okay... you know how you're constantly going on about wanting to get out of the city and start fresh, all that jazz?"
     roman "I can't deny that."
-    eris "If you win - if Parker gives you employee of the month instead of me - I'll help pay for you to get out. We'll go halves on it. Whatever you need."
+    eris "If you win--if Parker gives you employee of the month instead of me--I'll help pay for you to get out. We'll go halves on it. Whatever you need."
     roman "Oookay. That's... incredible generous."
     roman "I assume there's a catch? You wouldn't just give me that kind of money."
     eris "Naturally."
-    eris "If {i}I{/i} win -"
+    eris "If {i}I{/i} win--"
     "She puffs her e-cig, the thick mist floating ominously between us."
-    eris p2 e7 " - You have to go back to ARTech. You have to re-apply. I know they'd take you back."
+    eris p2 e7 "--You have to go back to ARTech. You have to re-apply. I know they'd take you back."
     "..."
     "Why..."
     roman "Why the hell would I do that!?"
@@ -271,10 +265,10 @@ label A1_02:
     eris p1 e1 "I mean, you were brilliant."
     # eris p2 e1 "I mean, you were brilliant."
     eris "Why did you decide to work at this dump, anyway?"
-    "She gives me a good few seconds to produce an answer - but one is not forthcoming."
-    roman "It's -"
+    "She gives me a good few seconds to produce an answer--but one is not forthcoming."
+    roman "It's--"
     "My mind is racing in all kinds of directions."
-    roman "Is this why you applied -"
+    roman "Is this why you applied--"
     eris "Give it up."
     eris "I don't know what's going on with you, but when you can't justify it to yourself, you have a problem."
     eris p2 e5 "You know how much we achieved at that place? Greenway was a huge step for our team! We have done so much already! Why would you want to let go of that?"
@@ -285,7 +279,7 @@ label A1_02:
     eris p1 e1 "Well, sure, you don't need to 'look back' on it. Just... there's no need to completely throw it away, either."
     eris "Do you even care about what we did for ARTech? I mean, your work on neural sound encoding, you can't just forget that part of your life."
     "I look at her, lost for words."
-    "After a while, she takes one more long drag, exhaling not quite in my direction but close enough that I still feel her faceful of vapour."
+    "After a while, she takes one more long drag, exhaling not quite in my direction but close enough that I still feel her faceful of vapor."
     eris "Enjoy your drink, Roman."
     show eris at transform_hide
     hide eris
@@ -323,11 +317,11 @@ label living_hell:
     roman "Don't get me wrong, I tried to cooperate with her, I really did, but do you know what it's like to work with someone who'll never give you any quarter? When it seems like they'd never even consider, not once, that what you have to say might have value?"
     "Brandishing a finger, I realise how loud my voice has gotten, and do nothing to lower it."
     roman "She had no right to be my superior! We were hired at the same time, at the same level!"
-    roman "And don't get me started on -!"
+    roman "And don't get me started on--!"
     stop music fadeout 1
     parker p1 e4 "Roman, calm down."
     "His voice is forceful, and as my voice bounces of the walls of the empty bar, lingering in the air and ringing in my ears, I feel my cheeks burn."
-    roman "I- I wasn't- "
+    roman "I--I wasn't-- "
     "Parker's expression isn't one of shock, but a combination of understanding and disappointment."
     parker "You know you've just confirmed exactly what I was worried about, don't you, Roman?"
     parker "If working with Eris is going to be this hard for you, then we have a problem."
@@ -342,21 +336,19 @@ label living_hell:
     "Parker looks as though he wants to hear more, so I keep talking. I can already hear the lack of conviction in my voice. Could he?"
     roman "There's no sense in holding onto stuff from the past like this, and getting angry for something that happened long ago isn't going to do anyone any good."    
     parker "..."
-    "He looks...satisfied enough."
-    # TODO: Chill scene 2 music
-    # $ queue_music(music_chill)
+    "He looks...satisfied enough." 
     parker p1 e5 "Wise words. Mind you live by them."
     "He fixes me with a knowing stare for a beat, before continuing."
     parker p1 e1 "I am surprised to hear you and Eris have such a turbulent history, to be honest. She didn't say anything about it when I mentioned to her that I was bringing you on board."
     parker p1 e3 "Though I probably shouldn't talk about that with you."
-    "He hastens to fix his slip-up - but I'm not about to let that go."
+    "He hastens to fix his slip-up--but I'm not about to let that go."
     roman "You mentioned me to Eris before she started? What did she say?"
     parker p1 e1 "I just said, I can't talk about that with you. It's private."
-    roman "I don't think it's against any employment law, right? Considering the circumstances - and if you spoke about me, surely I have the right to know what it was about?"
-    "I hardly have an in-depth knowledge of employment law - though I'm hoping Parker has very little understanding as well."
+    roman "I don't think it's against any employment law, right? Considering the circumstances--and if you spoke about me, surely I have the right to know what it was about?"
+    "I hardly have an in-depth knowledge of employment law--though I'm hoping Parker has very little understanding as well."
     "That or a kind heart."
     parker p1 e4 "Well..."
-    parker p1 e1 "All right, all right. I just mentioned your name, in passing - you know, mentioned I was bringing a new guy on and all that - and when I mentioned your name, she sort of... fixated on it."
+    parker p1 e1 "All right, all right. I just mentioned your name, in passing--you know, mentioned I was bringing a new guy on and all that--and when I mentioned your name, she sort of... fixated on it."
     roman "And?"
     parker "We didn't really linger on the subject. She said that she worked with you before, and that you were a, eh... what was it, now..."
     parker "Actually, she just sort of trailed off."
