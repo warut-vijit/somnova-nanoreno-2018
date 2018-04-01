@@ -129,7 +129,8 @@ label scene8r:
 
    roman "Ooo..kay. Your choice of rum?"
 
-   "Eris gives me a withering look that very clearly says, “Do I look like I give a shit?”"
+   "Eris gives me a withering look that very clearly says, 'Do I look like I give a shit?'"
+   
    "After a few minutes, most of which was spent digging around in a cupboard under the bar for kiwi-flavoured syrup, I slide a luminous green drink in front of her. She takes a sip."
 
    eris p2 e3 "This is dreadful."
@@ -169,11 +170,9 @@ label scene8r:
 
    eris "You put such a damper on everything."
 
+   roman "..."
 
-        roman “...”
-
-
-“A silence grows between the two of us that I’m compelled to break.:
+   "A silence grows between the two of us that I’m compelled to break."
 
    roman "Yeah, I guess in a way, for just a little while, it was like the old days."
 
@@ -253,7 +252,7 @@ label scene8r:
 
    "My thoughts are not pleasant company, and my hollow-feeling stomach is no better."
    "I reach for a bottle of whiskey, but halt, my hand halfway there, hovering in place."        
-“...”
-“.....”
+   "..."
+   "....."
    "Fuck it."
    "I grab a pint glass, and pour a beer."

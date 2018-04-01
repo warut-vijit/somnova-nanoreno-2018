@@ -1,7 +1,7 @@
-﻿label scene 8c: 
+﻿label scene8c: 
 
 
-bg club_interior
+scene bg_club_2_before_work
 
 
 "The following day, Eris shows me her new setup on the AR platform."
@@ -40,7 +40,7 @@ roman "It just seems like we’re working far more closely then we ever did at A
 roman "What changed?"
 
 
-She takes a moment, looking as if she’s trying to take in the question thoughtfully. 
+"She takes a moment, looking as if she’s trying to take in the question thoughtfully."
 
 
 Eris "Well…"
@@ -67,8 +67,7 @@ roman "That’s..."
 "That’s a huge leap for her. Knowing her, this isn’t something that she’d be able to say lightly." 
 
 
-Eris p1 e1
-
+show eris p1 e1
 
 "However…"
 
@@ -183,7 +182,7 @@ eris p1 e2 "You had people double check your work when you were at ARTech?"
 roman "It was practically a {i}requirement{/i} at ARTech."
 
 
-eris p1 e1
+show eris p1 e1
 
 
 roman "Whether at a high-profile company or somewhere like here, I guess it’s healthy to check in with someone."
@@ -229,7 +228,7 @@ roman "I’ll still verify the working code again to make sure problems don’t 
 roman "Aside from that though..."
 
 
-eris p1 e2
+show eris p1 e2
 
 
 eris "Any other tests you think we need to run?"
@@ -328,7 +327,7 @@ parker "This month we saw some… creative endeavors to bring some more customer
 "A collection of laughs escape from the mouths of everyone except for me and Eris."
 
 
-eris p3 e8
+show eris p3 e8
 
 
 "Ah, he’s gonna be talking about how poorly Eris and I messed up our attempts."
@@ -382,9 +381,9 @@ parker "I’ll be sure to get this hung up on the office wall so you two can glo
 parker "Congratulations again, you guys. You’ve done a lot of hard work, and I hope to see you both keep it up."
 
 
-(Simultaneously)
-eris "Thats...thank you."
-roman "Wow, uh, thanks."
+#(Simultaneously)
+eris "Thats...thank you." (multiple=2)
+roman "Wow, uh, thanks." (multiple=2)
 
 
 hide parker
@@ -432,7 +431,7 @@ eris "Thank you!"
 roman "Alright, alright. No need to inflate my ego any more today."
 
 
-eris p1 e6
+show eris p1 e6
 
 
 "I reach out and grasp her hand in a firm, yet gentle handshake."
@@ -501,7 +500,7 @@ eris "I see."
 roman "But, at least I know I’d be working with a friend."
 
 
-eris p1 e2
+show eris p1 e2
 
 
 eris "That’s…"
@@ -514,7 +513,7 @@ eris p1 e6 "Well, I’m glad things turned out the way they did."
 eris "So, we better get back to work! Gotta keep that title somehow, right?."
 
 
-roman "Right. Let’s do it.”
+roman "Right. Let’s do it."
 
 
 "Turns out our antics managed to get us praise for our work. In a way, it’s the best outcome that I could have asked for."
@@ -523,4 +522,4 @@ roman "Right. Let’s do it.”
 "This inner sense of comfort...is a nice feeling."
 
 
-<END>
+##<END>

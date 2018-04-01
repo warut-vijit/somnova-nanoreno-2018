@@ -22,7 +22,7 @@ show parker p1 e3 at middleleft
 Roman "I'll be out for a bit, that alright? Just going for a cig, then I'm back."
 
 
-parker p1 e1
+show parker p1 e1
  
 "He nods. Amidst the shadows of the neon lights shifting across his face, my mind conjures a thin, but comforting smile."
  
@@ -40,7 +40,7 @@ parker p1 e1
  
 # sound effect backdooropen.ogg
  
-bg back alley
+show bg_back_alley
  
 # sound effect backdoorclose.ogg
 # start playing the ambient city noises, quietly, in the background
@@ -57,8 +57,8 @@ bg back alley
  
 # fade off the ambient city noises over a few seconds (or, if that's too complicated, turn them off)
 stop music
-    $ queue_music(music_nine)
-	$ crossfade_music(0.0, 1.0, 0.0)
+$ queue_music(music_nine)
+$ crossfade_music(0.0, 1.0, 0.0)
  
 "My movements are fast and automatic. The cigarette's lit and held between my teeth before I'd so much as noticed taking it out of the packet."
  
@@ -70,7 +70,7 @@ stop music
  
 "Looking at them, down there, squinting at just the right angle ---"
  
-"I can almost imagine seeing them falling into the beginning of a drawn, white-gray circle. Obviously, nothing but smoke is really there. 
+"I can almost imagine seeing them falling into the beginning of a drawn, white-gray circle. Obviously, nothing but smoke is really there." 
  
 "My mind's just… desperate for it, I guess. Screaming at me to acknowledge a pattern in the air."
  
@@ -78,13 +78,14 @@ stop music
  
 "{i}You're an Arabian genie, Roman{i}."
  
-"{i}You're trapped in that magical circle.{/i}
+"{i}You're trapped in that magical circle.{/i}"
  
-"{i}All fiery and powerful ---{/i}
+"{i}All fiery and powerful ---{/i}"
  
-"{i}All helpless.{/i}
+"{i}All helpless.{/i}"
  
-Roman "I need to escape this place."
+roman "I need to escape this place."
+
 "It doesn't hit me that I've said those words out loud until I notice the tingling of the smoke in my throat."
  
 "When I first came here, I thought I'd finally found a place where I could belong."
@@ -105,163 +106,163 @@ Roman "Jesus. What's up with me today."
  
 # sound effect backdooropen.ogg
  
-Roman "Huh?"
+roman "Huh?"
  
 "I turn my head back towards the door, cheeks burning like I'd just got caught with my pants down."
 
 
 show eris p1 e2 at middleright
  
-Eris "Roman?"
+eris "Roman?"
  
 "Eris' face pokes sheepishly out of the entrance. Her eyes are tired, but she doesn't look upset otherwise."
  
-Roman "Yeah? Yeah, what do you want?"
+roman "Yeah? Yeah, what do you want?"
  
 "She opens her mouth silently, in reluctance, glancing with uncertainty in both directions."
  
-Eris "Is this a bad time? I mean, I could come back later if ---"
+eris "Is this a bad time? I mean, I could come back later if ---"
  
-Roman "What? --- No, it's fine, it's --- nothing. What did you want?"
+roman "What? --- No, it's fine, it's --- nothing. What did you want?"
  
-Eris p2 e2 "Can I come over?"
+eris p2 e2 "Can I come over?"
  
-Roman "Yeah. Sure. I’m not going to stop you."
+roman "Yeah. Sure. I’m not going to stop you."
  
 "She nods, the rest of her body following her head into the alley like some gangly cartoon character's."
  
-eris p1 e1
+show eris p1 e1
  
 "Her first few steps are slow and cautious, like she's waiting for me to pull out a knife and lunge at her. Then she stops, takes a deep breath, regains her composure and stands up next to me, like normal."
  
 "She pulls out that disgusting e-cig of hers. Within moments, the whole alley fills with the sickening aroma of burnt cherry syrup."
  
-Roman "So?"
+roman "So?"
  
-Eris p1 e2 "…So?"
+eris p1 e2 "…So?"
  
-Roman "So, what was it you wanted to say? You look like you wanted to say something."
+roman "So, what was it you wanted to say? You look like you wanted to say something."
  
-Roman "Can't think of any other reason you'd suddenly go all bashful on me."
+roman "Can't think of any other reason you'd suddenly go all bashful on me."
  
-Eris p2 e7
+show eris p2 e7
  
-Eris "Yeah, guess so. No real need for that whole highschool routine."
+eris "Yeah, guess so. No real need for that whole highschool routine."
  
-Roman "And?"
+roman "And?"
  
 "She takes another deep, long lungful of cherry vapors, then pulls the e-cig out her mouth and stares in the other direction."
  
-Eris p1 e1 "So…"
+eris p1 e1 "So…"
  
-Eris "Two things I thought I should say to you. To start, anyway."
+eris "Two things I thought I should say to you. To start, anyway."
  
 "What's with that show? Either she's won the lottery and trying to rub it in, she just found out she's dying, or she's playing some sort of game. I don't like two of those options."
  
 "Deciding to play it cool, I shrug and just motion for her to continue."
  
-Eris p1 e2 "First: I wanted to say that I'm sorry."
+eris p1 e2 "First: I wanted to say that I'm sorry."
  
 "Alright. That was unexpected."
  
 "I suppose that does deserve me looking at her in the eyes."
  
-Roman "Okay."
+roman "Okay."
  
-Roman "What for?"
+roman "What for?"
  
-Eris p3 e8 "For the past few months, and all that. Mostly the big project I dragged you into, but, like, counting the whole other time, as well."
+eris p3 e8 "For the past few months, and all that. Mostly the big project I dragged you into, but, like, counting the whole other time, as well."
  
-Eris "I know that you came here because you hated it in ARTech, and I should've known you wouldn't like this any better."
+eris "I know that you came here because you hated it in ARTech, and I should've known you wouldn't like this any better."
  
-Eris "Plus… I {i}guess{/i} you could say that I was kind of a hardass about it. You did a good job and I mostly just sat there complaining."
+eris "Plus… I {i}guess{/i} you could say that I was kind of a hardass about it. You did a good job and I mostly just sat there complaining."
  
-Eris p2 e7 "I was selfish. I admit it."
+eris p2 e7 "I was selfish. I admit it."
 
 
-“A silence stretches between us, one that she tries to break.”
+"A silence stretches between us, one that she tries to break."
  
-Eris "That takes some guts, doesn't it? Doesn't happen every day that I can admit I was wrong."
+eris "That takes some guts, doesn't it? Doesn't happen every day that I can admit I was wrong."
  
-Eris p1 e4 "So there, you have your one thing that you can hold over me."
+eris p1 e4 "So there, you have your one thing that you can hold over me."
  
 "She says that, then stops, obviously trying to get me to reply."
 
 
-eris p1 e1
+show eris p1 e1
  
 "But I… don't really know what to say."
  
 "My mind's still working the sentence over."
  
-"If she'd been another person and this had been another situation, I'd just blurt out one of those automatic 'okay, I forgive you's.
+"If she'd been another person and this had been another situation, I'd just blurt out one of those automatic 'okay, I forgive you's."
 
 
-“But in this instance, in a weird sort of way, I feel simultaneously like Eris doesn't deserve that...{i}and{/i} deserves far more than that."
+"But in this instance, in a weird sort of way, I feel simultaneously like Eris doesn't deserve that...{i}and{/i} deserves far more than that."
  
 "So I try to give it some actual thought."
  
-Roman "…"
+roman "…"
  
-Roman "Alright. Thanks."
+roman "Alright. Thanks."
  
-Roman "That sure is very mature of you."
+roman "That sure is very mature of you."
  
 "The words ring hollow in the quiet alley air."
  
-Show Eris p3 e8
+show eris p3 e8
  
-Eris "…Okay. Well ---"
+eris "…Okay. Well ---"
  
-Eris  p1 e1 "The second thing I wanted to say is this: thank you."
+eris  p1 e1 "The second thing I wanted to say is this: thank you."
  
-Roman "'Thank you'?"
+roman "'Thank you'?"
  
-Eris " --- For the same thing, basically. You were a ton of help and I wouldn't have been able to do any of this without you."
+eris " --- For the same thing, basically. You were a ton of help and I wouldn't have been able to do any of this without you."
  
-Eris "Don't know if you've noticed, or if you, well, care about any of this stuff, but you did some pretty impressive work, and it shows."
+eris "Don't know if you've noticed, or if you, well, care about any of this stuff, but you did some pretty impressive work, and it shows."
  
-Eris "It was my idea, but you did like eighty percent of the job."
+eris "It was my idea, but you did like eighty percent of the job."
  
 "I chuckle. More to break this growing uneasiness than anything. Moisten up my throat that's suddenly feeling all perched."
  
-Roman "Just eighty?"
+roman "Just eighty?"
  
-Eris p2 e7 "Fine, eighty five? Something around that."
+eris p2 e7 "Fine, eighty five? Something around that."
  
-Eris "Which brings me to…"
+eris "Which brings me to…"
  
 "She turns towards me, back straightened up, suddenly looking all formal and proper, and shoves a hand into her pocket."
  
-Eris "This."
+eris "This."
  
 "She pulls out something and hands it over to me. Curiously, I peek down to look at it, and ---"
  
-Roman "{i}What?{/i}"
+roman "{i}What?{/i}"
  
 "I very nearly choke on my cig, sending me into what could charitably sound like a cross between a coughing fit and a snicker."
  
 "In Eris' hand, neat as I'd have expected from her, without even crumpled ends, is a roll of bills probably as wide around as my neck, held together in a rubber band stretched so thin you can see the discolored strands where it's desperately trying to snap apart."
 
 
-roman “You’re trying to pay me...in cash?”
+roman "You’re trying to pay me...in cash?"
 
 
-eris p1 e6 “I thought you’d appreciate the sentiment at least.”
+eris p1 e6 "I thought you’d appreciate the sentiment at least."
 
 
-roman “What…?”
+roman "What…?"
+
+roman "You...uh, want me to smuggle you south of the border, or something?"
  
-Roman "You...uh, want me to smuggle you south of the border, or something?"
+roman "'Cause if you got in shit with some scary individuals, I'm telling you right now, you're on your own."
  
-Roman "'Cause if you got in shit with some scary individuals, I'm telling you right now, you're on your own."
+eris p2 e7 "Why, aren't you hilarious?"
  
-Eris p2 e7 "Why, aren't you hilarious?"
- 
-Eris p1 e1 "Now, take it."
+eris p1 e1 "Now, take it."
 
 
-“It’s funny how irony works.”
+"It’s funny how irony works."
  
 "Now I'm the one who's moving like they're trying to get past a sleeping tiger. Slowly, carefully, lifting my hand towards her before snatching the cash and pulling it back towards me."
  
@@ -269,54 +270,54 @@ Eris p1 e1 "Now, take it."
  
 "Besides, Eris actually looks genuine. I think that scares me more than anything else."
  
-Roman "…"
+roman "…"
  
-Roman "…okay."
+roman "…okay."
  
-Roman "Mind me asking what this is for?"
+roman "Mind me asking what this is for?"
  
-Eris p1 e6 "Our bet."
+eris p1 e6 "Our bet."
  
 "I stare at her, confusedly."
  
-Roman "What, you mean like ---"
+roman "What, you mean like ---"
  
-Eris "Yup. From way back then."
+eris "Yup. From way back then."
  
-Roman "Like, the one we had about ---?"
+roman "Like, the one we had about ---?"
  
-Eris "That one."
+eris "That one."
  
 "My eyes dart from the money to Eris' face and back, mind still racing."
  
-Roman "…I didn't win it."
+roman "…I didn't win it."
  
-Roman "I mean, if anyone {i}did{/i} win, it was you, no?"
+roman "I mean, if anyone {i}did{/i} win, it was you, no?"
  
-Roman "Your system's the one that actually worked."
+roman "Your system's the one that actually worked."
  
-Eris p1 e1 "But only with your help. And not the way I planned it in first place."
+eris p1 e1 "But only with your help. And not the way I planned it in first place."
  
-Eris "I tried justifying this to myself in all kinds of ways, but the truth is, I just can't think of that as my victory. The point was to show who was better at this, right?"
+eris "I tried justifying this to myself in all kinds of ways, but the truth is, I just can't think of that as my victory. The point was to show who was better at this, right?"
  
-Roman "…I feel like that depends a lot on what 'this' is."
+roman "…I feel like that depends a lot on what 'this' is."
  
 "She shrugs, looking the other way and sucking the occasional bubble out of her e-cig."
 
 
-Hide Eris
+hide eris
  
 "For a while, both of us just stand there, in silence."
  
-“A minute passes…”
+"A minute passes…"
 
 
-“Then two…”
+"Then two…"
 
 
-I decide it'd be smartest to put the money safe in my pocket, at least for the time being --- but other than that, neither of us is moving."
+"I decide it'd be smartest to put the money safe in my pocket, at least for the time being --- but other than that, neither of us is moving."
  
-“It’s almost like I’m expecting Eris to object. Change her mind at the last moment."
+"It’s almost like I’m expecting Eris to object. Change her mind at the last moment."
  
 "Nothing."
  
@@ -326,13 +327,13 @@ I decide it'd be smartest to put the money safe in my pocket, at least for the t
  
 "I decide to be the one to speak first."
  
-Roman "This is way, {i}way{/i} more than I expected."
+roman "This is way, {i}way{/i} more than I expected."
  
-show Eris p1 e1 at middleright
+show eris p1 e1 at middleright
  
-Eris "I know. You've helped a lot with the upgrades."
+eris "I know. You've helped a lot with the upgrades."
  
-"Her voice is flat, casual, and businesslike. The tone you'd use to tell someone that, yes, it is now 4:15. The bus will be showing up soon.”
+"Her voice is flat, casual, and businesslike. The tone you'd use to tell someone that, yes, it is now 4:15. The bus will be showing up soon."
  
 "Definitely not the one I'd use if I'd just given someone the kind of money that...well normally goes in a briefcase. Typically on a table alongside a pistol and the head of gagged policeman."
  
@@ -345,69 +346,68 @@ Eris "I know. You've helped a lot with the upgrades."
 "Getting a new car."
 
 
-“Or finally…”
+"Or finally…"
 
 
-“...”
+"..."
  
 "Running away from this place."
  
-Roman "You know ---"
+roman "You know ---"
  
-eris p3 e8
+show eris p3 e8
 
+roman "It'd feel really shitty having to look you in the face every day after taking this much ---"
 
-Roman "It'd feel really shitty having to look you in the face every day after taking this much ---"
- 
 "I raise my eyes to look at her face."
  
 "Before I can finish the sentence, realization coalesces in my chest like tumor."
  
 "Heavy and sticky and painful and huge."
  
-Eris "Don't worry about it. It won't be a problem."
+eris "Don't worry about it. It won't be a problem."
  
 "Silence."
  
 "The two of us turn to look away from each other."
  
-Roman "…Where do you plan to go?"
+roman "…Where do you plan to go?"
  
 "I can hear her clothes shifting in discomfort."
  
-Eris p1 e1 "Dunno yet. Just started really looking at stuff."
+eris p1 e1 "Dunno yet. Just started really looking at stuff."
  
-Eris "I've been thinking about this for a while. Way since the last time we've… you know. Talked."
+eris "I've been thinking about this for a while. Way since the last time we've… you know. Talked."
  
 "I nod, slowly, wondering if I should say something that wouldn’t really mean anything in the end."
  
-Eris p2 e4 "You were right the whole time, Roman."
+eris p2 e4 "You were right the whole time, Roman."
  
-Eris "This isn't the place for me. I’m not sure what is, but I’m now sure that this isn't it."
+eris "This isn't the place for me. I’m not sure what is, but I’m now sure that this isn't it."
  
-Eris "This is your place. It's always been. I just intruded on it because I --- I dunno, it seemed like a good idea at the time. Honestly, I can't…"
+eris "This is your place. It's always been. I just intruded on it because I --- I dunno, it seemed like a good idea at the time. Honestly, I can't…"
  
-eris p3 e8
+show eris p3 e8
  
-Eris "I don't know what I was thinking."
+eris "I don't know what I was thinking."
  
-Eris "Maybe I could really devote myself back at ARTech."
+eris "Maybe I could really devote myself back at ARTech."
  
 eris  "But without the team I used to have..."
  
-Show Eris p1 e1
+show eris p1 e1
  
-Eris "No. I think I plan on looking into a company where I can start out a bit more humble.”
+eris "No. I think I plan on looking into a company where I can start out a bit more humble."
  
-Eris "There’s a lot I still need to improve on, and I can’t expect others to do the work for me. I can’t overwork myself with two jobs again either. "
+eris "There’s a lot I still need to improve on, and I can’t expect others to do the work for me. I can’t overwork myself with two jobs again either. "
 
 
-Eris "I’m ready to forge a life for myself that I can finally take full control of.”
+eris "I’m ready to forge a life for myself that I can finally take full control of."
 
 
-Show Eris p2 e7
+show eris p2 e7
  
-Eris "With a few thousand tech companies on this side of town alone, there's bound to be one that'd be able to fit my criteria."
+eris "With a few thousand tech companies on this side of town alone, there's bound to be one that'd be able to fit my criteria."
  
 "I squint at her, like that'd somehow make it so I could really see into her."
  
@@ -415,58 +415,57 @@ Eris "With a few thousand tech companies on this side of town alone, there's bou
  
 "I don’t know whether or not that smile is real, but in the end I know that she’s serious."
  
-Roman "And all that, just because of what I said last time?"
+roman "And all that, just because of what I said last time?"
  
-Eris p1 e6 "You don't need to apologize about that. Water under the bridge."
+eris p1 e6 "You don't need to apologize about that. Water under the bridge."
  
-Eris "Like, you {i}could{/i} if you want to, but I'm not going to keep a grudge if you don't."
+eris "Like, you {i}could{/i} if you want to, but I'm not going to keep a grudge if you don't."
  
-Eris "You said some mean stuff, I'm not gonna lie, but most of it was true. There’s no point to me working if I don’t know why, and I’m not going to keep living that kind of unfulfilled life.”
+eris "You said some mean stuff, I'm not gonna lie, but most of it was true. There’s no point to me working if I don’t know why, and I’m not going to keep living that kind of unfulfilled life."
+
+eris p1 e2 "I still don’t buy into the entire ‘work should be fun’ lecture you gave me, but the gist of it was pretty on the spot."
 
 
-Eris p1 e2 “I still don’t buy into the entire ‘work should be fun’ lecture you gave me, but the gist of it was pretty on the spot.”
+eris  p1 e1 "It made me realize that all this time I’ve been mostly… I don’t know how to say it without sounding like a moron. Kind of like… I was only driven forward by inertia, you know what I mean?"
 
 
-Eris  p1 e1 “It made me realize that all this time I’ve been mostly… I don’t know how to say it without sounding like a moron. Kind of like… I was only driven forward by inertia, you know what I mean?”
+eris "I never could stop myself from pushing forward, so I just kept doing that. For years and years and years."
 
 
-Eris “I never could stop myself from pushing forward, so I just kept doing that. For years and years and years.”
+eris "Never really knowing where I was pushing myself to."
 
 
-Eris “Never really knowing where I was pushing myself to.”
+eris p1 e10 "I never thought about it until now, but you know what? Maybe I’ve been following you all this time because you just seemed to be so good at that."
 
 
-Eris p1 e10 “I never thought about it until now, but you know what? Maybe I’ve been following you all this time because you just seemed to be so good at that.”
+eris p1 e6 "Not always doing the right thing or the smart thing, but at least doing {i}your{/i} thing. That’s pretty cool. A little stupid, but cool."
 
 
-Eris p1 e6 “Not always doing the right thing or the smart thing, but at least doing {i}your{/i} thing. That’s pretty cool. A little stupid, but cool.”
+eris "So now that I’ve gone and figured it out…"
 
 
-Eris “So now that I’ve gone and figured it out…”
-
-
-Eris p1 e1 “Only logical thing to do now get off my ass and do something."
+eris p1 e1 "Only logical thing to do now get off my ass and do something."
  
-Roman "Like leaving Arcady."
+roman "Like leaving Arcady."
  
 "She nods."
  
-Roman "So all that money…?"
+roman "So all that money…?"
  
-Eris p2 e7 "Some of us can be responsible adults, you know. I didn’t just go off wasting what we've been making every month."
+eris p2 e7 "Some of us can be responsible adults, you know. I didn’t just go off wasting what we've been making every month."
  
-Roman "These are your {i}savings{/i}?"
+roman "These are your {i}savings{/i}?"
  
-Eris p1 e1 "Relax, it's not all of them. I'm not {i}that{/i} thankful."
+eris p1 e1 "Relax, it's not all of them. I'm not {i}that{/i} thankful."
  
-Eris "Just a little something for showing me the way, plus what I owe you for the bet. Most of it's just my last paycheck --- Parker gave me this huge ass bonus for what we've done, and I wouldn't have known what to do with it anyway."
+eris "Just a little something for showing me the way, plus what I owe you for the bet. Most of it's just my last paycheck --- Parker gave me this huge ass bonus for what we've done, and I wouldn't have known what to do with it anyway."
  
-Eris "You said so yourself. I don't have anything I like to do. I want to fix that."
+eris "You said so yourself. I don't have anything I like to do. I want to fix that."
  
-eris p3 e9
+show eris p3 e9
 
 
-"Eris bites her lip in what looks, for a moment, like an expression of uncertain melancholy. Like her previous, cheerful smile was just the mask that she wanted me to see.”
+"Eris bites her lip in what looks, for a moment, like an expression of uncertain melancholy. Like her previous, cheerful smile was just the mask that she wanted me to see."
  
 "Then, in the span of an eye blink, the moment's gone."
  
@@ -476,23 +475,23 @@ Roman "Good luck with that."
  
 "She nods then turns off the e-cig, waving in front of her face to disperse the vapors."
  
-Eris p1 e6 "I'm going to try my best. I'll stay here for a couple more days, but after that, you won't have to see me again."
+eris p1 e6 "I'm going to try my best. I'll stay here for a couple more days, but after that, you won't have to see me again."
  
-Eris "You could have it like you should've: you and Parker, and this place. And the upgrade we installed, but that was the two of us, right?"
+eris "You could have it like you should've: you and Parker, and this place. And the upgrade we installed, but that was the two of us, right?"
  
-Eris "Maybe without me getting in your way you'll be able to make more of it. I know you have it in you, when you do what you want. You could probably make this a really great club."
+eris "Maybe without me getting in your way you'll be able to make more of it. I know you have it in you, when you do what you want. You could probably make this a really great club."
  
 "Stowing away her cig, she pushes herself off the wall and heads back towards the Arcady door.."
  
 # sound effect backdooropen.ogg
  
-Show Eris p2 e7
+show eris p2 e7
  
-Eris "Good luck Roman."
+eris "Good luck Roman."
  
-Eris "You keep doing you."
+eris "You keep doing you."
  
-Hide Eris
+hide eris
  
 # sound effect backdoorclose.ogg
  
@@ -516,10 +515,10 @@ Hide Eris
  
 "I wanted this. I've won."
  
-"I got enough money to leave this all behind stuffed inside my jacket. 
+"I got enough money to leave this all behind stuffed inside my jacket."
 
 
-“Eris' just went and flat out told me I was right, that she's going away from here ---"
+"Eris' just went and flat out told me I was right, that she's going away from here ---"
  
 "I'll have this place to myself now. Much as it ever could've been, in any case. The way I planned since the beginning."
  
@@ -531,7 +530,7 @@ Hide Eris
  
 "The circle of ash is still there. Smeared across the asphalt the one part my feet had broken through it."
  
-Roman "Some genie I am."
+roman "Some genie I am."
  
 "I whisper it out for no one."
  
