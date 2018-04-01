@@ -190,8 +190,8 @@ label A1_05_c:
     show eris p2 e3 at transform_hide
     hide eris
     "After the brief shake I turn to go. Eris doesn't stop me."
-	stop dynamic_1 fadeout 1.0
-	stop dynamic_2 fadeout 1.0
+    stop dynamic_1 fadeout 1.0
+    stop dynamic_2 fadeout 1.0
     return
 
 label A1_05_r:
@@ -206,7 +206,7 @@ label A1_05_r:
     roman "Seriously though... Why not say something at the time instead of just putting me down? That's how it's {i}always{/i} been with you."
     eris p1 e1 "...What are you talking about?"
     stop dynamic_1 fadeout 10.0
-	stop dynamic_2 fadeout 10.0
+    stop dynamic_2 fadeout 10.0
     roman "Oh my god, why do you keep pretending like there's no history?"
     eris p2 e5 "Because I literally have no idea what you're talking about or what's wrong with you right now, Roman!"
     eris "Just like last time, you're being a dick--and from my point of view, it's for absolutely no reason whatsoever."

@@ -1,7 +1,7 @@
 ﻿label A1_04:
     scene bg_club_2_before_work with Dissolve(0.5)
     $ queue_music(music_four1)
-    $ crossfade_music(0.0, 1.0, 0)
+    $ crossfade_music(0.0, 1.0, 0.0)
     "It was almost humiliating to come back to work today. Last night was a disaster of unbelievable proportions." 
     "It has often been said that 'no plan survives contact with the enemy,' but my idea did more than just {i}not{/i} survive. It was crushed. Demolished. Burned to the ground like it had killed someone's loved one."
     "It taught me what Parker's like when angry, a lesson I could've done without."
@@ -248,8 +248,8 @@
     roman "Sure thing."
     show parker p1 e1 at transform_hide
     hide parker
-	stop dynamic_1 fadeout 5.0
-	stop dynamic_2 fadeout 5.0
+    stop dynamic_1 fadeout 5.0
+    stop dynamic_2 fadeout 5.0
     "Tonight was a disaster, one that I should ultimately feel happy about."
     "Eris's plan was crushed. Demolished. Burned to the ground like it had killed someone's loved one."
     "I guess..."
