@@ -256,6 +256,9 @@ screen main_menu():
     style_prefix "main_menu"
     add "gui/main_menu.png" # TODO
 
+    $ renpy.music.stop("dynamic_1", fadeout = 1.5)
+    $ renpy.music.stop("dynamic_2", fadeout = 1.5)
+
     frame:
         pass
 

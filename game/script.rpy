@@ -1,5 +1,4 @@
 # Game entrypoint.
-$ config.developer = True
 
 label start:
     # First, initialize story-progression variables. There's no real reason to do this, but it's
@@ -10,17 +9,6 @@ label start:
 
         scene_5_rivalry = True
         scene_5_cooperation = True
-
-    if config.developer:
-        $ renpy.watch("cooperation")
-        $ renpy.watch("rivalry")
-        $ renpy.watch("scene_5_rivalry")
-        $ renpy.watch("scene_5_cooperation")
-        $ renpy.watch("current_music")
-        $ renpy.watch("queued_music")
-        $ renpy.watch("renpy.music.get_pos(channel = 'dynamic_1')")
-        $ renpy.watch("renpy.music.get_pos(channel = 'dynamic_2')")
-        $ renpy.watch("_game_menu_screen")
 
     call A1_01
     call A1_02

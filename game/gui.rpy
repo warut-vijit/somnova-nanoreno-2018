@@ -50,3 +50,32 @@ define gui.unscrollable = "hide"
 
 # The number of blocks of dialogue history Ren'Py will keep.
 define config.history_length = 250
+
+##########################################
+##---------------SPLASH-----------------##
+##########################################
+
+image logo = "gui/logo.png"
+image splash_movie = Movie(play = "gui/intro.webm")
+
+label splashscreen:
+    show bg_black
+    show splash_movie at splash_movie with Pause(6)
+    hide splash_movie
+    show logo at splash_centered with Pause(4)
+    return
+
+transform splash_movie:
+    alpha 1.0
+    on show:
+        linear 5 alpha 1.0
+        linear 1 alpha 0.0
+
+transform splash_centered:
+    xcenter 0.5
+    ycenter 0.5
+    alpha 0.0
+    on show:
+        linear 1 alpha 1.0
+        linear 2 alpha 1.0
+        linear 1 alpha 0.0

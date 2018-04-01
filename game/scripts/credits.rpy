@@ -35,8 +35,6 @@ init python:
     ]
 
 init:
-    image credits_logo = "gui/credits.png"
-
     image credits_text_left = Text(
         "\r\n".join(x[0] for x in credits_texts),
         color = gui.active_text_color,
@@ -76,7 +74,7 @@ label end_credits:
     show bg_black
     $ renpy.pause(2, hard = True)
     $ queue_music(music_nine2, False)
-    show credits_logo at credits_logo
+    show logo at credits_logo
     show credits_text_left at credits_text
     show credits_text_right at credits_text
     show credits_text_end at credits_text

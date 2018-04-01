@@ -5,7 +5,7 @@
 # The _() marks the string as translatable, should we want that in the future.
 define config.name = _("Arcadia")
 
-define config.version = "0.1.0 beta"
+define config.version = "1.0.0"
 
 # Text that is placed on the game's about screen. To insert a blank line
 # between paragraphs, write \n\n.
@@ -75,7 +75,7 @@ define config.save_directory = "arcadia-218-1519786094"
 
 #define config.window_icon = "images/emblem_icon.png"
 # This icon should be used for non-final builds.
-define config.window_icon = "images/emblem_icon_dev.png"
+define config.window_icon = "images/emblem_icon.png"
 
 ##########################################
 ##--------BUILDING/DISTRIBUTION---------##
