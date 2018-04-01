@@ -1,3 +1,5 @@
+init offset = -3
+
 # DynamicMusic is a custom class I defined in dynamicmusic.rpy.
 # file_names is an array of up to two files which have identical timing (i.e. can be crossfaded between).
 # stop_points is a list of points at which the song can be stopped (in seconds).
