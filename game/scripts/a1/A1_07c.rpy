@@ -6,7 +6,7 @@
     "It's same as it always was, except now something feels different. Time's getting all funky in very unfamiliar ways."
     "For the first time in my life I'm able to slow down and breathe. There isn't any crazy expectation to prove myself now, both myself and Eris failed what we were setting out to do."
     "And at the same time, unless I'm paying attention, it feels like life's passing me by in a nonchalant haze."
-    "I come to work in the evening, spend what feels like seconds waiting tables, cleaning the floor, listening to Eris' sing for really the first time, and then...bam: it's morning. All that time implodes into one instant 'nothing has changed', but..."
+    "I come to work in the evening, spend what feels like seconds waiting tables, cleaning the floor, listening to Eris sing for really the first time, and then...bam: it's morning. All that time implodes into one instant 'nothing has changed', but..."
     "I get back home feeling better than I have been in a long time, strangely without having actually {i}accomplished{/i} anything different."
     "Either something's gone weird with some high-energy quantum whatchamacallit at the nearest university--"
     "--or I'm sinking into a routine again. Only comfortably this time."
@@ -264,7 +264,7 @@
     roman "You can...holler if you need me. Just be sure to take some time and rest when you can."
     eris p1 e10 "You can count on it."
     show eris p1 e10 centered
-    hide eris
+    hide eris with Dissolve(0.25)
     "And just like that, she's back to work again."
     "Yet overall I'd say that went..."
     "Well."

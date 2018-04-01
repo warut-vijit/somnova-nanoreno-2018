@@ -91,7 +91,7 @@
     "Even if she might be trying a little too hard, it's still a nice sentiment."
     roman "I'm gonna get ready for my shift, so I'll catch you later."
     eris "Later!"
-    hide eris
+    hide eris with Dissolve(0.25)
     "Thankfully, I don't really have to do much to prepare. Today's shift isn't anything out the ordinary."
     "There are no big performances scheduled, or any special events for that matter, so there aren't as many people to worry about right now."
     "I let another staffer manage the regulars and decide to take the time to simply clean up the empty tables during this lull in activity."

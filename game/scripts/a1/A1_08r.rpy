@@ -125,7 +125,7 @@
     parker "Just left my wallet."
     "He gestures towards the office, shuffling past me."
     "As he comes back out, flapping his wallet, he look at me in the face, apparently for the first time since re-entering the bar."
-    parker "You okay there, Roman? You Rdon't look great."
+    parker "You okay there, Roman? You don't look great."
     "I make a vague attempt to adjust my face into a more ok--looking configuration, and feel it failing."
     roman "Yeah."
     roman "Well, no. But yeah."
