@@ -62,7 +62,7 @@ label A1_03:
     roman "--phew!"
     "Exercising what little grace can be humanely mustered while carrying a load in two hands, I deftly manage to very nearly avoid killing myself in a very stupid way as I tumble backwards."
     show parker p1 e1 at centered
-    parker "What with all the noise out--"
+    parker "What's with all the noise out--"
     parker "Roman?"
     "Parker's eyes move confusedly first to the box, then my face peeking out from behind it, then, with a stretch of the neck, to my car, then right back to the box, then to me."
     "His eyebrow rises by a fiendish, all-too familiar, fraction of a centimeter."
@@ -247,6 +247,7 @@ label A1_03:
     roman "Pebbles."
     eris "Pebbles. You put pebbles in my whiskey."
     roman "Indeed I did. Special, drinking pebbles"
+
     eris p2 e5 "W--"
     eris "Why would you--"
     eris "Why would you put special pebbles in whiskey? Do you have pebbles in your whiskey right now?"
