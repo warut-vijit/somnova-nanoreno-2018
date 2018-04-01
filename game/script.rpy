@@ -20,6 +20,7 @@ label start:
         $ renpy.watch("queued_music")
         $ renpy.watch("renpy.music.get_pos(channel = 'dynamic_1')")
         $ renpy.watch("renpy.music.get_pos(channel = 'dynamic_2')")
+        $ renpy.watch("_game_menu_screen")
 
     call A1_01
     call A1_02
@@ -38,5 +39,7 @@ label start:
         call A1_07r
         call A1_08r
         call A1_09r
+
+    call end_credits
 
     return

@@ -1,4 +1,5 @@
 ﻿init offset = -1
+default hide_quick_menu = False
 
 ##########################################
 ##----------------STYLES----------------##
@@ -123,27 +124,28 @@ style choice_button_text:
 ##########################################
 
 screen quick_menu():
-    # The quick menu lords over other puny screens.
-    zorder 100
-    frame:
-        background LiveTile("gui/quick_menu_bar.png")
-        ysize 80
-        xfill True
-        yanchor 1.0
-        yoffset 1080
+    if not hide_quick_menu:
+        # The quick menu lords over other puny screens.
+        zorder 100
+        frame:
+            background LiveTile("gui/quick_menu_bar.png")
+            ysize 80
+            xfill True
+            yanchor 1.0
+            yoffset 1080
 
-    hbox:
-        style_prefix "quick_left"
-        textbutton _("AUTO") action Preference("auto-forward", "toggle")
-        textbutton _("SKIP") action Skip() alternate Skip(fast = True, confirm = True)
-        textbutton _("MUTE") action Preference("all mute", "toggle")
-        
-    hbox:
-        style_prefix "quick_right"
-        textbutton _("MENU") action ShowMenu("options")
-        textbutton _("LOAD") action ShowMenu("load")
-        textbutton _("SAVE") action ShowMenu("save")
-        textbutton _("HISTORY") action ShowMenu("history")
+        hbox:
+            style_prefix "quick_left"
+            textbutton _("AUTO") action Preference("auto-forward", "toggle")
+            textbutton _("SKIP") action Skip() alternate Skip(fast = True, confirm = True)
+            textbutton _("MUTE") action Preference("all mute", "toggle")
+            
+        hbox:
+            style_prefix "quick_right"
+            textbutton _("MENU") action ShowMenu("options")
+            textbutton _("LOAD") action ShowMenu("load")
+            textbutton _("SAVE") action ShowMenu("save")
+            textbutton _("HISTORY") action ShowMenu("history")
 
 init python:
     config.overlay_screens.append("quick_menu")
