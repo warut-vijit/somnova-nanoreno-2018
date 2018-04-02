@@ -7,10 +7,10 @@
     "It taught me what Parker's like when angry, a lesson I could've done without."
     "After last night's hilarious little mess-up, I've already braced myself to see either of two things as soon as I arrived: Parker's disappointed frown... or Eris's victorious grin."
     "I'd sooner jump off a cliff in a tutu than let her get under my skin and rub this in my face."
-    "{i}Our 'competition' has barely begun{/i}, I've tried to tell myself.{i}I'll have the last laugh all the same.{/ i}"
+    "{i}Our 'competition' has barely begun{/i}, I've tried to tell myself. {i}I'll have the last laugh all the same.{/ i}"
     "I'd have other ideas eventually. Better ones, even."
     "But... after all that, I've realized it's all a bit pointless in the end."
-    "I'll just end up where I started, and just accumulate another embarrassment."
+    "I'll just end up where I started and just accumulate another embarrassment."
     $ crossfade_music(1.0, 0.0, 5.0)
     "So screw the bet, if Eris wants to gloat then I can tell her right where to shove it." 
     "And besides... there's still some solace in returning back to ARTech."

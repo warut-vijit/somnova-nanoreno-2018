@@ -8,7 +8,7 @@ label A1_03:
     play audio navcomp
     navcomp "Are you trying to park in reverse?"
     "The navcomp's saccharine, hotel-receptionist voice pulls me out of my moment."
-    roman "Nah. Just felt like trying something new. I'm actually in the middle of a traffic jam. Gonna ram into the back of that asshole in the gas-guzzler right about... now~"
+    roman "Nah. Just felt like trying something new. I'm actually in the middle of a traffic jam. Gonna ram into the back of that asshole in the gas-guzzler right about... now--"
     "The navcomp goes silent for a blissful second. Checking with the satellite, I bet. Gotta be cautious when the human's driving."
     "Hope it's not calling my insurance provider."
     play audio navcomp
@@ -61,7 +61,7 @@ label A1_03:
     scene bg_back_alley with hpunch
     roman "Oh crap oh crap oh crap--"
     roman "--phew!"
-    "Exercising what little grace can be humanely mustered while carrying a load in two hands, I deftly manage to very nearly avoid killing myself in a very stupid way as I tumble backwards."
+    "Exercising what little grace can be humanly mustered while carrying a load in two hands, I deftly manage to very nearly avoid killing myself in a very stupid way as I tumble backwards."
     show parker p1 e1 at centered
     parker "What's with all the noise out--"
     parker "Roman?"

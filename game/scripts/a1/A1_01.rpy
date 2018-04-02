@@ -21,7 +21,7 @@ label A1_01:
     "I guess you could call me a hipster, but I wouldn't be offended if you did."
     "I like the way people did things back in the 90s and the Aughts--without bunch of bombardment by shiny tech that commands your attention 24/7."
     "And that's what this place--the Arcady Jazz Club--is all about."
-    "I got a job as a waiter here mainly because I wanted to soak in this atmosphere; a breath of fresh air away from the stagnant city outside."
+    "I got a job as a waiter here mainly because I wanted to soak in this atmosphere--a breath of fresh air away from the stagnant city outside."
     "Parker, my boss, manages this club exactly the way I like it. He's cultivated a unique atmosphere."
     show parker p1 e1 at centered
     parker "Good afternoon, Roman. Good to see you. Ready for another night shift?"
@@ -50,9 +50,9 @@ label A1_01:
     customer_a "I wonder if she's performing here tonight..."
     customer_b "She said in her last vlog that she's working on getting a second gig ready by this week."
     customer_a "Yeah? Sweet, it'd be nice to meet her."
-    "I wonder if they're talking about that new waitress-slash-vocalist. Who is she, I wonder?"
-    "Even without AR rigs, I barely follow much of the way of pop artists. Maybe she's famous?"
-    "Though why would she want to work here anyway?"
+    "I wonder if they're talking about that new waitress-slash-vocalist. Who is she, I wonder...?"
+    "Even without AR rigs, I barely follow much of the way of pop artists. Maybe she's famous...?"
+    "Though, why would she want to work here anyway?"
     "..."
     "Whatever. If Parker says it'll bring a crowd, I guess I'll play along."
     show parker p1 e1 at centered
@@ -65,7 +65,7 @@ label A1_01:
     hide parker
     play audio lightfootsteps
     "True to his word, in a few moments I catch the sound of footsteps approach me from behind."
-    "I turn around and catch sight of just who it is that I'll be working with."
+    "I turn around and catch sight of just who it is whom I'll be working with."
     # TODO: CG1
     show eris p1 e6 at centered
     "She's wearing our uniform, but the sleeves are made of a trendy semi-transparent fabric."
@@ -87,15 +87,15 @@ label A1_01:
     "I got lazy and decided I could save money by not shaving."
     "And she knows it."
     # TODO: p3 e1 doesn't exist.
-    eris "So, want to show me around or...?"
-    # eris p3 e1 "So, want to show me around or...?"
+    eris "So, want to show me around, or...?"
+    # eris p3 e1 "So, want to show me around, or...?"
     "What the fuck are you doing here?"
     "A million questions are racing through my head, but..."
     "Knowing Parker, and especially knowing Eris, I do my best to push away the ensuing conflict."
     "The topic will come up eventually down the line."
     roman "Just gimme a sec with this."
     eris p2 e3 "What is it?"
-    roman "An AR platform parker bought a few months ago. Says it's for you."
+    roman "An AR platform Parker bought a few months ago. Says it's for you."
     # TODO: p2 e10 doesn't exist.
     eris "What, that old thing? That's at least two years out of date."
     # eris p2 e10 "So, want to show me around or...?"

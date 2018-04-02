@@ -18,7 +18,7 @@ label A1_02:
     parker "Morning, Roman."
     roman "Good morning, Parker."
     play audio mop_bucket
-    "I make my way hastily to the cupboard behind the bar and grab a bucket and mop from underneath it to begin the day's work."
+    "I make hastily my way to the cupboard behind the bar and grab a bucket and mop from underneath it to begin the day's work."
     parker "Did you sleep all right?"
     roman "Uh..."
     "I was hoping my attempts at looking busy might reduce the risk of smalltalk. No such luck."
@@ -53,12 +53,12 @@ label A1_02:
         "Seriously. That's all it was. Just coworkers.":
             $ cooperation += 1
             $ scene_5_cooperation = False
-            call just_coworkers
+            call just_coworkers from _call_just_coworkers
         
         "Fine. She made my time at my old place a living hell.":
             $ rivalry += 1
             $ scene_5_rivalry = False
-            call living_hell
+            call living_hell from _call_living_hell
     
     play audio mop_bucket
     "I do as he says, taking up the mop I'd left leaning against the side of the bucket. As Parker disappears into the back office, I'm left pondering the honesty of my own words."
@@ -124,14 +124,14 @@ label A1_02:
     "I get a punch in the shoulder for my trouble, to which Parker turns a blind eye."
     eris p1 e1 "Do you have {i}any{/i} idea the numbers that you'd like to see?"
     parker "Not really. I just feel like the club isn't really keeping up with the times, so maybe a new change could do some good with the establishment."
-    parker "It's not a coincidence that I've recently hired on a new AR performer such as yourself Eris. I just like to do what I can to provide a great service for my customers."
+    parker "It's not a coincidence that I've recently hired on a new AR performer such as yourself, Eris. I just like to do what I can to provide a great service for my customers."
     "My mind is still racing over the idea that Eris is performing as a singer, but this entire conversation is beginning to bug the hell out."
     roman "Who cares about whether or not we're keeping up with the times?"
     roman "We play jazz and serve decent booze. What needs to change?"
     "Parker opens his mouth to speak, but doesn't get a chance to before Eris cuts in."
     eris p2 e4 "You can't expect people to keep coming back for the same old stuff every day. People like different things, and something {i}new{/i} and exciting might be exactly what this place needs!"
     "Of course, like always, she would direct attention to herself."
-    roman "Well, they're definitely not going to keep coming back if this place, a jazz club, stops playing jazz!"
+    roman "Well, they're definitely not going to keep coming back if this place--a jazz club--stops playing jazz!"
     show eris p2 e5
     parker p1 e2 "Before you two keep going on, I really just need a definitive and solid idea to work from."
     parker p1 e1 "Is that something you could potentially work together on?"
@@ -221,7 +221,7 @@ label A1_02:
     "Now agitated, Eris slips a hand inside her pocket and pulls out a sleek, black e-cigarette."
     roman "You know you can't do that indoors."
     eris p1 e1 "And you're not allowed to drink. At least I'm not breaking one of Parker's rules."
-    "Eris inhales the smoke and I frustratingly gulp down whiskey that's become warmer from the heat of a tense grip."
+    "Eris inhales the vapor and I frustratingly gulp down whiskey that's become warmer from the heat of a tense grip."
     "After her long inhale she produces a thick, white cloud from her nose and mouth. Oddly it doesn't smell sickly sweet like e-cigarette vapour usually does.."
     roman "Is that tobacco flavored? Do they really still make those for E-cigs?"
     eris p2 e7 "You aren't the only one who can appreciate the past."

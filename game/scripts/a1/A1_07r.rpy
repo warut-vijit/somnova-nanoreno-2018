@@ -42,9 +42,9 @@
     roman "Online shopping while at work? What's the matter, kicked out of your place?"
 
     if scene_5_cooperation:
-        call A1_07r_c
+        call A1_07r_c from _call_A1_07r_c
     else:
-        call A1_07r_r
+        call A1_07r_r from _call_A1_07r_r
 
     show eris p2 e7 at centered
     eris "So, remember how my last plan failed because it turned out Arcady doesn't have the electronic infrastructure to pull it off?"

@@ -101,7 +101,7 @@
     eris p3 e8 "You got me."
     eris p1 e1 "I was hopeful."
     roman "I still don't really understand why. I have my life, and you have yours. Why does what I do with mine matter to you?"
-    eris "I don't really know, and frankly I don't want to talk about it again. This topic always seems to end with an argument."
+    eris "I don't really know, and frankly, I don't want to talk about it again. This topic always seems to end with an argument."
     eris "I'm not going to ask you to come back to ARTech again. I promise."
     eris "I mean, it would be pointless, wouldn't it?"
     roman "Didn't you pretty much just ask me if I'd come back again in saying that, though?"
