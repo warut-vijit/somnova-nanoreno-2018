@@ -153,7 +153,7 @@ label A1_03:
     "Probably taking pics and posting them all over the net."
     "I keep one eye on my work and one eye on the slowly gathering crowd as the club begins to slowly come to life."
     "Much as I want to start this already, I know I'll only get one shot at a real fancy opening, and I don't want to waste on a partial audience."
-    "In the meantime, I make use of whatever lulls in the action I can risk setting up the stage and connecting the mic. Kinda disappointing that this is kind of tech is mostly just plug-and-play."
+    "In the meantime, I make use of whatever lulls in the action I can risk setting up the stage and connecting the mic. Kinda disappointing that this kind of tech is mostly just plug-and-play."
     "Slowly but surely more and more seats are taken. The static noise of conversations and laugher grows louder and less distinct. Parker's now spending more time handing out drinks than chatting with drinkers."
     "This is it. Just a little while longer now."
     "I had over to Parker's for a few final preparations. He's just finished pouring one of the early-comers what has to be their third mug already, so he should have a free moment."
@@ -363,7 +363,7 @@ label A1_03:
     parker "Off of each glass, yes, but you bought enough whiskey to fill a bathtub!"
     show parker p1 e2 at centered
     "Parker raises a finger towards me that looks almost accusatory."
-    parker "To you, this whiskey is 'old-school' and 'hip' and whatever it you're thinking. That's fine."
+    parker "To you, this whiskey is 'old-school' and 'hip' and whatever it is you're thinking. That's fine."
     parker "To most of these people, though?"
     parker "This is going to sound terrible, but as a bartender, I can tell you for a fact that to most of those people, your expensive, gold label, real-deal whiskey is {i}just another drink{/i}."
     parker "It's tasty and it's nice, but you know what else is? Eris' awful kiwi mojitos. Or Mexican corn beer, for that matter."
