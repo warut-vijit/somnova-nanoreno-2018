@@ -188,7 +188,7 @@ eris p2 e5 “I can handle it, Roman.”
  
 "I’m incredibly pissed off right now.”
  
-"I guess it’s not even her fault, that’s just how she is, but the monotony of the work day begins to overwhelm me "
+"I guess it’s not even her fault, that’s just how she is, but the monotony of the work day begins to overwhelm me."
  
 "I haven't felt like this since my time over at ARTech."
  
