@@ -103,8 +103,8 @@ eris "Not at all! It’s what’s on the screen that I’m about to present to y
 parker p1 e1
 "She does a quick double-tap, showing us an elaborate setup of electronics and assorted components."
 Eris p1 e1 "I couldn’t help but notice how...rundown the club’s current AR platform is when it comes to catering our customer’s virtual interface."
-"{i}My{/i} proposal was to upgrade it with a new program that I’ve been developing over at ARTech, something that’ll make AR in this club far more efficient than ever before!"
-"You don’t even need to worry about cost - these are all my components that I’ve had approved to bring over here. Consider it a ‘donation’ of sorts from yours truly."
+eris "{i}My{/i} proposal was to upgrade it with a new program that I’ve been developing over at ARTech, something that’ll make AR in this club far more efficient than ever before!"
+eris "You don’t even need to worry about cost - these are all my components that I’ve had approved to bring over here. Consider it a ‘donation’ of sorts from yours truly."
 parker p1 e3
 "Parker’s eyebrows shoot up at the mention of ‘donation’."
 parker "Eris, that’s… very generous of you. But this won’t change anything too distract with[a] our club’s system, right?"
