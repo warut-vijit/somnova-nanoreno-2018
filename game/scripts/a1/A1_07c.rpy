@@ -45,9 +45,9 @@
     "I pull out my phone to check. Through the display, the myriad windows and screen floating in the air in front of her become clear."
     roman "Online shopping while at work? What's the matter, Parker forcing too much overtime on you?"
     if scene_5_rivalry:
-        call A1_07c_cooperation
+        call A1_07c_cooperation from _call_A1_07c_cooperation
     else:
-        call A1_07c_rivalry
+        call A1_07c_rivalry from _call_A1_07c_rivalry
     "She proceeds to show me her device's screen with a few menus opened."
     eris "Well, so far I'm looking at trying to upgrade Parker's old stuff. The right way this time."
     roman "How so?"
@@ -195,7 +195,7 @@
     "The thought passes my mind, and it used to be my only thought on the matter."
     "Yet I'd like to think things have the chance to be different."
     roman "Look, you keep wanting to do everything at once, but ultimately never can accept help with anything."
-    roman "Frankly it pisses me off to no end. No kind of work can ever get done when you're always trying to do the work of three people."
+    roman "Frankly, it pisses me off to no end. No kind of work can ever get done when you're always trying to do the work of three people."
     roman "But you have people around you who can support you, coworkers you can {i}actually{/i} rely on so you don't have to work these crazy hours."
     roman "If you had just trusted us with some of the workload back then, things might have..."
     eris p3 e8 "Roman..."
@@ -324,7 +324,7 @@ label A1_07c_rivalry:
     eris p1 e1 "I'm just tired and frustrated right now, Roman. I don't have time for this right now."
     roman "Maybe I could help?"
     eris "Please, just leave me alone."
-    "I think back towards the last conversation we shared with each other...and frankly I was a bit of an ass."
+    "I think back towards the last conversation we shared with each other...and frankly, I was a bit of an ass."
     "Yet despite never really being on the right foot, I can now see where Eris is coming from with these outbursts."
     "Hell, from the whiskey tasting event I'm surprised I didn't snap more the last time Eris brought it up to me."
     roman "Okay."

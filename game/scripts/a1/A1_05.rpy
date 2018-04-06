@@ -107,11 +107,11 @@
         "Do you really mean that?":
             $ cooperation += 1
             $ scene_5_rivalry = False
-            call A1_05_c
+            call A1_05_c from _call_A1_05_c
         "Don't patronize me.":
             $ rivalry += 1
             $ scene_5_cooperation = False
-            call A1_05_r
+            call A1_05_r from _call_A1_05_r
     return
 
 label A1_05_c:
