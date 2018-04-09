@@ -488,7 +488,9 @@ style options_slider:
     left_gutter 2
     right_gutter 2
     yalign 0.5
-    xysize (380, 20)
+    xysize (380, 40)
+    hover_thumb "gui/bar_indicator.png"
+    hover_thumb_offset 1.5
 
 style mute_all_button:
     size 8
