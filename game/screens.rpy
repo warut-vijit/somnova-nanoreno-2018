@@ -479,6 +479,7 @@ style options_button_text:
     xcenter 0.5
     ycenter 0.5
     color gui.inactive_text_color
+    hover_color gui.text_color
     selected_color gui.active_text_color
     size 20
 
