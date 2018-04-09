@@ -427,7 +427,7 @@ screen options():
             ypos 130 - position_offset
             label _("Display")
             textbutton _("FULLSCREEN") action Preference("display", "fullscreen")
-            textbutton _("WINDOWED") action Preference("display", "window")
+            textbutton _("WINDOWED") action Preference("display", "any window")
         hbox:
             ypos 190 - position_offset
             label _("Skip unseen text")
