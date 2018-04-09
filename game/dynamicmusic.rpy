@@ -46,13 +46,13 @@ init python:
         mixer = "music",
         tight = True,
         loop = False,
-        stop_on_mute = False)
+        stop_on_mute = True)
     renpy.music.register_channel(
         name = "dynamic_2",
         mixer = "music",
         tight = True,
         loop = False,
-        stop_on_mute = False)
+        stop_on_mute = True)
 
     queued_music = None
     current_music = None
@@ -87,11 +87,13 @@ init python:
         renpy.music.play(
             filenames = track.filename(0, loop),
             channel = "dynamic_1",
-            synchro_start = True)
+            synchro_start = True,
+            loop = loop)
         renpy.music.play(
             filenames = track.filename(1, loop),
             channel = "dynamic_2",
-            synchro_start = True)
+            synchro_start = True,
+            loop = loop)
 
         current_music = track
         queued_music = None

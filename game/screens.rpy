@@ -461,7 +461,10 @@ screen options():
             offset (810, 499)
             xysize (12, 80)
             background "gui/mute_frame.png"
-            textbutton _("MUTE") action Preference("all mute", "toggle"):
+            textbutton _("MUTE"):
+                action [
+                    Preference("all mute", "toggle"),
+                ]
                 style "mute_all_button"
 
 style options_label:
