@@ -55,7 +55,7 @@ define config.rollback_enabled = False
 ##########################################
 
 # How many characters to display per second. 0 = instantaneous display
-default preferences.text_cps = 24
+default preferences.text_cps = 50
 
 # How long to wait until auto-forward advances (in seconds).
 default preferences.afm_time = 15
