@@ -78,7 +78,7 @@ label end_credits:
     show credits_text_left at credits_text
     show credits_text_right at credits_text
     show credits_text_end at credits_text
-    $ renpy.pause(31, hard = True)
+    $ renpy.pause(38, hard = True)
     $ config.skipping = True
     $ hide_quick_menu = False
     $ _game_menu_screen = "save_screen"
@@ -90,11 +90,10 @@ transform credits_logo:
         xcenter 0.5
         ycenter 0.5
         alpha 0.0
-        linear 2.5 alpha 1.0
-        linear 0.5 alpha 1.0
-        linear 24 yoffset -2500
+        linear 3.5 alpha 1.0
+        linear 30 yoffset -2500
 
 transform credits_text:
     on show:
-        linear 3 alpha 1.0
-        linear 24 yoffset -2500
+        linear 3.5 alpha 1.0
+        linear 30 yoffset -2500
