@@ -91,7 +91,8 @@ screen choice(items):
         background "gui/choice_icon.png"
         xysize (80, 69)
         xalign 0.5
-        yalign 0.4
+        yanchor 0.0
+        ypos 580
 
         textbutton items[0].caption:
             action items[0].action
