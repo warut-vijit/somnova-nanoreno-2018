@@ -385,7 +385,8 @@ screen file_slots(title):
                             xysize (240, 80)
                             action FileAction(slot)
                             frame:
-                                background Frame("gui/file_slot_empty.png", 2, 2, tile = True)
+                                if title == "SAVE GAME":
+                                    background Frame("gui/file_slot_empty.png", 2, 2, tile = True)
                                 xysize (config.thumbnail_width, config.thumbnail_height)
                                 pos (20, 6)
                             text _("Empty"):
