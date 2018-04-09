@@ -9,9 +9,9 @@ transform common(x = 0):
         alpha 0
         xoffset x
         linear 0.25 alpha 1
-    on replace:
-        # This block is called when the image replaces another instance of itself.
+    on replaced:
         alpha 1
+        linear 0.25 alpha 0
         ease 0.75 xoffset x
 
 # This is so that characters don't blip out of existence.
