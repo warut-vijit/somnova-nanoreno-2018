@@ -87,6 +87,11 @@ define config.narrator_menu = True
 
 screen choice(items):
     frame:
+        xfill True
+        yfill True
+        background Solid(gui.box_background_color)
+
+    frame:
         style_prefix "choice"
         background "gui/choice_icon.png"
         xysize (80, 69)
@@ -275,7 +280,12 @@ screen game_menu(title):
 
     if main_menu:
         add "gui/main_menu.png" # TODO
-    
+    else:
+        frame:
+            xfill True
+            yfill True
+            background Solid(gui.box_background_color)
+
     frame:
         xpadding 80
         xpos 500
