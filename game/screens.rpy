@@ -314,6 +314,8 @@ screen game_menu(title):
             text_ycenter 0.29 # Align to top. Ack.
             text_first_indent -6 # Align to left. Ack.
             yoffset 880
+            text_color gui.text_color
+            text_hover_color gui.active_text_color
             action Return()
         frame:
             yoffset 200
