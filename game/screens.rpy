@@ -498,6 +498,11 @@ style mute_all_button:
     ycenter 0.5
     xoffset 10
 
+style mute_all_button_text:
+    color gui.inactive_text_color
+    hover_color gui.text_color
+    selected_color gui.active_text_color
+
 style options_hbox:
     spacing 20
 
