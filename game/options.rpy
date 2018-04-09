@@ -70,6 +70,8 @@ default preferences.afm_time = 15
 
 # This probably should't be changed.
 define config.save_directory = "arcadia-218-1519786094"
+define config.has_quicksave = False
+define config.has_autosave = False
 
 ##########################################
 ##-----------------ICON-----------------##

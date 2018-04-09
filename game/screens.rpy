@@ -398,13 +398,15 @@ screen file_slots(title):
                 yalign 1.0
                 offset (-20, -54)
                 spacing 12
-                textbutton _("Prev") action FilePagePrevious()
+                textbutton _("Prev"):
+                    action FilePagePrevious(5, wrap = False)
 
                 # 1 (inclusive) to 6 (exclusive).
                 for page in range(1, 6):
                     textbutton "[page]" action FilePage(page)
 
-                textbutton _("Next") action FilePageNext()
+                textbutton _("Next"):
+                    action FilePageNext(5, wrap = False)
 
 style page_button_text:
     color gui.empty_text_color
