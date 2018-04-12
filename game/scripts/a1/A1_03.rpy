@@ -1,7 +1,8 @@
 label A1_03:
+    # TODO: Add Long Time Skip here.
     show bg_black
     $ queue_music(music_one)
-    "Pulling the car back into the alleyway behind Arcadia's feels like sinking through molasses into another world."
+    "Pulling the car back into the alleyway behind Arcady feels like sinking through molasses into another world."
     "One moment, you can't hear yourself thinking over the honks and the blares and the shouting and all that hustle and bustle of the street outside."
     "Then you drive back for ten more seconds, and before you can really mind it all that noise just fades out into... a world you have for yourself."
     "Just the soft hum of the engine, the gray, hoary whisper of the AC blowing at your face, and--"
@@ -84,7 +85,7 @@ label A1_03:
     roman "What--come on, don't be like this! You thought I wasn't serious or something? I'm a man of my word, Parker."
     parker "A modern day samurai."
     roman "Okay, look--I didn't want it to come to this, alright?"
-    roman "But sometimes a man's gotta do what a man's gotta do, you know? I'm not going to spend the rest of my days here listening to Eris--I don't know, just {i}dissing{/i} me and, like, my whole way of life!"
+    roman "But sometimes a man's gotta do what a man's gotta do, you know? I'm not going to spend the rest of my days here listening to Eris -- I don't know, just {i}dissing{/i} me and, like, my whole way of life!"
     show parker p1 e5 at centered
     "Parker looks like he's trying very hard not to laugh. To his credit, he's doing a pretty good job."
     roman "Fine, so maybe not that far. But still, Eris started it. And if it's a fight she wants, then dammit, a fight's what I'm going to give."
@@ -172,11 +173,11 @@ label A1_03:
     roman "Thanks. I guarantee you, this is going to be amazing."
     roman "Oh, and I've been thinking--"
     "I point towards the stage behind me."
-    roman "Is there any chance I can try and hook up a real mic up there, or are we stuck with that AR contraption?"
+    roman "Is there any chance I can try and hook up a old-school mic up there, or are we stuck with that new-fangled contraption?"
     show parker p1 e4 at centered
     "Parker eyes me with an odd look."
-    parker "Why? The customers are all wired in, they hear it just fine."
-    roman "Sure, but, I mean, it doesn't have all those little things, you know? No echoes, no tiny pieces of feedback, no--"
+    parker "Why? What's wrong with the current mic setup?"
+    roman "It's fine, but, I mean, it doesn't have all those little things, you know? No echoes, no tiny pieces of feedback, no--"
     parker p1 e1 "Roman, generations of sound technicians have toiled for more than a century to produce a system that runs as smoothly as this one does."
     parker "It isn't theirs, mine, and certainly any of my customers' fault that you found the bugs on older models charming. Is that clear?"
     roman "...Yes, boss."
@@ -227,7 +228,7 @@ label A1_03:
     roman "World's full of nice surprises, isn't it? Maybe next time you'll think twice before challenging me."
     eris "Wow. Someone's full of themselves."
     roman "Sorry, I'm just savoring your grumpiness. Goes fantastic with the bourbon."
-    show eris p2 e5 at centered
+    show eris p3 e3 at centered
     "Eris rolls her eyes."
     roman "Look, we can just put all that behind us now, right? Here, have some of this. To show that I'm a dignified winner and all."
     # TODO: note: I don't know where we want the CGs to be yet, but if we're going to have those I think we should absolutely consider using a CG for the following part. Read it over and tell me if you think it's worth one.
@@ -248,7 +249,7 @@ label A1_03:
     eris p1 e6 "Pebbles?"
     roman "Pebbles."
     eris "Pebbles. You put pebbles in my whiskey."
-    roman "Indeed I did. Special, drinking pebbles"
+    roman "Indeed I did. Special, drinking pebbles."
 
     eris p2 e5 "W--"
     eris "Why would you--"
@@ -289,7 +290,7 @@ label A1_03:
     roman "Or it might just be that it's been ages since any club around here's offered such an authentic experience and they can't wait to get a taste of some of the the good stuff."
     eris p1 e1 "I suppose. Guess we'll have to wait until my turn is finished. {i}Then{/i} we can be all scientific and compare the results."
     roman "Now that I'd like to see. Can't {i}wait{/i} to find out what kind of overhyped new gizmo you're all crazy ready to wire-up in here."
-    eris p2 e5 "Alright, don't be a dick. I'm drinking your whiskey and all, aren't I?"
+    eris p2 e3 "Alright, don't be a dick. I'm drinking your whiskey and all, aren't I?"
     eris p1 e6 "And for the record, it's not bad. So you do have that going for you."
     roman "Thanks. I suppose you do have a point"
     roman "Guess I'll save the gloating for {i}after{/i} I officially humiliate you."

@@ -1,4 +1,5 @@
 ﻿label A1_09c:
+    # TODO: Add Long Time Skip here.
     scene bg_black with Dissolve(0.5)
     play audio car_engine
     "It's hard to believe how quickly a few weeks passes when you're not paying attention, but..."
@@ -218,7 +219,7 @@
     eris "You know, for being a friend to me when I really didn't deserve it."
     roman "Well, we both needed one."
     "...Things really did work out in the end."
-    "All that's left of my cigarette is a burning nub, one that I toss to the side and stomp out."
+    "All that's left of my cigarette is a burning nub, one that I shove into the nearby smoking receptacle."
     eris p1 e1 "You finished smoking?"
     roman "..."
     roman "Yeah... I think so."

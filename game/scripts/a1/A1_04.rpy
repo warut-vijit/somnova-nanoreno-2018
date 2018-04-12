@@ -1,11 +1,12 @@
 ﻿label A1_04:
-    scene bg_club_2_before_work with Dissolve(0.5)
+    # TODO: Add Long Time Skip here.
+    scene bg_club_2_during_work with Dissolve(0.5)
     $ queue_music(music_four1)
     $ crossfade_music(0.0, 1.0, 0.0)
     "It was almost humiliating to come back to work today. Last night was a disaster of unbelievable proportions." 
     "It has often been said that 'no plan survives contact with the enemy,' but my idea did more than just {i}not{/i} survive. It was crushed. Demolished. Burned to the ground like it had killed someone's loved one."
     "It taught me what Parker's like when angry, a lesson I could've done without."
-    "After last night's hilarious little mess-up, I've already braced myself to see either of two things as soon as I arrived: Parker's disappointed frown... or Eris's victorious grin."
+    "After last night's hilarious little failure, I've already braced myself to see either of two things as soon as I arrived: Parker's disappointed frown... or Eris's victorious grin."
     "I'd sooner jump off a cliff in a tutu than let her get under my skin and rub this in my face."
     "{i}Our 'competition' has barely begun{/i}, I've tried to tell myself. {i}I'll have the last laugh all the same.{/ i}"
     "I'd have other ideas eventually. Better ones, even."
