@@ -216,12 +216,14 @@
     "Either way..."
     eris "Roman?" 
     # TODO: Start Eris Alley CG (Cooperative/Smile)
+    scene cg_co_smile with Dissolve(0.5)
     eris "I know I've said this a lot, but thank you."
     eris "You know, for being a friend to me when I really didn't deserve it."
     roman "Well, we both needed one."
     "...Things really did work out in the end."
     "All that's left of my cigarette is a burning nub, one that I shove into the nearby smoking receptacle."
     # TODO: Show Eris Alley CG (Cooperative/Neutral)
+    scene cg_co_neutral with Dissolve(0.5)
     eris p1 e1 "You finished smoking?"
     roman "..."
     roman "Yeah... I think so."
@@ -230,12 +232,13 @@
     eris "Let's head inside; our break is bound to be over already."
     roman "Yeah, either than or have Parker send out a search party."
     # TODO: Show Eris Alley CG (Cooperative/Laugh)
+    scene cg_co_laugh with Dissolve(0.5)
     eris p1 e10 "He could always fire us."
     roman "Now wouldn't that be something...."
-    show eris p1 e10 at transform_hide
+    #show eris p1 e10 at transform_hide
     hide eris
     "The two of us share a laugh as we casually make our way inside."
     "We're heading back to a home that we both have found."
     "Back to Arcady, the garden of an old and new world."
-    show bg_black with Dissolve(1.5)
+    scene bg_black with Dissolve(1.5)
     return

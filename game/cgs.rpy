@@ -1,1 +1,8 @@
 # image cg_elonmusk_liftoff = "cgs/elonmusk/liftoff.png"
+image cg_whiskeynight = "cg/CG_Whiskey.png"
+image cg_co_laugh = "cg/CG_Coop_Laugh.png"
+image cg_co_neutral = "cg/CG_Coop_Neutral.png"
+image cg_co_smile = "cg/CG_Coop_Smile.png"
+image cg_ri_neutral = "cg/CG_Rival_Neutral.png"
+image cg_ri_noeris = "cg/CG_Rival_NoEris.png"
+image cg_ri_smile = "cg/CG_Rival_Smile.png"

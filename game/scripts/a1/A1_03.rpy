@@ -155,6 +155,7 @@ label A1_03:
     "Probably taking pics and posting them all over the net."
     "I keep one eye on my work and one eye on the slowly gathering crowd as the club begins to slowly come to life."
     "Much as I want to start this already, I know I'll only get one shot at a real fancy opening, and I don't want to waste on a partial audience."
+    scene cg_whiskeynight with Dissolve(0.5)
     "In the meantime, I make use of whatever lulls in the action I can risk setting up the stage and connecting the mic. Kinda disappointing that this is kind of tech is mostly just plug-and-play."
     scene bg_club_2_during_work with Dissolve(0.5)
     "Slowly but surely more and more seats are taken. The static noise of conversations and laugher grows louder and less distinct. Parker's now spending more time handing out drinks than chatting with drinkers."
@@ -204,6 +205,7 @@ label A1_03:
     roman "But those are all future problems, right? For now, you want to try the real deal, yeah?"
     roman "So just for you, just tonight, Arcady's got all the greatest brands and labels, the prices are great, and we've got all the special deals you could shake your glass at."
     roman "So sit back, relax, and enjoy the true, proper Arcady experience the way you never have, but should have."
+    scene bg_club_2_before_work with Dissolve(0.5)
     "I instinctively give a small bow--even though, now that I think about it, I probably shouldn't have had to--and climb back down the stairs, feeling like I've just come back from war."
     "Passing a hand over the bridge of my nose and through my hair, I now know what I need."
     "I need a drink."
