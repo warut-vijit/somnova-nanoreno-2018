@@ -28,7 +28,6 @@
     "Everything's right with the world. We've won."
     stop audio
     $ queue_music(music_nine)
-    $ crossfade_music(0.0, 1.0, 0.0)
     "My movements are fast and automatic. The cigarette's lit and held between my teeth before I'd so much as noticed taking it out of the packet."
     "I inhale, lean back, and try to float off and away to the zen of not giving a shit."
     "Watching, feeling a million miles away, the whorls of smoke rising lazily up in the air like transparent, abyssal fish. Flakes of ash drifting down in a sluggish and shadowy dance."
