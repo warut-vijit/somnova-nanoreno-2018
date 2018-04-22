@@ -1,4 +1,5 @@
 ﻿label A1_07c:
+    # TODO: Add Long Time Skip here.
     scene bg_club_2_before_work with Dissolve(0.5)
     "After that, the days seemed to just pass me by."
     "I guess it just showed how much energy I was putting into that stupid bet with Eris."
@@ -131,7 +132,7 @@
     eris p1 e1 "Not everyone wants to just come here to get drunk after all."
     roman "I was thinking I could take a crack at it while you worked on the AR system. I mean, business always starts pretty slow in the morning anyway."
     eris p2 e4 "It's a cool idea, Roman."
-    parker p2 e7 "Just don't turn it into another whiskey tasting night."
+    eris p2 e7 "Just don't turn it into another whiskey tasting night."
     roman "Ah. Right. I'll keep things realistic for this one."
     eris p1 e1 "Well good luck with your end. I think I juuuust have things figured out on mine."
     show eris p1 e1 at transform_hide

@@ -1,4 +1,5 @@
 ﻿label A1_09c:
+    # TODO: Add Long Time Skip here.
     scene bg_black with Dissolve(0.5)
     play audio car_engine
     "It's hard to believe how quickly a few weeks passes when you're not paying attention, but..."
@@ -214,11 +215,13 @@
     "Or maybe we were just reading too far into things?"
     "Either way..."
     eris "Roman?" 
+    # TODO: Start Eris Alley CG (Cooperative/Smile)
     eris "I know I've said this a lot, but thank you."
     eris "You know, for being a friend to me when I really didn't deserve it."
     roman "Well, we both needed one."
     "...Things really did work out in the end."
-    "All that's left of my cigarette is a burning nub, one that I toss to the side and stomp out."
+    "All that's left of my cigarette is a burning nub, one that I shove into the nearby smoking receptacle."
+    # TODO: Show Eris Alley CG (Cooperative/Neutral)
     eris p1 e1 "You finished smoking?"
     roman "..."
     roman "Yeah... I think so."
@@ -226,6 +229,7 @@
     eris "Okay, me too."
     eris "Let's head inside; our break is bound to be over already."
     roman "Yeah, either than or have Parker send out a search party."
+    # TODO: Show Eris Alley CG (Cooperative/Laugh)
     eris p1 e10 "He could always fire us."
     roman "Now wouldn't that be something...."
     show eris p1 e10 at transform_hide

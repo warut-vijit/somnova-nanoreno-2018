@@ -76,18 +76,18 @@ label A1_01:
     eris p1 e2 "Oh. My. God. Roman?"
     "She enunciates that phrase exactly like how I remember. It never left me, no matter how much I tried."
     "My body tenses in apprehension."
-    show eris p2 e5 at centered
+    show eris p2 e3 at centered
     roman "Fancy meeting you here, Eris."
     eris "Likewise."
     roman "..."
-    eris p2 e3 "..."
-    eris "You grew a beard. Looks... {i}nice.{/i}"
+    eris "..."
+    eris p1 e2 "You grew a beard. Looks... {i}nice.{/i}"
     "It's clear she doesn't like it."
     roman "Did it myself. Made a project out of it."
     "I got lazy and decided I could save money by not shaving."
     "And she knows it."
     # TODO: p3 e1 doesn't exist.
-    eris "So, want to show me around, or...?"
+    eris p2 e3 "So, want to show me around, or...?"
     # eris p3 e1 "So, want to show me around, or...?"
     "What the fuck are you doing here?"
     "A million questions are racing through my head, but..."
@@ -97,7 +97,7 @@ label A1_01:
     eris p2 e3 "What is it?"
     roman "An AR platform Parker bought a few months ago. Says it's for you."
     # TODO: p2 e10 doesn't exist.
-    eris "What, that old thing? That's at least two years out of date."
+    eris p1 e10 "What, that old thing? That's at least two years out of date."
     # eris p2 e10 "So, want to show me around or...?"
     # TODO: p2 e1 doesn't exist.
     # show eris p2 e1 at centered
@@ -147,7 +147,7 @@ label A1_01:
     hide eris
     "Shit. I thought I was done dealing with people like her."
     show parker p1 e1 at centered
-    parker "So finished already?"
+    parker "So, finished already?"
     parker "You didn't put her through her paces too much, I hope."
     roman "..."
     parker p1 e3 "Roman? You okay?"

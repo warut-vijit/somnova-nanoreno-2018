@@ -1,4 +1,5 @@
-﻿label A1_08c: 
+﻿label A1_08c:
+    # TODO: Add Long Time Skip here.
     scene bg_club_2_before_work with Dissolve(0.5)
     "The following day, Eris shows me her new setup on the AR platform."
     show eris p1 e6 at centered
@@ -76,7 +77,7 @@
     roman "Well, whatever right? We're working together now and that amounts to something."
     eris "..."
     eris "...yeah, whatever."
-    eris p2 e5 "This system works and was just validated by you, so I don't see a problem."
+    eris p1 e6 "This system works and was just validated by you, so I don't see a problem."
     roman "I'll still verify the working code again to make sure problems don't occur down the line."
     roman "Aside from that though..."
     show eris p1 e2
@@ -118,23 +119,23 @@
     "Ah, he's gonna be talking about how poorly Eris and I messed up our attempts."
     parker "I'm pleased to announce that while some weren't as viable as others, that doesn't mean those efforts went to waste."
     "Where are you going with this Parker?"
-    parker p1 e4 "We received a lot of good feedback from our customers, several of which have come back regularly in this month alone."
-    parker p1 e1 "And the employee--sorry, {i}employees{/i}--that got the most feedback were..."
-    parker p1 e4 "Roman and Eris! Great job, you two!"
+    parker p1 e5 "We received a lot of good feedback from our customers, several of which have come back regularly in this month alone."
+    parker "And the employee--sorry, {i}employees{/i}--that got the most feedback were..."
+    parker "Roman and Eris! Great job, you two!"
     "He starts applauding for us, with the rest of the workers following suit."
     roman "...What?"
     eris p1 e10 "What is this Parker, a new sense of pity for your employees?"
     parker "This month's award goes to the both of you."
-    parker "Even after failing the two of you continued working towards Arcady's improvement, and because of that I've felt that the two of you truly deserve some appreciation."
+    parker p1 e1 "Even after failing with your initial ideas, the two of you continued working towards Arcady's improvement, and because of that I've felt that the two of you truly deserve some appreciation."
     "He fishes out a small metal plaque with both our names on it."
     roman "Really, a trophy?"
     roman "Now I know this is a joke."
     "I still can't help but beam from ear to ear, and I can see that Eris is wearing the same reaction on her face."
     parker "I'll be sure to get this hung up on the office wall so you two can gloat about it later."
-    parker "Congratulations again, you guys. You've done a lot of hard work, and I hope to see you both keep it up."
+    parker p1 e5 "Congratulations again, you guys. You've done a lot of hard work, and I hope to see you both keep it up."
     eris "That's... thank you." (multiple = 2)
     roman "Wow, uh, thanks." (multiple = 2)
-    show parker p1 e4 at transform_hide
+    show parker p1 e5 at transform_hide
     hide parker
     show eris p1 e10 at transform_hide
     hide eris
@@ -142,6 +143,7 @@
     "I barely pay attention, dumbly smiling the whole time."
     show bg_black with Dissolve(0.75)
     hide bg_black with Dissolve(0.75)
+    scene bg_club_lounge with Dissolve(0.5)
     "The meeting wraps up with Parker retreating back to his office, and with my co-workers now scattering to their usual positions Eris and I now have some time to process what just happened."
     show eris p1 e6 at centered
     eris "So, Roman."

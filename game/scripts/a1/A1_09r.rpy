@@ -223,16 +223,20 @@
     roman "Good luck with that."
     "My voice sounds distant and brittle."
     "She nods then turns off the e-cig, waving in front of her face to disperse the vapors."
+    # TODO: Start Eris Alley CG (Rival/Neutral)
     eris p1 e6 "I'm going to try my best. I'll stay here for a couple more days, but after that, you won't have to see me again."
+    # TODO: Show Eris Alley CG (Rival/Smile)
     eris "You could have it like you should've: you and Parker, and this place. And the upgrade we installed, but that was the two of us, right?"
     eris "Maybe without me getting in your way you'll be able to make more of it. I know you have it in you, when you do what you want. You could probably make this a really great club."
     "Stowing away her cig, she pushes herself off the wall and heads back towards the Arcady door.."
     play audio backdoor_open
+    # TODO: Show Eris Alley CG (Rival/Neutral)
     eris p2 e7 "Good luck, Roman."
     eris "You keep doing you."
     show eris p2 e7 at transform_hide 
     hide eris
     play audio backdoor_close
+    # TODO: Show Eris Alley CG (Rival/No Eris)
     "The sound of the door closing reverberates throughout the alley."
     "Objectively, it's probably nothing. A creak then a bump in a city full of car horns and shouting,  noodle vendors and stereos blaring out of open windows."
     "There's a club half a meter of concrete behind me, where they're playing music right now."
