@@ -1,7 +1,7 @@
 ﻿label A1_08c:
     # TODO: Add Long Time Skip here.
     scene bg_club_2_before_work with Dissolve(0.5)
-	$ queue_music(placeholder)
+    $ queue_music(placeholder)
     "The following day, Eris shows me her new setup on the AR platform."
     show eris p1 e6 at centered
     eris "Roman!"
@@ -167,7 +167,7 @@
     roman "Didn't we call that off?"
     eris p3 e9 "Well, yeah, but... don't tell me you weren't a little curious to see how this employee of the month award would turn out."
     "I shrug."
-	stop dynamic_1 fadeout 5.0
+    stop dynamic_1 fadeout 5.0
     stop dynamic_2 fadeout 5.0
     roman "I'd be lying if I said I didn't want to see that result as well."
     eris p2 e7 "Hah, called it."

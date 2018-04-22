@@ -15,7 +15,7 @@
     "Everything feels right, but old habits are desperately telling me to flee."
     "I'm all too afraid that something's bound to go wrong."
     play audio [backdoor_open, backdoor_close]
-	$ queue_music(music_seven1)
+    $ queue_music(music_seven1)
     scene bg_back_alley with Dissolve(0.5)
     roman "There goes another night..."
     "My shift over, I say goodbye to Parker, pick my jacket off of the hanger and leave through the front door, but not before waving kindly to the guy with pink bangs who leaves big tips."
@@ -181,7 +181,7 @@
     eris p2 e3 "I know that! It... I guess it just decided not to update on me."
     roman "As a practical joke maybe?"
     eris p2 e5 "Ugh, Roman, just... give me a second with that--"
-	$ queue_music(music_seven2c)
+    $ queue_music(music_seven2c)
     "She reaches for the console, trying to tug it away from my hands."
     roman "Whoa, hey. Eris!"
     eris "Just lemme do it! I'll get it done faster, anyway!"
@@ -267,7 +267,7 @@
     roman "You can...holler if you need me. Just be sure to take some time and rest when you can."
     eris p1 e10 "You can count on it."
     show eris p1 e10 centered
-	$ queue_music(music_seven3, False)
+    $ queue_music(music_seven3, False)
     hide eris with Dissolve(0.25)
     "And just like that, she's back to work again."
     "Yet overall I'd say that went..."
@@ -306,7 +306,7 @@
     roman "Well, great! I'm happy I was able to help."
     parker p1 e5 "I appreciate that you found the time to bother with this today. I also appreciate Eris encouraging you to look into this."
     roman "Yeah...I'm glad she did too."
-	   stop dynamic_1 fadeout 5.0
+    stop dynamic_1 fadeout 5.0
     stop dynamic_2 fadeout 5.0
     show parker p1 e5 at transform_hide
     hide parker

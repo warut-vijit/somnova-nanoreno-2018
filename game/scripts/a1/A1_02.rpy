@@ -336,7 +336,7 @@ label living_hell:
     roman "That shit, it's all in the past. I want to move past it. I do."
     "Do I?"
     roman "Yeah!"
-	stop dynamic_1 fadeout 5.0
+    stop dynamic_1 fadeout 5.0
     stop dynamic_2 fadeout 5.0
     "Amidst Parker's confusion I answer myself out loud."
     show parker p1 e1 at centered

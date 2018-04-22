@@ -142,7 +142,7 @@ label A1_03:
     "Parker nods and turns back into the club. My knees cry meekly in protest as I lift back up the box at my feet, but after that 'a man's got to do' talk, I don't think I have much choice but to bear with it."
     "Now, back to business."
     scene bg_club_2_before_work with Dissolve(0.5)
-	$ queue_music(music_three1)
+    $ queue_music(music_three1)
     "Carrying them in aside, setting up the props for tonight's event took barely any time at all. That's one of the beautiful things about my plan: it's simple and efficient."
     "I can't even imagine what kind of convoluted electronic gimmick Eris would want to install here. "
     "The whiskey bottles are standing up like proud soldiers across the counter and inside the cabinets, glass gleaming, labels sparkling, ember contents shining in the warm Arcady lights."
@@ -369,7 +369,7 @@ label A1_03:
     parker "Off of each glass, yes, but you bought enough whiskey to fill a bathtub!"
     show parker p1 e2 at centered
     "Parker raises a finger towards me that looks almost accusatory."
-	$ queue_music(music_three2, False)
+    $ queue_music(music_three2, False)
     parker "To you, this whiskey is 'old-school' and 'hip' and whatever it you're thinking. That's fine."
     parker "To most of these people, though?"
     parker "This is going to sound terrible, but as a bartender, I can tell you for a fact that to most of those people, your expensive, gold label, real-deal whiskey is {i}just another drink{/i}."

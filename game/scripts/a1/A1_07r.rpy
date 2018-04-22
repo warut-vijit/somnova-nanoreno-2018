@@ -13,7 +13,7 @@
     "--or I'm sinking into a routine again."
     "And much as I'm all for the cohesion of the time-space continuum, I really don't know which one I'd rather have."
     play audio [backdoor_open, backdoor_close]
-	$ queue_music(music_seven1)
+    $ queue_music(music_seven1)
     scene bg_back_alley with Dissolve(0.5)
     roman "There goes another night..."
     "With my shift being over, I say goodbye to Parker, pick my jacket off of the hanger and leave through the front door, waving noncommittally to that one guy with the pink bangs who leaves big tips."
@@ -222,7 +222,7 @@
     "Eris emerges sheepishly through the backdoor."
     "The sounds of the club leak out for just a moment, filling the dry air around us, then quiet down just as fast with the clang of it closing behind her."
     play audio backdoor_close
-	$ queue_music(music_seven_2r)
+    $ queue_music(music_seven_2r)
     "I take the cigarette out of my mouth to exhale. The feeling of emptiness in my chest feels so natural."
     "I don't even look her way. It feels like too much of commitment. She'll read in it stuff that's not there and hold me up to it."
     roman "What?"
@@ -382,7 +382,7 @@
     eris "Excuse me--"
     roman "--I'm not finished."
     "I cut her sentence, sharply and painfully."
-	stop dynamic_1 fadeout 20.0
+    stop dynamic_1 fadeout 20.0
     stop dynamic_2 fadeout 20.0
     roman "You make such a production out of how much you care, but what is any of it even {i}for{/i}? I thought you had a passion for what ARTech was doing, but then I leave the company and you just track me down to the goddamn {i}club{/i} I went to wait in, instead?"
     roman "Good thing you can sort-of-sing, huh? Imagine if you had to find another way in here. Probably would've had to convince Parker Arcady needs a finance department. And the funny thing is, you'd have done the job."
