@@ -71,10 +71,10 @@ label end_credits:
     stop music fadeout 2
     stop dynamic_1 fadeout 2
     stop dynamic_2 fadeout 2
-    show bg_black
+    show bg_credits with Dissolve(2)
     $ renpy.pause(2, hard = True)
     $ queue_music(music_nine2, False)
-    show logo at credits_logo
+    show logo_credits at credits_logo
     show credits_text_left at credits_text
     show credits_text_right at credits_text
     show credits_text_end at credits_text
