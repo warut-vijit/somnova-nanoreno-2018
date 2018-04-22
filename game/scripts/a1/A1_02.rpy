@@ -19,7 +19,7 @@ label A1_02:
     parker "Morning, Roman."
     roman "Good morning, Parker."
     play audio mop_bucket
-    "I make hastily my way to the cupboard behind the bar and grab a bucket and mop from underneath it to begin the day's work."
+    "I make my way to the cupboard behind the bar and grab a bucket and mop from underneath it to begin the day's work."
     parker "Did you sleep all right?"
     roman "Uh..."
     "I was hoping my attempts at looking busy might reduce the risk of smalltalk. No such luck."
@@ -256,7 +256,7 @@ label A1_02:
     eris "Okay... you know how you're constantly going on about wanting to get out of the city and start fresh, all that jazz?"
     roman "I can't deny that."
     eris "If you win--if Parker gives you employee of the month instead of me--I'll help pay for you to get out. We'll go halves on it. Whatever you need."
-    roman "Oookay. That's... incredible generous."
+    roman "Oookay. That's... incredibly generous."
     roman "I assume there's a catch? You wouldn't just give me that kind of money."
     eris "Naturally."
     eris "If {i}I{/i} win--"
