@@ -16,7 +16,7 @@ label A1_01:
     "I'd give anything to get out of this city at this point. Maybe head out of state, get a new job, that sort of thing."
     "A fresh start."
     $ crossfade_music(1.0, 0.0, 2.5)
-    scene bg_club_2_before_work with Dissolve(2.5)
+    scene bg_club_1_off_work with Dissolve(2.5)
     "A place that hasn't caught the AR plague."
     "I guess you could call me a hipster, but I wouldn't be offended if you did."
     "I like the way people did things back in the 90s and the Aughts--without bunch of bombardment by shiny tech that commands your attention 24/7."
@@ -44,8 +44,7 @@ label A1_01:
     hide parker
     "Well, I guess it's better paid work than my last job..."
     show bg_black with Dissolve(0.75)
-    hide bg_black with Dissolve(0.75)
-    scene bg_club_2_during_work with Dissolve(2.5)
+    show bg_club_2_during_work with Dissolve(0.75)
     "Soon, the evening crowd moves in, ordering drinks and dinner."
     "My ears eventually pick up a fragment of conversation."
     customer_a "I wonder if she's performing here tonight..."
@@ -186,7 +185,7 @@ label A1_01:
     roman "..."
     "I could really use a smoke right about now."
     "Grabbing my coat from the break room, I leave my tarnished sanctuary for the world outside."
+    scene bg_black with Dissolve(1.5)
     "Perhaps tomorrow will give me something to keep my mind off of Eris."
     "Knowing her, that's probably not going to happen."
-    show bg_black with Dissolve(1.5)
     return

@@ -48,7 +48,7 @@ define config.window = "hide"
 define config.window_show_transition = Dissolve(.2)
 define config.window_hide_transition = Dissolve(.2)
 
-define config.rollback_enabled = False
+define config.rollback_enabled = True
 
 ##########################################
 ##---------DEFAULT PREFERENCES----------##

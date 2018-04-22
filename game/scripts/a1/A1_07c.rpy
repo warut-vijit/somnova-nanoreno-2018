@@ -215,7 +215,7 @@
     eris "You're with that person for long and then they just... leave."
     "So it's about ARTech in the end?"
     roman "Eris, I'm sorry for--"
-    eris p1 e1 "You know someone you're entire life. At least you think you do. You grew up loving them, and when you finally sure that you can rely on them they just--"
+    eris p1 e1 "You know someone your entire life. At least you think you do. You grew up loving them, and when you finally sure that you can rely on them they just--"
     eris p2 e5 "--It's like you don't matter anymore! Your entire family doesn't matter!"
     eris "And it's not just them. It's not just you. Everything it left out of your control, and if you sit around nothing is going to change about that!"
     eris "But you're never good enough! No matter how hard you work!"
