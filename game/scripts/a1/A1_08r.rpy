@@ -1,5 +1,6 @@
 ﻿label A1_08r: 
     scene bg_black with Dissolve(0.5)
+    $ queue_music(placeholder)
     "If the last few weeks were a blur, the one that follows them is more like white noise."
     "Coming into work, waiting tables, and leaving passes by without notice, without any thought."
     "If I talk to Eris at all, it's never more than a grunt, and is forgotten within ten minutes."
@@ -121,6 +122,8 @@
     show eris p1 e1 at transform_hide
     hide eris
     "Giving me a look that I can't place, Eris departs. As she leaves, I hear her greet Parker, who heads back in towards the bar."
+    stop dynamic_1 fadeout 5.0
+    stop dynamic_2 fadeout 5.0
     show parker p1 e1 at centered
     parker "Just left my wallet."
     "He gestures towards the office, shuffling past me."

@@ -1,7 +1,6 @@
 label A1_03:
     # TODO: Add Long Time Skip here.
     show bg_black
-    $ queue_music(music_one)
     "Pulling the car back into the alleyway behind Arcady feels like sinking through molasses into another world."
     "One moment, you can't hear yourself thinking over the honks and the blares and the shouting and all that hustle and bustle of the street outside."
     "Then you drive back for ten more seconds, and before you can really mind it all that noise just fades out into... a world you have for yourself."
@@ -142,6 +141,7 @@ label A1_03:
     "Parker nods and turns back into the club. My knees cry meekly in protest as I lift back up the box at my feet, but after that 'a man's got to do' talk, I don't think I have much choice but to bear with it."
     "Now, back to business."
     scene bg_club_2_before_work with Dissolve(0.5)
+    $ queue_music(music_three1)
     "Carrying them in aside, setting up the props for tonight's event took barely any time at all. That's one of the beautiful things about my plan: it's simple and efficient."
     "I can't even imagine what kind of convoluted electronic gimmick Eris would want to install here. "
     "The whiskey bottles are standing up like proud soldiers across the counter and inside the cabinets, glass gleaming, labels sparkling, ember contents shining in the warm Arcady lights."
@@ -155,6 +155,7 @@ label A1_03:
     "Probably taking pics and posting them all over the net."
     "I keep one eye on my work and one eye on the slowly gathering crowd as the club begins to slowly come to life."
     "Much as I want to start this already, I know I'll only get one shot at a real fancy opening, and I don't want to waste on a partial audience."
+    scene cg_whiskeynight with Dissolve(0.5)
     "In the meantime, I make use of whatever lulls in the action I can risk setting up the stage and connecting the mic. Kinda disappointing that this is kind of tech is mostly just plug-and-play."
     scene bg_club_2_during_work with Dissolve(0.5)
     "Slowly but surely more and more seats are taken. The static noise of conversations and laugher grows louder and less distinct. Parker's now spending more time handing out drinks than chatting with drinkers."
@@ -204,6 +205,7 @@ label A1_03:
     roman "But those are all future problems, right? For now, you want to try the real deal, yeah?"
     roman "So just for you, just tonight, Arcady's got all the greatest brands and labels, the prices are great, and we've got all the special deals you could shake your glass at."
     roman "So sit back, relax, and enjoy the true, proper Arcady experience the way you never have, but should have."
+    scene bg_club_2_before_work with Dissolve(0.5)
     "I instinctively give a small bow--even though, now that I think about it, I probably shouldn't have had to--and climb back down the stairs, feeling like I've just come back from war."
     "Passing a hand over the bridge of my nose and through my hair, I now know what I need."
     "I need a drink."
@@ -366,6 +368,7 @@ label A1_03:
     parker "Off of each glass, yes, but you bought enough whiskey to fill a bathtub!"
     show parker p1 e2 at centered
     "Parker raises a finger towards me that looks almost accusatory."
+    $ queue_music(music_three2, False)
     parker "To you, this whiskey is 'old-school' and 'hip' and whatever it you're thinking. That's fine."
     parker "To most of these people, though?"
     parker "This is going to sound terrible, but as a bartender, I can tell you for a fact that to most of those people, your expensive, gold label, real-deal whiskey is {i}just another drink{/i}."

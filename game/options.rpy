@@ -5,7 +5,7 @@
 # The _() marks the string as translatable, should we want that in the future.
 define config.name = _("Arcadia")
 
-define config.version = "1.1.0"
+define config.version = "1.2.0"
 
 # Text that is placed on the game's about screen. To insert a blank line
 # between paragraphs, write \n\n.
