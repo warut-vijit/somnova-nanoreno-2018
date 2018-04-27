@@ -205,7 +205,7 @@ label A1_03:
     roman "But those are all future problems, right? For now, you want to try the real deal, yeah?"
     roman "So just for you, just tonight, Arcady's got all the greatest brands and labels, the prices are great, and we've got all the special deals you could shake your glass at."
     roman "So sit back, relax, and enjoy the true, proper Arcady experience the way you never have, but should have."
-    scene bg_club_2_before_work with Dissolve(0.5)
+    scene bg_club_2_during_work with Dissolve(0.5)
     "I instinctively give a small bow--even though, now that I think about it, I probably shouldn't have had to--and climb back down the stairs, feeling like I've just come back from war."
     "Passing a hand over the bridge of my nose and through my hair, I now know what I need."
     "I need a drink."
