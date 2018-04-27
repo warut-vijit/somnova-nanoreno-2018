@@ -156,7 +156,6 @@ label A1_03:
     "Probably taking pics and posting them all over the net."
     "I keep one eye on my work and one eye on the slowly gathering crowd as the club begins to slowly come to life."
     "Much as I want to start this already, I know I'll only get one shot at a real fancy opening, and I don't want to waste on a partial audience."
-    scene cg_whiskeynight with Dissolve(0.5)
     "In the meantime, I make use of whatever lulls in the action I can risk setting up the stage and connecting the mic. Kinda disappointing that this is kind of tech is mostly just plug-and-play."
     scene bg_club_2_during_work with Dissolve(0.5)
     "Slowly but surely more and more seats are taken. The static noise of conversations and laugher grows louder and less distinct. Parker's now spending more time handing out drinks than chatting with drinkers."
@@ -191,6 +190,7 @@ label A1_03:
     "My frustration with the sound situation evaporates to make way for anxiety as I make my way up the stairs."
     "With the lights behind me, it's hard to make out the customer's faces when I look aside, but I can tell roughly how many of them there are."
     "{i}A lot{/i}."
+    scene cg_whiskeynight with Dissolve(0.5)
     "Heart beating like a doumbek, face burning, throat shaking, I pick up the mic in front of me and tap the end to grab their attention."
     "There's a moment of silence as shadowed faces turn to me. I take a deep breath, and open."
     roman "Good evening, ladies and gentlemen."
