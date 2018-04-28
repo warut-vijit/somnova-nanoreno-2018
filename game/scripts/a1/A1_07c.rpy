@@ -39,6 +39,7 @@
     play audio [backdoor_open, backdoor_close]
     scene bg_club_2_after_work with Dissolve(0.5)
     "Parker's nowhere to be seen, and it seems the rest of the crowd has already dispersed for the evening."
+    scene bg_club_lounge with Dissolve(0.5)
     "I make my way towards the staff area, quickly spotting my phone on the table. As I'm about to leave, though, my attention shifts towards a sight as unexpected as it is comfortably familiar."
     show eris p2 e3 at centered
     "Sitting at the table with a strained, focused, almost desperate expression is Eris. Her shoulders are slumped uncomfortably and from the wrinkles under her eyes you can imagine she's been here a while."
@@ -274,7 +275,7 @@
     "Well."
     "Way better than I ever thought could have been possible."
     show bg_black with Dissolve(0.75)
-    hide bg_black with Dissolve(0.75)
+    scene bg_club_2_after_work with Dissolve(0.75)
     "The end of my shift rolls in, the late hours clearing out the crowds."
     "I try and check in on Eris, but Parker heads me off before I can."
     show parker p1 e1 at centered
