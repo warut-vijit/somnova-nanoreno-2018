@@ -33,10 +33,10 @@
     "Watching, feeling a million miles away, the whorls of smoke rising lazily up in the air like transparent, abyssal fish. Flakes of ash drifting down in a sluggish and shadowy dance."
     "Closing one eye--"
     "Looking at them, down there, squinting at just the right angle--"
-    "I can almost imagine seeing them falling into the beginning of a drawn, white-gray circle. Obviously, nothing but smoke is really there." 
+    "I can almost imagine seeing them falling into the beginning of a drawn, white-gray circle. Obviously, nothing but smoke is really there."
     "My mind's just... desperate for it, I guess. Screaming at me to acknowledge a pattern in the air."
     "It's a cheesy, pretentious fuck, like that."
-    "{i}You're an Arabian genie, Roman{i}."
+    "{i}You're an Arabian genie, Roman{/i}."
     "{i}You're trapped in that magical circle.{/i}"
     "{i}All fiery and powerful--{/i}"
     "{i}All helpless.{/i}"
@@ -227,12 +227,12 @@
     scene cg_ri_smile with Dissolve(0.5)
     eris "You could have it like you should've: you and Parker, and this place. And the upgrade we installed, but that was the two of us, right?"
     eris "Maybe without me getting in your way you'll be able to make more of it. I know you have it in you, when you do what you want. You could probably make this a really great club."
-    "Stowing away her cig, she pushes herself off the wall and heads back towards the Arcady door.."
+    "Stowing away her cig, she pushes herself off the wall and heads back towards the Arcady door."
     play audio backdoor_open
     scene cg_ri_neutral with Dissolve(0.5)
     eris p2 e7 "Good luck, Roman."
     eris "You keep doing you."
-    #show eris p2 e7 at transform_hide 
+    #show eris p2 e7 at transform_hide
     hide eris
     play audio backdoor_close
     scene cg_ri_noeris with Dissolve(0.5)

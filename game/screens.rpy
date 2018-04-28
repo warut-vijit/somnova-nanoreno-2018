@@ -25,7 +25,7 @@ style vscrollbar:
 
 screen say(who, what):
     style_prefix "say"
-    
+
     frame:
         background Frame("gui/divider.png", 2, 0, tile = True)
         yoffset 1080
@@ -35,7 +35,7 @@ screen say(who, what):
     window:
         id "window"
         add Solid(gui.border_edge, xalign = 1.0, xoffset = 1, xysize = (1, 160))
-        
+
         text what id "what":
             xpos 37
             ypos 10
@@ -111,7 +111,7 @@ screen choice(items):
             xoffset 30
             background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.png", (0, 0), "gui/choice_overlay_right_idle.png")
             hover_background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.png", (0, 0), "gui/choice_overlay_right.png")
-            
+
 style choice_button:
     xysize (734, 60)
     xpos 0.5
@@ -145,7 +145,7 @@ screen quick_menu():
             textbutton _("AUTO") action Preference("auto-forward", "toggle")
             textbutton _("SKIP") action Skip() alternate Skip(fast = True, confirm = True)
             textbutton _("MUTE") action Preference("all mute", "toggle")
-            
+
         hbox:
             style_prefix "quick_right"
             textbutton _("MENU") action ShowMenu("options")
@@ -219,7 +219,7 @@ screen navigation():
             xcenter 0.5
             yanchor 1.0
             ypos 180
-        
+
         vbox:
             yoffset 340
             spacing 20
@@ -230,12 +230,12 @@ screen navigation():
                 textbutton _("RETURN") action Return()
                 textbutton _("HISTORY") action ShowMenu("history")
                 textbutton _("SAVE GAME") action ShowMenu("save")
-            
+
             textbutton _("LOAD GAME") action ShowMenu("load")
             textbutton _("OPTIONS") action ShowMenu("options")
 
             if main_menu:
-                textbutton _("EXTRAS") sensitive False text_color gui.empty_text_color
+                textbutton _("EXTRAS") sensitive True text_color gui.empty_text_color
                 textbutton _("QUIT") action Quit(confirm = not main_menu)
             else:
                 textbutton _("QUIT") action MainMenu()
@@ -245,7 +245,7 @@ style navigation_button:
     xysize (280, 60)
     hover_background Frame("gui/main_menu_button.png", 2, 2, tile = True)
     selected_background Frame("gui/main_menu_button.png", 2, 2, tile = True)
-    
+
 style navigation_button_text:
     font "fonts/Lato-Light.ttf"
     xcenter 0.5
@@ -471,7 +471,7 @@ screen options():
 style options_label:
     xysize (380, 40)
     right_padding 20
-    
+
 style options_label_text:
     font "fonts/Lato-Light.ttf"
     size 30
@@ -532,7 +532,7 @@ screen history():
             mousewheel True
             draggable True
             pagekeys True
-            
+
             yinitial 1.0
 
             style_prefix "history"
@@ -567,7 +567,7 @@ screen confirm(message, yes_action, no_action):
         xfill True
         yfill True
         background Solid(gui.confirm_background)
-        frame:    
+        frame:
             xalign .5
             yalign .5
             xysize (660, 180)

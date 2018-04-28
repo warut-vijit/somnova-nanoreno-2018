@@ -3,17 +3,17 @@
     scene bg_club_2_during_work with Dissolve(0.5)
     $ queue_music(music_four1)
     $ crossfade_music(0.0, 1.0, 0.0)
-    "It was almost humiliating to come back to work today. Last night was a disaster of unbelievable proportions." 
+    "It was almost humiliating to come back to work today. Last night was a disaster of unbelievable proportions."
     "It has often been said that 'no plan survives contact with the enemy,' but my idea did more than just {i}not{/i} survive. It was crushed. Demolished. Burned to the ground like it had killed someone's loved one."
     "It taught me what Parker's like when angry, a lesson I could've done without."
     "After last night's hilarious little failure, I've already braced myself to see either of two things as soon as I arrived: Parker's disappointed frown... or Eris's victorious grin."
     "I'd sooner jump off a cliff in a tutu than let her get under my skin and rub this in my face."
-    "{i}Our 'competition' has barely begun{/i}, I've tried to tell myself. {i}I'll have the last laugh all the same.{/ i}"
+    "{i}Our 'competition' has barely begun{/i}, I've tried to tell myself. {i}I'll have the last laugh all the same.{/i}"
     "I'd have other ideas eventually. Better ones, even."
     "But... after all that, I've realized it's all a bit pointless in the end."
     "I'll just end up where I started and just accumulate another embarrassment."
     $ crossfade_music(1.0, 0.0, 5.0)
-    "So screw the bet, if Eris wants to gloat then I can tell her right where to shove it." 
+    "So screw the bet, if Eris wants to gloat then I can tell her right where to shove it."
     "And besides... there's still some solace in returning back to ARTech."
     "A wicked smile crosses my face as I take in Arcady's lobby and prepare for the day."
     "{i}I can always quit again.{/i}"
@@ -42,7 +42,7 @@
     "All I can do is sullenly nod, and wait to see if he's going to say anymore, but-"
     show parker p1 e5 at transform_hide
     hide parker
-    "He's already walking away." 
+    "He's already walking away."
     "That was it, the extent of our conversation."
     "Even as the jazz music supposedly fills the room, this tense air is suddenly assaulting my senses"
     "My hands feel wet, tongue tastes dry, and a newfound hollowness is rising from within me."
@@ -50,7 +50,7 @@
     "It's something that I'd never be able to escape from, no matter how much I try and distract myself."
     "{i}Great band we have today, huh Roman?{/i}"
     "{i}I heard they came from the next city over, a place that's almost like a cultural underground for authentic jazz music.{/i}"
-    "{i}And it's not too far at all... but right now it might as well be light years away.{/i}" 
+    "{i}And it's not too far at all... but right now it might as well be light years away.{/i}"
     "Just how long is it going to be until I get there?"
     "A new start. A new life."
     "..."
@@ -65,7 +65,7 @@
     "That'd be my cue, then. Back to work."
     "And right away."
     "I hurry over to the couple, trying to find some comfort in the monotony of serving."
-    "I don't know what's taking Eris so long, but I try and cherish some calm before the storm." 
+    "I don't know what's taking Eris so long, but I try and cherish some calm before the storm."
     "For as long as it'll hold."
     show bg_black with Dissolve(0.75)
     hide bg_black with Dissolve(0.75)
@@ -74,7 +74,7 @@
     "I was barely finished serving the middle-aged pair when Eris finally strides through the doors, wearing the exact kind of triumphant smirk I had expected her to be sporting."
     eris p2 e4  "I didn't think you'd still be able to come here after yesterday, Roman. Takes some real audacity, after a disaster like that."
     eris p2 e7 "Maybe if only you'd had that tenacity back at ARTech, you wouldn't have needed to leave."
-    "I simply nod as I turn my back to head for the counter. {i}You can always just quit again{/i}, I keep telling myself." 
+    "I simply nod as I turn my back to head for the counter. {i}You can always just quit again{/i}, I keep telling myself."
     show eris p2 e3 at centered
     "She eyes me with suspicion in response. It seems I didn't give her the reaction she wanted out of me."
     eris "But really though, when you {i}really{/i} think about it, whiskey-tasting? That's really just a bit out-of-touch in the end."
@@ -93,7 +93,7 @@
     "She chats with Parker a bit, probably to explain why she was late, before she darts off quickly to the other end of the club."
     "Before I could give it more thought than it warrants, another customer calls out, waving their hand to get my attention."
     "There are a bit more customers today, thankfully, which makes it easier than usual to distract myself. Two more acts follow the band that had played earlier, both of which also came from outside the city."
-    "And before I know it I'm back to my usual rhythm, one that's weirdly assuring to fall back into." 
+    "And before I know it I'm back to my usual rhythm, one that's weirdly assuring to fall back into."
     "The night wrapped up without any further complications--a bit of respite that I embraced wholeheartedly while I could."
     show bg_black with Dissolve(0.75)
     scene bg_club_1_off_work with Dissolve(0.75)
@@ -209,7 +209,7 @@
     roman "You know, at least according to this error message."
     eris p2 e5 "Dammit. {i}Shit!{/i}"
     "She angrily grabs a hold of her hair, spewing out a string of curses and muttering under her breath."
-    eris "All the devs said it would work this way." 
+    eris "All the devs said it would work this way."
     eris "I spent all this time making an ass of myself earlier today. Everyone will come in tomorrow and see that {i}nothing{/i} has changed."
     eris "And I had the gall to boast to everyone."
     eris "{i}Goddammit!!!{/i}"

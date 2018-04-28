@@ -44,7 +44,7 @@ label A1_02:
     roman "And besides, even if there were, is it really anything to do with you?"
     "That was the wrong thing to say. His next works are heavy with sarcasm."
     parker "Oh, my apologies, please do forgive me for prying into your personal life."
-    parker "But, unfortunately, it is my business. I've had staff with history before. It's a pain in the ass."
+    parker "But, unfortunately, it {i}is{/i} my business. I've had staff with history before. It's a pain in the ass."
     parker "They either waste half the day fornicating in the store cupboard, or they can't work within 50 feet of each other without frightening the customers."
     parker "So, what's it gonna be with you?"
     roman "We just worked together in the past. That's all it is."
@@ -55,12 +55,12 @@ label A1_02:
             $ cooperation += 1
             $ scene_5_cooperation = False
             call just_coworkers from _call_just_coworkers
-        
+
         "Fine. She made my time at my old place a living hell.":
             $ rivalry += 1
             $ scene_5_rivalry = False
             call living_hell from _call_living_hell
-    
+
     play audio mop_bucket
     "I do as he says, taking up the mop I'd left leaning against the side of the bucket. As Parker disappears into the back office, I'm left pondering the honesty of my own words."
     "Yeah, so me and Eris have a rough history, but do I really need to bother myself with that? Maybe now it's time to let bygones be bygones. This is supposed to be the start of a new chapter...or something like that. God, that sounds pretentious."
@@ -290,7 +290,7 @@ label A1_02:
     hide eris
     show bg_black with Dissolve(1.5)
     return
-            
+
 label just_coworkers:
     roman "Seriously. That's all it was. Just coworkers."
     parker "Just coworkers?"
@@ -311,7 +311,7 @@ label just_coworkers:
     show parker p1 e2 at transform_hide
     hide parker
     return
-    
+
 label living_hell:
     roman "Fine. She made my time at my old place a living hell."
     roman "From the start, she was {i}constantly{/i} second-guessing me. I couldn't get a goddamn word in the entire time!"
@@ -341,9 +341,9 @@ label living_hell:
     "Amidst Parker's confusion I answer myself out loud."
     show parker p1 e1 at centered
     "Parker looks as though he wants to hear more, so I keep talking. I can already hear the lack of conviction in my voice. Could he?"
-    roman "There's no sense in holding onto stuff from the past like this, and getting angry for something that happened long ago isn't going to do anyone any good."    
+    roman "There's no sense in holding onto stuff from the past like this, and getting angry for something that happened long ago isn't going to do anyone any good."
     parker "..."
-    "He looks...satisfied enough." 
+    "He looks...satisfied enough."
     parker p1 e5 "Wise words. Mind you live by them."
     "He fixes me with a knowing stare for a beat, before continuing."
     parker p1 e1 "I am surprised to hear you and Eris have such a turbulent history, to be honest. I didn't really expect anything like this to happen when I was bringing her on board, even when I mentioned you during our interview."
