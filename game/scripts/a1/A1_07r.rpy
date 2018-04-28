@@ -34,6 +34,7 @@
     play audio [backdoor_open, backdoor_close]
     scene bg_club_2_after_work with Dissolve(0.5) 
     "Parker's nowhere to be seen. Sneaky old bastard moves fast."
+    scene bg_club_lounge with Dissolve(0.5)
     "I make my way towards the staff area, quickly spotting my phone on the table. As I'm about to leave, my eyes adjust to the dim light and my attention shifts towards a sight...as unexpected as it is unfortunately familiar."
     show eris p2 e5 at centered
     "Sitting at the table with a strained, focused, almost desperate expression is Eris. Her shoulders are slumped uncomfortably, and from the wrinkles under her eyes one could only imagine that she's been here a while."
@@ -53,7 +54,8 @@
     eris "For the bet we had a while back!"
     roman "Oh. Right. That plan."
     "Part of me's rolling my eyes now, sorry she's ever brought that up. I just wanted to forget about that whole mess."
-    "It's like when you blurt out something at a party that turns out to be way dumber than you'd imagined and everyone laughs at you--they'd probably forget that the next time they have a bowel movement, but you're going to come back to that and feel like an idiot every too-quiet sleepless night for the next twenty years and wish you'd shut it."
+    "It's like when you blurt out something at a party that turns out to be way dumber than you'd imagined and everyone laughs at you."
+    "They'd probably forget that the next time they have a bowel movement, but you're going to come back to that and feel like an idiot every too-quiet sleepless night for the next twenty years and wish you'd shut it."
     "Another part of me, though, leaps to attention. Sure, it was a disaster, but if I'm being honest here it {i}was{/i} the last interesting thing to happen around here."
     "Eris continues."
     eris "So anyway, I've been thinking: we couldn't make it work back then, but it's still a great idea on principle, right?"
@@ -317,7 +319,8 @@
     roman "Sure, it paid nice, and the benefits were great, but I don't give a shit about that stuff. I give a shit about waking up in the morning and not feeling like going to work because I can't stand the thought of what it's going to be like."
     eris p2 e5 "'What it's going to be like'? What exactly did I do? Hold you down and waterboard you? It wasn't torture, it was your job. It was reality. {i}Life{/i}."
     roman "See? See?! You're doing that same thing again. That thing where you imply that my {i}job{/i} was, is, or should be my {i}life{/i}."
-    roman "I don't know what it was like for you, but that's just not how I roll. And for your sake, I hope it isn't how you do, because if that's the case it's not even a wonder if you're feeling so empty inside you need to go to this ridiculous lengths every single fucking time in some pathetic {i}scheme{/i} to rope me back into yours."
+    roman "I don't know what it was like for you, but that's just not how I roll." 
+    roman "And for your sake, I hope it isn't how you do, because if that's the case it's not even a wonder if you're feeling so empty inside you need to go to this ridiculous lengths every single fucking time in some pathetic {i}scheme{/i} to rope me back into yours."
     eris p2 e3 "Wow! Are {i}you{/i} listening to yourself? What is with this shit? 'How you roll'? What are you, fucking sixteen?"
     eris "You had an amazing thing going in ARTech! You could've had a future! You got a gift and you're squandering it! There's no other way to say it."
     roman "Well, guess what? I don't give a fuck. 'Gift'? I'm not a wizard, I'm not a superhero, I'm some asshole nobody who figured he'll go get a BE, see if there're any nice jobs that way."
