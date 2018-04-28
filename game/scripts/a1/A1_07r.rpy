@@ -34,6 +34,7 @@
     play audio [backdoor_open, backdoor_close]
     scene bg_club_2_after_work with Dissolve(0.5) 
     "Parker's nowhere to be seen. Sneaky old bastard moves fast."
+    scene bg_club_lounge with Dissolve(0.5)
     "I make my way towards the staff area, quickly spotting my phone on the table. As I'm about to leave, my eyes adjust to the dim light and my attention shifts towards a sight...as unexpected as it is unfortunately familiar."
     show eris p2 e5 at centered
     "Sitting at the table with a strained, focused, almost desperate expression is Eris. Her shoulders are slumped uncomfortably, and from the wrinkles under her eyes one could only imagine that she's been here a while."
