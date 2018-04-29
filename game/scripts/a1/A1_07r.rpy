@@ -224,7 +224,7 @@
     "Eris emerges sheepishly through the backdoor."
     "The sounds of the club leak out for just a moment, filling the dry air around us, then quiet down just as fast with the clang of it closing behind her."
     play audio backdoor_close
-    $ queue_music(music_seven_2r)
+    $ queue_music(music_seven2r)
     "I take the cigarette out of my mouth to exhale. The feeling of emptiness in my chest feels so natural."
     "I don't even look her way. It feels like too much of commitment. She'll read in it stuff that's not there and hold me up to it."
     roman "What?"
