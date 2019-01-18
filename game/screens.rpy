@@ -211,16 +211,21 @@ init -2:
     # Transforms for navigation
     #Special dissolve transition that takes delay argument, counting from 0
 
-    define animspeed = 0.75
+    define gui.animspeed = 0.75
 
     transform mmfade(order):
         alpha 0.0
         pause (order * 0.1)
-        ease 0.75 alpha 1.0
+        ease gui.animspeed alpha 1.0
+    
+    transform mmquickfade(order):
+        alpha 0.0
+        pause (order * 0.03)
+        ease gui.animspeed alpha 1.0
 
     transform blackfade:
         alpha 1.0
-        ease 0.75 alpha 0.0
+        ease gui.animspeed alpha 0.0
 
 
 screen navigation():
@@ -375,7 +380,7 @@ screen file_slots(title):
                     $ slot = i + 1
                     if FileLoadable(slot):
                         button:
-                            at mmfade(i)
+                            at mmquickfade(i)
                             background Frame("gui/file_slot_button.png", 2, 2, tile = True)
                             xysize (240, 80)
                             action FileAction(slot)
@@ -400,7 +405,7 @@ screen file_slots(title):
                                 action FileDelete(slot)
                     else:
                         button:
-                            at mmfade(i)
+                            at mmquickfade(i)
                             xysize (240, 80)
                             action FileAction(slot)
                             frame:
