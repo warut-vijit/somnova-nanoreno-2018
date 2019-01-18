@@ -210,25 +210,23 @@ style quick_right_button_text:
 init -2:
     # Transforms for navigation
     #Special dissolve transition that takes delay argument, counting from 0
-    transform mmslidefade(order):
-        subpixel True
-        alpha 0.0 ypos -20
-        pause (order * 0.1)
-        ease 1.0 alpha 1.0 ypos 0
 
-    transform mmfade:
+    define animspeed = 0.75
+
+    transform mmfade(order):
         alpha 0.0
-        ease 1.0 alpha 1.0
+        pause (order * 0.1)
+        ease 0.75 alpha 1.0
 
     transform blackfade:
         alpha 1.0
-        ease 1.0 alpha 0.0
+        ease 0.75 alpha 0.0
 
 
 screen navigation():
     style_prefix "navigation"
     frame:
-        at mmfade
+        at mmfade(0)
         xpos 200
         xsize 280
         background Solid(gui.box_background_color)
@@ -245,19 +243,19 @@ screen navigation():
             spacing 20
 
             if main_menu:
-                textbutton _("NEW GAME") action Start() at mmslidefade(0)
-                textbutton _("LOAD GAME") action ShowMenu("load") at mmslidefade(1)
-                textbutton _("OPTIONS") action ShowMenu("options") at mmslidefade(2)
-                textbutton _("EXTRAS") sensitive False text_color gui.empty_text_color at mmslidefade(3)
-                textbutton _("QUIT") action Quit(confirm = not main_menu) at mmslidefade(4)
+                textbutton _("NEW GAME") action Start() at mmfade(0)
+                textbutton _("LOAD GAME") action ShowMenu("load") at mmfade(1)
+                textbutton _("OPTIONS") action ShowMenu("options") at mmfade(2)
+                textbutton _("EXTRAS") sensitive False text_color gui.empty_text_color at mmfade(3)
+                textbutton _("QUIT") action Quit(confirm = not main_menu) at mmfade(4)
             else:
-                textbutton _("RETURN") action Return() at mmslidefade(0)
-                textbutton _("HISTORY") action ShowMenu("history") at mmslidefade(1)
-                textbutton _("SAVE GAME") action ShowMenu("save") at mmslidefade(2)
-                textbutton _("LOAD GAME") action ShowMenu("load") at mmslidefade(3)
-                textbutton _("OPTIONS") action ShowMenu("options") at mmslidefade(4)
-                textbutton _("MAIN MENU") action MainMenu() at mmslidefade(5)
-                textbutton _("QUIT") action Quit(confirm = not main_menu) at mmslidefade(6)
+                textbutton _("RETURN") action Return() at mmfade(0)
+                textbutton _("HISTORY") action ShowMenu("history") at mmfade(1)
+                textbutton _("SAVE GAME") action ShowMenu("save") at mmfade(2)
+                textbutton _("LOAD GAME") action ShowMenu("load") at mmfade(3)
+                textbutton _("OPTIONS") action ShowMenu("options") at mmfade(4)
+                textbutton _("MAIN MENU") action MainMenu() at mmfade(5)
+                textbutton _("QUIT") action Quit(confirm = not main_menu) at mmfade(6)
 
 style navigation_button:
     xysize (280, 60)
@@ -377,6 +375,7 @@ screen file_slots(title):
                     $ slot = i + 1
                     if FileLoadable(slot):
                         button:
+                            at mmfade(i)
                             background Frame("gui/file_slot_button.png", 2, 2, tile = True)
                             xysize (240, 80)
                             action FileAction(slot)
@@ -401,6 +400,7 @@ screen file_slots(title):
                                 action FileDelete(slot)
                     else:
                         button:
+                            at mmfade(i)
                             xysize (240, 80)
                             action FileAction(slot)
                             frame:
