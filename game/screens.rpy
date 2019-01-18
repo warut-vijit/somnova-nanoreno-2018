@@ -206,9 +206,29 @@ style quick_right_button_text:
 ##########################################
 
 # Navigation is used in both the main (title) menu and on the in-game menu screen.
+
+init -2:
+    # Transforms for navigation
+    #Special dissolve transition that takes delay argument, counting from 0
+    transform mmslidefade(order):
+        subpixel True
+        alpha 0.0 ypos -20
+        pause (order * 0.1)
+        ease 1.0 alpha 1.0 ypos 0
+
+    transform mmfade:
+        alpha 0.0
+        ease 1.0 alpha 1.0
+
+    transform blackfade:
+        alpha 1.0
+        ease 1.0 alpha 0.0
+
+
 screen navigation():
     style_prefix "navigation"
     frame:
+        at mmfade
         xpos 200
         xsize 280
         background Solid(gui.box_background_color)
@@ -225,21 +245,19 @@ screen navigation():
             spacing 20
 
             if main_menu:
-                textbutton _("NEW GAME") action Start()
+                textbutton _("NEW GAME") action Start() at mmslidefade(0)
+                textbutton _("LOAD GAME") action ShowMenu("load") at mmslidefade(1)
+                textbutton _("OPTIONS") action ShowMenu("options") at mmslidefade(2)
+                textbutton _("EXTRAS") sensitive False text_color gui.empty_text_color at mmslidefade(3)
+                textbutton _("QUIT") action Quit(confirm = not main_menu) at mmslidefade(4)
             else:
-                textbutton _("RETURN") action Return()
-                textbutton _("HISTORY") action ShowMenu("history")
-                textbutton _("SAVE GAME") action ShowMenu("save")
-            
-            textbutton _("LOAD GAME") action ShowMenu("load")
-            textbutton _("OPTIONS") action ShowMenu("options")
-
-            if main_menu:
-                textbutton _("EXTRAS") sensitive False text_color gui.empty_text_color
-                textbutton _("QUIT") action Quit(confirm = not main_menu)
-            else:
-                textbutton _("QUIT") action MainMenu()
-
+                textbutton _("RETURN") action Return() at mmslidefade(0)
+                textbutton _("HISTORY") action ShowMenu("history") at mmslidefade(1)
+                textbutton _("SAVE GAME") action ShowMenu("save") at mmslidefade(2)
+                textbutton _("LOAD GAME") action ShowMenu("load") at mmslidefade(3)
+                textbutton _("OPTIONS") action ShowMenu("options") at mmslidefade(4)
+                textbutton _("MAIN MENU") action MainMenu() at mmslidefade(5)
+                textbutton _("QUIT") action Quit(confirm = not main_menu) at mmslidefade(6)
 
 style navigation_button:
     xysize (280, 60)
@@ -260,7 +278,8 @@ style navigation_button_text:
 screen main_menu():
     tag menu # This ensures that any other menu screen is replaced.
     style_prefix "main_menu"
-    add "gui/main_menu.png" # TODO
+    add "gui/main_menu.png"
+    add "images/black.webp" at blackfade
 
     $ renpy.music.stop("dynamic_1", fadeout = 1.5)
     $ renpy.music.stop("dynamic_2", fadeout = 1.5)
