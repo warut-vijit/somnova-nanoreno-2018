@@ -202,7 +202,7 @@ style quick_right_button_text:
     xalign 1.0
 
 ##########################################
-##-------------NAVIVGATION--------------##
+##-------------NAVIGATION--------------##
 ##########################################
 
 # Navigation is used in both the main (title) menu and on the in-game menu screen.
@@ -220,9 +220,14 @@ init -2:
             pause (order * 0.1)
             ease gui.animspeed alpha 1.0
     
-    transform mmquickfade(order):
+    transform mmqfade(order):
         alpha 0.0
-        pause (order * 0.03)
+        pause (order * 0.05)
+        ease gui.animspeed alpha 1.0
+
+    transform mmsfade(order):
+        alpha 0.0
+        pause (order * 0.1)
         ease gui.animspeed alpha 1.0
 
     transform blackfade:
@@ -301,6 +306,12 @@ screen main_menu():
 ##########################################
 
 # This includes a bunch of different menu types.
+
+init -2:
+    transform menutitlecrop:
+        alpha 0.0
+        ease gui.animspeed alpha 1.0
+
 screen game_menu(title):
     style_prefix "game_menu"
 
@@ -313,6 +324,7 @@ screen game_menu(title):
             background Solid(gui.box_background_color)
 
     frame:
+        at mmfade(0)
         xpadding 80
         xpos 500
         xsize 1220
@@ -320,6 +332,7 @@ screen game_menu(title):
         background Solid(gui.box_background_color)
 
         label title:
+            at menutitlecrop
             text_ycenter 0.73 # Align to bottom. Ack.
             text_size 90
             text_first_indent -8 # Align to left. Ack.
@@ -384,7 +397,7 @@ screen file_slots(title):
                     $ slot = i + 1
                     if FileLoadable(slot):
                         button:
-                            at mmquickfade(i)
+                            at mmqfade(i)
                             background Frame("gui/file_slot_button.webp", 2, 2, tile = True)
                             xysize (240, 80)
                             action FileAction(slot)
@@ -409,7 +422,7 @@ screen file_slots(title):
                                 action FileDelete(slot)
                     else:
                         button:
-                            at mmquickfade(i)
+                            at mmqfade(i)
                             xysize (240, 80)
                             action FileAction(slot)
                             frame:
@@ -455,33 +468,40 @@ screen options():
     use game_menu(_("OPTIONS")):
         $ position_offset = 21 + 10
         hbox:
+            at mmsfade(0)
             ypos 130 - position_offset
             label _("Display")
             textbutton _("FULLSCREEN") action Preference("display", "fullscreen")
             textbutton _("WINDOWED") action Preference("display", "any window")
         hbox:
+            at mmsfade(1)
             ypos 190 - position_offset
             label _("Skip unseen text")
             textbutton _("ON") action Preference("skip", "all")
             textbutton _("OFF") action Preference("skip", "seen")
         hbox:
+            at mmsfade(2)
             ypos 250 - position_offset
             label _("Skip after choices")
             textbutton _("ON") action Preference("after choices", "skip")
             textbutton _("OFF") action Preference("after choices", "stop")
         hbox:
+            at mmsfade(3)
             ypos 360 - position_offset
             label _("Text Speed")
             bar value Preference("text speed")
         hbox:
+            at mmsfade(4)
             ypos 420 - position_offset
             label _("Auto-Forward Time")
             bar value Preference("auto-forward time")
         hbox:
+            at mmsfade(5)
             ypos 480 - position_offset
             label _("Music Volume")
             bar value Preference("music volume")
         hbox:
+            at mmsfade(6)
             ypos 540 - position_offset
             label _("SFX Volume")
             bar value Preference("sound volume")
@@ -545,6 +565,12 @@ style options_hbox:
 ##########################################
 # Reference https://www.renpy.org/doc/html/history.html
 
+init -2:
+    transform historyfade:
+        crop_relative True
+        crop (0, 0, 1, 0) alpha 0.0
+        ease gui.animspeed crop (0, 0, 1, 1) alpha 1.0
+
 screen history():
     tag menu
 
@@ -553,6 +579,7 @@ screen history():
 
     use game_menu(_("HISTORY")):
         viewport:
+            at historyfade
             pos (55, 60)
             xysize (965, 520)
 
@@ -592,6 +619,7 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     frame:
+        at mmsfade(0)
         xfill True
         yfill True
         background Solid(gui.confirm_background)
@@ -627,8 +655,8 @@ screen confirm(message, yes_action, no_action):
                     style_prefix "confirm"
                     xpos 500
                     spacing 20
-                    textbutton _("Yes") action yes_action
-                    textbutton _("No") action no_action
+                    textbutton _("Yes") action yes_action at mmsfade(3)
+                    textbutton _("No") action no_action at mmsfade(4)
 
     # Right-click and escape answer "no".
     key "game_menu" action no_action
