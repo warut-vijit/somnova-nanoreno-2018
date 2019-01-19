@@ -214,9 +214,11 @@ init -2:
     define gui.animspeed = 0.75
 
     transform mmfade(order):
-        alpha 0.0
-        pause (order * 0.1)
-        ease gui.animspeed alpha 1.0
+        alpha 1.0
+        on show:
+            alpha 0.0
+            pause (order * 0.1)
+            ease gui.animspeed alpha 1.0
     
     transform mmquickfade(order):
         alpha 0.0
@@ -224,8 +226,10 @@ init -2:
         ease gui.animspeed alpha 1.0
 
     transform blackfade:
-        alpha 1.0
-        ease gui.animspeed alpha 0.0
+        alpha 0.0
+        on show:
+            alpha 1.0
+            ease gui.animspeed alpha 0.0
 
 
 screen navigation():
