@@ -12,8 +12,8 @@ style default:
 
 style vscrollbar:
     xysize (10, 520)
-    selected_base_bar Frame("gui/scrollbar_border.png", 1, 1, tile = True)
-    base_bar Frame("gui/scrollbar_border_idle.png", 1, 1, tile = True)
+    selected_base_bar Frame("gui/scrollbar_border.webp", 1, 1, tile = True)
+    base_bar Frame("gui/scrollbar_border_idle.webp", 1, 1, tile = True)
     selected_thumb Solid(gui.scrollbar_color)
     thumb Solid(gui.scrollbar_color_idle)
 
@@ -27,7 +27,7 @@ screen say(who, what):
     style_prefix "say"
     
     frame:
-        background Frame("gui/divider.png", 2, 0, tile = True)
+        background Frame("gui/divider.webp", 2, 0, tile = True)
         yoffset 1080
         pos (199, -262)
         xysize (1522, 2)
@@ -93,7 +93,7 @@ screen choice(items):
 
     frame:
         style_prefix "choice"
-        background "gui/choice_icon.png"
+        background "gui/choice_icon.webp"
         xysize (80, 69)
         xalign 0.5
         yanchor 0.0
@@ -103,14 +103,14 @@ screen choice(items):
             action items[0].action
             xanchor 1.0
             xoffset -30
-            background LiveComposite((734, 60), (0, 0), "gui/choice_button_left.png", (0, 0), "gui/choice_overlay_left_idle.png")
-            hover_background LiveComposite((734, 60), (0, 0), "gui/choice_button_left.png", (0, 0), "gui/choice_overlay_left.png")
+            background LiveComposite((734, 60), (0, 0), "gui/choice_button_left.webp", (0, 0), "gui/choice_overlay_left_idle.webp")
+            hover_background LiveComposite((734, 60), (0, 0), "gui/choice_button_left.webp", (0, 0), "gui/choice_overlay_left.webp")
         textbutton items[1].caption:
             action items[1].action
             xanchor 0.0
             xoffset 30
-            background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.png", (0, 0), "gui/choice_overlay_right_idle.png")
-            hover_background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.png", (0, 0), "gui/choice_overlay_right.png")
+            background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.webp", (0, 0), "gui/choice_overlay_right_idle.webp")
+            hover_background LiveComposite((734, 60), (0, 0), "gui/choice_button_right.webp", (0, 0), "gui/choice_overlay_right.webp")
             
 style choice_button:
     xysize (734, 60)
@@ -134,7 +134,7 @@ screen quick_menu():
         # The quick menu lords over other puny screens.
         zorder 100
         frame:
-            background LiveTile("gui/quick_menu_bar.png")
+            background LiveTile("gui/quick_menu_bar.webp")
             ysize 80
             xfill True
             yanchor 1.0
@@ -268,8 +268,8 @@ screen navigation():
 
 style navigation_button:
     xysize (280, 60)
-    hover_background Frame("gui/main_menu_button.png", 2, 2, tile = True)
-    selected_background Frame("gui/main_menu_button.png", 2, 2, tile = True)
+    hover_background Frame("gui/main_menu_button.webp", 2, 2, tile = True)
+    selected_background Frame("gui/main_menu_button.webp", 2, 2, tile = True)
     
 style navigation_button_text:
     font "fonts/Lato-Light.ttf"
@@ -285,7 +285,7 @@ style navigation_button_text:
 screen main_menu():
     tag menu # This ensures that any other menu screen is replaced.
     style_prefix "main_menu"
-    add "gui/main_menu.png"
+    add "gui/main_menu.webp"
     add "images/black.webp" at blackfade
 
     $ renpy.music.stop("dynamic_1", fadeout = 1.5)
@@ -305,7 +305,7 @@ screen game_menu(title):
     style_prefix "game_menu"
 
     if main_menu:
-        add "gui/main_menu.png" # TODO
+        add "gui/main_menu.webp" # TODO
     else:
         frame:
             xfill True
@@ -326,11 +326,11 @@ screen game_menu(title):
             yanchor 1.0
             ypos 180
         frame: # Top divider.
-            background Frame("gui/divider.png", 2, 0, tile = True)
+            background Frame("gui/divider.webp", 2, 0, tile = True)
             yoffset 200
             ysize 2
         frame: # Bottom divider.
-            background Frame("gui/divider.png", 2, 0, tile = True)
+            background Frame("gui/divider.webp", 2, 0, tile = True)
             xfill True
             add Solid(gui.border_edge, xsize = 88)
             yoffset 858
@@ -385,7 +385,7 @@ screen file_slots(title):
                     if FileLoadable(slot):
                         button:
                             at mmquickfade(i)
-                            background Frame("gui/file_slot_button.png", 2, 2, tile = True)
+                            background Frame("gui/file_slot_button.webp", 2, 2, tile = True)
                             xysize (240, 80)
                             action FileAction(slot)
                             add FileScreenshot(slot):
@@ -404,8 +404,8 @@ screen file_slots(title):
                                 anchor (0.0, 1.0)
                                 pos (211, 21)
                                 xysize (15, 15)
-                                background "gui/x_idle.png"
-                                hover_background "gui/x_focus.png"
+                                background "gui/x_idle.webp"
+                                hover_background "gui/x_focus.webp"
                                 action FileDelete(slot)
                     else:
                         button:
@@ -414,7 +414,7 @@ screen file_slots(title):
                             action FileAction(slot)
                             frame:
                                 if title == "SAVE GAME":
-                                    background Frame("gui/file_slot_empty.png", 2, 2, tile = True)
+                                    background Frame("gui/file_slot_empty.webp", 2, 2, tile = True)
                                 xysize (config.thumbnail_width, config.thumbnail_height)
                                 pos (20, 6)
                             text _("Empty"):
@@ -489,7 +489,7 @@ screen options():
             yanchor 0.5
             offset (810, 499)
             xysize (12, 80)
-            background "gui/mute_frame.png"
+            background "gui/mute_frame.webp"
             textbutton _("MUTE"):
                 action [
                     Preference("all mute", "toggle"),
@@ -507,7 +507,7 @@ style options_label_text:
 
 style options_button:
     xysize (180, 40)
-    background Frame("gui/options_button.png", 2, 2, tile = True)
+    background Frame("gui/options_button.webp", 2, 2, tile = True)
 
 style options_button_text:
     xcenter 0.5
@@ -518,13 +518,13 @@ style options_button_text:
     size 20
 
 style options_slider:
-    left_bar Frame("gui/bar_left.png", 2, 2, tile = True)
-    right_bar Frame("gui/bar_right.png", 2, 2, tile = True)
+    left_bar Frame("gui/bar_left.webp", 2, 2, tile = True)
+    right_bar Frame("gui/bar_right.webp", 2, 2, tile = True)
     left_gutter 2
     right_gutter 2
     yalign 0.5
     xysize (380, 40)
-    hover_thumb "gui/bar_indicator.png"
+    hover_thumb "gui/bar_indicator.webp"
     hover_thumb_offset 1.5
 
 style mute_all_button:
@@ -600,12 +600,12 @@ screen confirm(message, yes_action, no_action):
             yalign .5
             xysize (660, 180)
             frame:
-                background Frame("gui/divider.png", 2, 0, tile = True)
+                background Frame("gui/divider.webp", 2, 0, tile = True)
                 ysize 2
                 ypos -2
                 xfill True
             frame:
-                background Frame("gui/divider.png", 2, 0, tile = True)
+                background Frame("gui/divider.webp", 2, 0, tile = True)
                 ysize 2
                 ypos 180
                 xfill True

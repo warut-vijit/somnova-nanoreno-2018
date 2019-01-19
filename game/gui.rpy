@@ -55,8 +55,8 @@ define config.history_length = 250
 ##---------------SPLASH-----------------##
 ##########################################
 
-image logo = "gui/logo-splash.png"
-image logo_credits = "gui/logo-credits.png"
+image logo = "gui/logo-splash.webp"
+image logo_credits = "gui/logo-credits.webp"
 image splash_movie = Movie(play = "gui/intro.webm")
 
 label splashscreen:
