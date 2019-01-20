@@ -43,8 +43,7 @@ label A1_01:
     show parker at transform_hide
     hide parker
     "Well, I guess it's better paid work than my last job..."
-    show bg_black with Dissolve(0.75)
-    show bg_club_2_during_work with Dissolve(0.75)
+    scene bg_club_2_during_work with Fade(0.75, 0, 0.75)
     "Soon, the evening crowd moves in, ordering drinks and dinner."
     "My ears eventually pick up a fragment of conversation."
     customer_a "I wonder if she's performing here tonight..."
