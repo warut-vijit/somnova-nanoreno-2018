@@ -308,9 +308,20 @@ screen main_menu():
 # This includes a bunch of different menu types.
 
 init -2:
-    transform menutitlecrop:
+    transform menutitlefade:
         alpha 0.0
         ease gui.animspeed alpha 1.0
+    
+    transform gmbgimdissolve(child):
+        on show:
+            Null(height=1080, width=1220)
+            xpos 500
+            child with ImageDissolve("images/fx/pixelcloud.png", gui.animspeed*2)
+
+    transform dividercrop:
+        crop_relative True
+        crop (0, 0, 0, 1) alpha 1.0
+        ease gui.animspeed crop (0, 0, 1, 1) alpha 1.0
 
 screen game_menu(title):
     style_prefix "game_menu"
@@ -324,15 +335,16 @@ screen game_menu(title):
             background Solid(gui.box_background_color)
 
     frame:
-        at mmfade(0)
+        $ menuShown = False
         xpadding 80
         xpos 500
         xsize 1220
         yfill True
-        background Solid(gui.box_background_color)
+        background Solid(gui.box_background_color) at gmbgimdissolve
+        $ menuShown = True
 
         label title:
-            at menutitlecrop
+            at menutitlefade
             text_ycenter 0.73 # Align to bottom. Ack.
             text_size 90
             text_first_indent -8 # Align to left. Ack.
@@ -366,7 +378,7 @@ screen game_menu(title):
         key "game_menu" action ShowMenu("main_menu")
 
 ##########################################
-##-----------LOAD/SAVE SCREEN-----------##
+##-----------SAVE/LOAD SCREEN-----------##
 ##########################################
 # Reference: www.renpy.org/doc/html/screen_special.html#load
 
@@ -395,9 +407,10 @@ screen file_slots(title):
                 $ slot_hover = [False] * (4 * 3)
                 for i in range(4 * 3):
                     $ slot = i + 1
+                    $ animdelay = i + 10
                     if FileLoadable(slot):
                         button:
-                            at mmqfade(i)
+                            at mmqfade(animdelay)
                             background Frame("gui/file_slot_button.webp", 2, 2, tile = True)
                             xysize (240, 80)
                             action FileAction(slot)
@@ -422,7 +435,7 @@ screen file_slots(title):
                                 action FileDelete(slot)
                     else:
                         button:
-                            at mmqfade(i)
+                            at mmqfade(animdelay)
                             xysize (240, 80)
                             action FileAction(slot)
                             frame:
@@ -443,13 +456,15 @@ screen file_slots(title):
                 offset (-20, -54)
                 spacing 12
                 textbutton _("Prev"):
+                    at mmqfade(0)
                     action FilePagePrevious(5, wrap = False)
 
                 # 1 (inclusive) to 6 (exclusive).
                 for page in range(1, 6):
-                    textbutton "[page]" action FilePage(page)
+                    textbutton "[page]" action FilePage(page) at mmqfade(page)
 
                 textbutton _("Next"):
+                    at mmqfade(page+1)
                     action FilePageNext(5, wrap = False)
 
 style page_button_text:
