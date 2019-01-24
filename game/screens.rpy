@@ -27,7 +27,7 @@ screen say(who, what):
     style_prefix "say"
     
     frame:
-        background Frame("gui/divider.webp", 2, 0, tile = True)
+        background Frame("gui/divider.webp", 2, 0, tile = True) at dividercrop
         yoffset 1080
         pos (199, -262)
         xysize (1522, 2)
@@ -207,36 +207,6 @@ style quick_right_button_text:
 
 # Navigation is used in both the main (title) menu and on the in-game menu screen.
 
-init -2:
-    # Transforms for navigation
-    #Special dissolve transition that takes delay argument, counting from 0
-
-    define gui.animspeed = 0.75
-
-    transform mmfade(order):
-        alpha 1.0
-        on show:
-            alpha 0.0
-            pause (order * 0.1)
-            ease gui.animspeed alpha 1.0
-    
-    transform mmqfade(order):
-        alpha 0.0
-        pause (order * 0.05)
-        ease gui.animspeed alpha 1.0
-
-    transform mmsfade(order):
-        alpha 0.0
-        pause (order * 0.1)
-        ease gui.animspeed alpha 1.0
-
-    transform blackfade:
-        alpha 0.0
-        on show:
-            alpha 1.0
-            ease gui.animspeed alpha 0.0
-
-
 screen navigation():
     style_prefix "navigation"
     frame:
@@ -307,22 +277,6 @@ screen main_menu():
 
 # This includes a bunch of different menu types.
 
-init -2:
-    transform menutitlefade:
-        alpha 0.0
-        ease gui.animspeed alpha 1.0
-    
-    transform gmbgimdissolve(child):
-        on show:
-            Null(height=1080, width=1220)
-            xpos 500
-            child with ImageDissolve("images/fx/pixelcloud.png", gui.animspeed*2)
-
-    transform dividercrop:
-        crop_relative True
-        crop (0, 0, 0, 1) alpha 1.0
-        ease gui.animspeed crop (0, 0, 1, 1) alpha 1.0
-
 screen game_menu(title):
     style_prefix "game_menu"
 
@@ -340,7 +294,7 @@ screen game_menu(title):
         xpos 500
         xsize 1220
         yfill True
-        background Solid(gui.box_background_color) at gmbgimdissolve
+        background Solid(gui.box_background_color)
         $ menuShown = True
 
         label title:
@@ -407,7 +361,7 @@ screen file_slots(title):
                 $ slot_hover = [False] * (4 * 3)
                 for i in range(4 * 3):
                     $ slot = i + 1
-                    $ animdelay = i + 10
+                    $ animdelay = i + 2
                     if FileLoadable(slot):
                         button:
                             at mmqfade(animdelay)
@@ -580,12 +534,6 @@ style options_hbox:
 ##########################################
 # Reference https://www.renpy.org/doc/html/history.html
 
-init -2:
-    transform historyfade:
-        crop_relative True
-        crop (0, 0, 1, 0) alpha 0.0
-        ease gui.animspeed crop (0, 0, 1, 1) alpha 1.0
-
 screen history():
     tag menu
 
@@ -709,10 +657,3 @@ screen notify(message):
         text message
 
     timer 3.25 action Hide('notify')
-
-transform notify_appear:
-    on show:
-        alpha 0
-        linear .25 alpha 1.0
-    on hide:
-        linear .5 alpha 0.0
