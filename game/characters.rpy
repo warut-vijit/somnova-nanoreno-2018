@@ -8,22 +8,23 @@ define debug = Character("Debug", who_color = "#ff00ff")
 ##----------PRIMARY CHARACTERS----------##
 ##########################################
 
-define eris = Character("Eris", what_prefix = "“", what_suffix = "”", image = "eris", who_color = "#59ff9b", ctc="ctctyping", ctc_position="nestled")
-define roman = Character("Roman", what_prefix = "“", what_suffix = "”", who_color = "#b37664", ctc="ctctyping", ctc_position="nestled")
-define parker = Character("Parker", what_prefix = "“", what_suffix = "”", image = "parker", who_color = "#f1c564", ctc="ctctyping", ctc_position="nestled")
+define narrator = Character(ctc="ctctyping", ctc_position="fixed")
+define eris = Character("Eris", what_prefix = "“", what_suffix = "”", image = "eris", who_color = "#59ff9b", ctc="ctctyping", ctc_position="fixed")
+define roman = Character("Roman", what_prefix = "“", what_suffix = "”", who_color = "#b37664", ctc="ctctyping", ctc_position="fixed")
+define parker = Character("Parker", what_prefix = "“", what_suffix = "”", image = "parker", who_color = "#f1c564", ctc="ctctyping", ctc_position="fixed")
 
 ##########################################
 ##--------INCIDENTAL CHARACTERS---------##
 ##########################################
 
-define customer_a = Character("Customer A", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="nestled")
-define customer_b = Character("Customer B", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="nestled")
-define navcomp = Character("Navcomp", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="nestled")
-define phone = Character("Phone", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="nestled")
+define customer_a = Character("Customer A", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="fixed")
+define customer_b = Character("Customer B", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="fixed")
+define navcomp = Character("Navcomp", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="fixed")
+define phone = Character("Phone", what_prefix = "“", what_suffix = "”", ctc="ctctyping", ctc_position="fixed")
 
 ##########################################
 ##----------UTILITY CHARACTERS----------##
 ##########################################
 
 # For use before Roman recognizes Eris.
-define waitress_girl = Character("Waitress Girl", what_prefix = "”", what_suffix = "”", ctc="ctctyping", ctc_position="nestled")
+define waitress_girl = Character("Waitress Girl", what_prefix = "”", what_suffix = "”", ctc="ctctyping", ctc_position="fixed")

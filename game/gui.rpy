@@ -72,6 +72,7 @@ image ctcblink3:
     repeat
 
 layeredimage ctctyping:
+    xpos 1670 ypos 960
     always:
         "ctcblink1"
     always:
