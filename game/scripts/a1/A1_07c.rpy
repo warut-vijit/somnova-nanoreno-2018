@@ -215,7 +215,7 @@
     eris "...Roman, have you ever had someone walk out on you before?"
     roman "...?"
     eris "It's a terrible feeling, to feel like you're not good enough for somebody."
-    eris "You're with that person for long and then they just... leave."
+    eris "You're with that person for so long and then they just... leave."
     "So it's about ARTech in the end?"
     roman "Eris, I'm sorry for--"
     eris p1 e1 "You know someone your entire life. At least you think you do. You grew up loving them, and when you finally sure that you can rely on them they just--"

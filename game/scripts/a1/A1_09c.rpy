@@ -29,7 +29,7 @@
     roman "Yeah... I have."
     "Hard to believe that I'm still here." 
     show parker p1 e1 at centered
-    "I shut off the engine and pop out of my car, only to  curiously meet Parker's gaze as he steps through Arcady's backdoor."
+    "I shut off the engine and pop out of my car, only to curiously meet Parker's gaze as he steps through Arcady's backdoor."
     show parker p1 e5 at centered
     "It takes him mere moments to recognize that it's me, and so he sends me a kind smile and steps closer."
     roman "Morning, Parker."

@@ -237,7 +237,7 @@
     play audio backdoor_close
     scene cg_ri_noeris with Dissolve(0.5)
     "The sound of the door closing reverberates throughout the alley."
-    "Objectively, it's probably nothing. A creak then a bump in a city full of car horns and shouting,  noodle vendors and stereos blaring out of open windows."
+    "Objectively, it's probably nothing. A creak then a bump in a city full of car horns and shouting, noodle vendors and stereos blaring out of open windows."
     "There's a club half a meter of concrete behind me, where they're playing music right now."
     "And yet--"
     "--yet it feels like an earthquake. So much that my stomach turns and bile runs up my throat, even if my feet obviously aren't moving."
