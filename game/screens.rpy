@@ -27,7 +27,7 @@ screen say(who, what):
     style_prefix "say"
     
     frame:
-        background Frame("gui/divider.webp", 2, 0, tile = True) at dividercrop
+        background Frame("gui/divider.webp", 2, 0, tile = True) # at dividercrop ## Might re-introduce this later. on show doesn't work, currently.
         yoffset 1080
         pos (199, -262)
         xysize (1522, 2)
@@ -261,7 +261,7 @@ screen main_menu():
     tag menu # This ensures that any other menu screen is replaced.
     style_prefix "main_menu"
     add "gui/main_menu.webp"
-    add "images/black.webp" at blackfade
+    add "bg_black" at blackfade
 
     $ renpy.music.stop("dynamic_1", fadeout = 1.5)
     $ renpy.music.stop("dynamic_2", fadeout = 1.5)
@@ -281,7 +281,7 @@ screen game_menu(title):
     style_prefix "game_menu"
 
     if main_menu:
-        add "gui/main_menu.webp" # TODO
+        add "gui/main_menu.webp" at mmfade(1) # TODO
     else:
         frame:
             xfill True

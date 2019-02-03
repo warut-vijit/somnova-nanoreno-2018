@@ -31,6 +31,55 @@ define gui.scrollbar_color = "#fff" # White
 define gui.scrollbar_color_idle = "#ffffff4c" # White (30% opacity)
 
 ##########################################
+##-----------------CTC------------------##
+##########################################
+
+define gui.ctc_ypos = 27
+
+image ctcdot = Solid(gui.text_color, xysize = (3, 3))
+
+image ctcblink1:
+    "ctcdot"
+    xpos 10
+    ypos gui.ctc_ypos
+    ease 1.0 alpha 1.0
+    pause 0.2
+    ease 0.3 alpha 0.0
+    pause 0.4
+    repeat
+ 
+image ctcblink2:
+    "ctcdot"
+    xpos 20
+    ypos gui.ctc_ypos
+    alpha 0.0
+    pause 0.2
+    ease 1.0 alpha 1.0
+    pause 0.2
+    ease 0.3 alpha 0.0
+    pause 0.2
+    repeat
+
+image ctcblink3:
+    "ctcdot"
+    xpos 30
+    ypos gui.ctc_ypos
+    alpha 0.0
+    pause 0.4
+    ease 1.0 alpha 1.0
+    pause 0.2
+    ease 0.3 alpha 0.0
+    repeat
+
+layeredimage ctctyping:
+    always:
+        "ctcblink1"
+    always:
+        "ctcblink2"
+    always:
+        "ctcblink3"
+
+##########################################
 ##--------------FILE SLOTS--------------##
 ##########################################
 
