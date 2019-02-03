@@ -295,7 +295,7 @@
     "I hand over my notes and let him take a quick read."
     parker p1 e4 "Hmmm..."
     parker "So this is one of the things you talked about with Eris?"
-    roman "Yeah, she encouraged me to go through it it."
+    roman "Yeah, she encouraged me to go through with it."
     roman "If the club's budget and chef's attitude wouldn't be a problem, I think this is actually something viable we could look into."
     parker "..."
     parker p1 e1 "Budget won't be the issue."
