@@ -230,7 +230,7 @@ screen navigation():
                 textbutton _("NEW GAME") action Start() at mmfade(0)
                 textbutton _("LOAD GAME") action ShowMenu("load") at mmfade(1)
                 textbutton _("OPTIONS") action ShowMenu("options") at mmfade(2)
-                textbutton _("EXTRAS") sensitive False text_color gui.empty_text_color at mmfade(3)
+                textbutton _("EXTRAS") action ShowMenu("extras") at mmfade(3)
                 textbutton _("QUIT") action Quit(confirm = not main_menu) at mmfade(4)
             else:
                 textbutton _("RETURN") action Return() at mmfade(0)
@@ -636,6 +636,25 @@ style confirm_button_text:
     ycenter 0.5
     color gui.confirm_text_color
     hover_color gui.text_color
+
+##########################################
+##--------------EXTRAS MENU-------------##
+##########################################
+
+screen extras():
+    tag menu
+    use game_menu(_("EXTRAS")):
+        grid 2 2:
+            xfill True
+            yfill True
+            $ mmqorder = 3
+            $ gallery, manifest = bg_gallery
+            for bg_name in manifest:
+                $ thumbnail = Transform(bg_name, zoom=0.15)
+                add gallery.make_button(bg_name, thumbnail, xalign=0.5, yalign=0.5):
+                    at mmqfade(mmqorder)
+                    
+                $ mmqorder += 1
 
 ##########################################
 ##------------SKIP INDICATOR------------##
