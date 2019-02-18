@@ -241,6 +241,33 @@ screen navigation():
                 textbutton _("MAIN MENU") action MainMenu() at mmfade(5)
                 textbutton _("QUIT") action Quit(confirm = not main_menu) at mmfade(6)
 
+# Extras screen uses a different navbar 
+
+screen extras_navigation():
+    style_prefix "extras_navigation"
+    frame:
+        at mmfade(0)
+        xpos 200
+        xsize 280
+        background Solid(gui.box_background_color)
+
+        label _("MENU"):
+            text_ycenter 0.73 # This aligns the text to the bottom of the container. Ack.
+            text_size 90
+            xcenter 0.5
+            yanchor 1.0
+            ypos 180
+        
+        vbox:
+            yoffset 340
+            spacing 20
+
+            textbutton _("GALLERY") action Start() at mmfade(0)
+            textbutton _("CONCEPT ART") action ShowMenu("load") at mmfade(1)
+            textbutton _("JUKEBOX") action ShowMenu("options") at mmfade(2)
+            textbutton _("CREDITS") action ShowMenu("extras") at mmfade(3)
+            textbutton _("BACK") action Return() at mmfade(4)
+
 style navigation_button:
     xysize (280, 60)
     hover_background Frame("gui/main_menu_button.webp", 2, 2, tile = True)
@@ -314,20 +341,26 @@ screen game_menu(title):
             add Solid(gui.border_edge, xsize = 88)
             yoffset 858
             ysize 2
-        textbutton _("BACK"):
-            text_size 45
-            text_ycenter 0.29 # Align to top. Ack.
-            text_first_indent -6 # Align to left. Ack.
-            yoffset 880
-            text_color gui.text_color
-            text_hover_color gui.active_text_color
-            action Return()
+
+        # Extras menus use the sidebar to return to main menu
+        if "extras" not in title:
+            textbutton _("BACK"):
+                text_size 45
+                text_ycenter 0.29 # Align to top. Ack.
+                text_first_indent -6 # Align to left. Ack.
+                yoffset 880
+                text_color gui.text_color
+                text_hover_color gui.active_text_color
+                action Return()
         frame:
             yoffset 200
             ysize 660
             transclude # Include whatever content is necessary.
 
-    use navigation
+    if title == "EXTRAS":
+        use extras_navigation
+    else:
+        use navigation
     if main_menu:
         key "game_menu" action ShowMenu("main_menu")
 
@@ -644,15 +677,33 @@ style confirm_button_text:
 screen extras():
     tag menu
     use game_menu(_("EXTRAS")):
-        grid 2 2:
+        grid 5 2:
             xfill True
             yfill True
             $ mmqorder = 3
             $ gallery, manifest = bg_gallery
             for bg_name in manifest:
-                $ thumbnail = Transform(bg_name, zoom=0.15)
-                add gallery.make_button(bg_name, thumbnail, xalign=0.5, yalign=0.5):
-                    at mmqfade(mmqorder)
+                $ thumbnail = Transform(bg_name, crop_relative=(0.25,0,0.5,1.0), size=(200,200))
+                add gallery.make_button(bg_name, thumbnail, xalign=0.5, yalign=0.5, padding=(20,20), xysize=(200,200), background=Frame("gui/file_slot_empty.webp", 2, 2, tile = True))
+                #    at mmqfade(mmqorder)
+                #frame:
+                #    background Frame("gui/file_slot_empty.webp", 2, 2, tile = True)
+                #    padding (20,20)
+                #    xysize (200,200)
+            for _ in range(5*2 - len(manifest)):
+                button:
+                    xysize (200, 200)
+                    xalign 0.5
+                    yalign 0.5
+                    frame:
+                        background Frame("gui/file_slot_empty.webp", 2, 2, tile = True)
+                        padding (20, 20)
+                        xysize (200, 200)
+                        pos (20, 6)
+                    #text _("Empty"):
+                    #    color gui.empty_text_color
+                    #    pos (154, -1)
+                    #    size 28
                     
                 $ mmqorder += 1
 
