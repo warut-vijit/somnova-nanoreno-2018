@@ -1,4 +1,5 @@
 ﻿label A1_07r:
+    show screen scene_number("A1_07r")
     scene bg_black with Dissolve(0.5)
     "After that, the days just kept... passing."
     "Sounds like a bit of a no brainer, but I guess it just goes to show how much energy I've put into that stupid bet with Eris."

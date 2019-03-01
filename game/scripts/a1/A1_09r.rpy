@@ -1,4 +1,5 @@
 ﻿label A1_09r:
+    show screen scene_number("A1_09r")
     scene bg_club_2_during_work with Dissolve(0.5)
     "The hours kept running like wax."
     "Eris's big upgrade couldn't have taken that long, but there you had it. I'd taken my eyes off the clock and the next time I knew it, minutes all added up into months."

@@ -1,4 +1,6 @@
 label A1_01:
+    show screen scene_number("A1_01")
+    
     stop music
     $ queue_music(music_one)
     $ crossfade_music(0.0, 1.0, 0.0)

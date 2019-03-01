@@ -1,4 +1,5 @@
 ﻿label A1_07c:
+    show screen scene_number("A1_07c")
     # TODO: Add Long Time Skip here.
     scene bg_club_2_before_work with Dissolve(0.5)
     "After that, the days seemed to just pass me by."

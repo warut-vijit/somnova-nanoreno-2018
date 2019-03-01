@@ -1,4 +1,5 @@
 ﻿label A1_09c:
+    show screen scene_number("A1_09c")
     # TODO: Add Long Time Skip here.
     scene bg_black with Dissolve(0.5)
     play audio car_engine

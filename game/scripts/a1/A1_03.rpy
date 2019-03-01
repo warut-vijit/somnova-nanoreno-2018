@@ -1,4 +1,5 @@
 label A1_03:
+    show screen scene_number("A1_03")
     # TODO: Add Long Time Skip here.
     show bg_black
     "Pulling the car back into the alleyway behind Arcady feels like sinking through molasses into another world."

@@ -1,4 +1,5 @@
 ﻿label A1_08r: 
+    show screen scene_number("A1_08r")
     scene bg_black with Dissolve(0.5)
     $ queue_music(placeholder)
     "If the last few weeks were a blur, the one that follows them is more like white noise."

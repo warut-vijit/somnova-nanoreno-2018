@@ -202,6 +202,25 @@ style quick_right_button_text:
     xalign 1.0
 
 ##########################################
+##-------------SCENE_NUMBER-------------##
+##########################################
+
+# Scene number is used for debugging to show the current scene.
+
+screen scene_number(act_scene):
+    frame:
+        at mmfade(0)
+        xpos 200
+        xsize 280
+        background Solid(gui.box_background_color)
+        label _(act_scene):
+            text_ycenter 0.73 # This aligns the text to the bottom of the container. Ack.
+            text_size 90
+            xcenter 0.5
+            yanchor 1.0
+            ypos 180
+
+##########################################
 ##-------------NAVIGATION--------------##
 ##########################################
 

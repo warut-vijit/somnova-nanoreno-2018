@@ -1,4 +1,5 @@
 ﻿label A1_04:
+    show screen scene_number("A1_04")
     # TODO: Add Long Time Skip here.
     scene bg_club_2_during_work with Dissolve(0.5)
     $ queue_music(music_four1)

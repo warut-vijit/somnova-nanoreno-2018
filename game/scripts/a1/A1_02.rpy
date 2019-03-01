@@ -1,4 +1,5 @@
 label A1_02:
+    show screen scene_number("A1_02")
     # TODO: Add Long Time Skip here.
     scene bg_back_alley with Dissolve(1.5)
     $ queue_music(placeholder)

@@ -1,4 +1,5 @@
 ﻿label A1_05:
+    show screen scene_number("A1_05")
     scene bg_club_2_after_work with Dissolve (1.0)
     $ queue_music(music_five)
     "After an hour or so of mindless busy-work that does nothing to lift my mood, I decide I need a break."
