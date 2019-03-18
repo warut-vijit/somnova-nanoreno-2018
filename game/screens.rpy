@@ -230,7 +230,7 @@ screen navigation():
                 textbutton _("NEW GAME") action Start() at mmfade(0)
                 textbutton _("LOAD GAME") action ShowMenu("load") at mmfade(1)
                 textbutton _("OPTIONS") action ShowMenu("options") at mmfade(2)
-                textbutton _("EXTRAS") action ShowMenu("extras") at mmfade(3)
+                textbutton _("EXTRAS") action ShowMenu("extras", "gallery") at mmfade(3)
                 textbutton _("QUIT") action Quit(confirm = not main_menu) at mmfade(4)
             else:
                 textbutton _("RETURN") action Return() at mmfade(0)
@@ -262,8 +262,8 @@ screen extras_navigation():
             yoffset 340
             spacing 20
 
-            textbutton _("GALLERY") action Start() at mmfade(0)
-            textbutton _("CONCEPT ART") action ShowMenu("load") at mmfade(1)
+            textbutton _("GALLERY") action ShowMenu("extras", "gallery") at mmfade(0)
+            textbutton _("CONCEPT ART") action ShowMenu("extras", "conceptart") at mmfade(1)
             textbutton _("JUKEBOX") action ShowMenu("options") at mmfade(2)
             textbutton _("CREDITS") action ShowMenu("extras") at mmfade(3)
             textbutton _("BACK") action Return() at mmfade(4)
@@ -674,23 +674,27 @@ style confirm_button_text:
 ##--------------EXTRAS MENU-------------##
 ##########################################
 
-screen extras():
+screen extras(page):
     tag menu
     use game_menu(_("EXTRAS")):
         grid 5 2:
             xfill True
             yfill True
             $ mmqorder = 3
-            $ gallery, manifest = bg_gallery
-            for bg_name in manifest:
-                $ thumbnail = Transform(bg_name, crop_relative=(0.25,0,0.5,1.0), size=(200,200))
-                add gallery.make_button(bg_name, thumbnail, xalign=0.5, yalign=0.5, padding=(20,20), xysize=(200,200), background=Frame("gui/file_slot_empty.webp", 2, 2, tile = True))
-                #    at mmqfade(mmqorder)
-                #frame:
-                #    background Frame("gui/file_slot_empty.webp", 2, 2, tile = True)
-                #    padding (20,20)
-                #    xysize (200,200)
-            for _ in range(5*2 - len(manifest)):
+            if page == "gallery":
+                $ gallery, thumbs = extras_gallery
+                $ size = g_size
+                $ format = "g{:02}"
+            elif page == "conceptart":
+                $ gallery, thumbs = extras_ca
+                $ size = ca_size
+                $ format = "ca{:02}"
+
+            for i in range(min(size, 10)):
+                $ filename = format.format(i+1)
+                add gallery.make_button(filename, filename+"_thumb", xalign=0.5, yalign=0.5, padding=(20,20), xysize=(200,200), background=Frame("gui/file_slot_empty.webp", 2, 2, tile = True)) at mmqfade(mmqorder)
+                $ mmqorder += 1
+            for _ in range(5*2 - size):
                 button:
                     xysize (200, 200)
                     xalign 0.5
@@ -699,12 +703,7 @@ screen extras():
                         background Frame("gui/file_slot_empty.webp", 2, 2, tile = True)
                         padding (20, 20)
                         xysize (200, 200)
-                        pos (20, 6)
-                    #text _("Empty"):
-                    #    color gui.empty_text_color
-                    #    pos (154, -1)
-                    #    size 28
-                    
+                        at mmqfade(mmqorder)
                 $ mmqorder += 1
 
 ##########################################
